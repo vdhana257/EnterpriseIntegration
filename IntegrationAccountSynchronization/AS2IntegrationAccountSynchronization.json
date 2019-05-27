@@ -1,0 +1,239 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {    
+    "SourceIntegrationAccountName": {
+      "type": "string"
+    },
+    "DestinationResourceGroupName": {
+      "type": "string"
+    },
+    "DestinationIntegrationAccountName": {
+      "type": "string"
+    },
+    "LogicAppState": {
+      "type": "string",      
+      "allowedValues": ["Enabled","Disabled"]
+    },
+    "ServiceHealthRouterLogicAppName": {
+      "type": "string",
+      "defaultValue": "ServiceHealth"
+    }
+  },
+  "variables": {
+    "sourceConnectionName": "AS2SyncSourceIntegrationAccountConnection",
+    "destinationConnectionName": "AS2SyncDestinationIntegrationAccountConnection",
+    "pollingInterval": "30",
+    "syncTriggerStartTime": "2017-04-01",
+    "apiVersion": "2016-06-01",
+    "sourceIntegrationAccountId": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().Name,'/providers/Microsoft.Logic/integrationAccounts/', parameters('SourceIntegrationAccountName'))]",
+    "destinationIntegrationAccountId": "[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/', parameters('DestinationResourceGroupName'), '/providers/Microsoft.Logic/integrationAccounts/', parameters('DestinationIntegrationAccountName'))]"
+  },
+  "resources": [
+    {
+      "name": "AS2IntegrationAccountSynchronization",
+      "type": "Microsoft.Logic/workflows",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "[variables('apiVersion')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/connections', variables('sourceConnectionName'))]",
+        "[resourceId('Microsoft.Web/connections', variables('destinationConnectionName'))]"
+      ],
+      "properties": {
+        "state": "[parameters('LogicAppState')]",
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "actions": {
+            "Run_Scope": {
+              "actions": {
+                "Add_or_update_a_MIC_content": {
+                  "inputs": {
+                    "body": {
+                      "AgreementName": "@{triggerBody()?['AgreementName']}",
+                      "As2From": "@{triggerBody()?['As2From']}",
+                      "As2To": "@{triggerBody()?['As2To']}",
+                      "MessageId": "@{triggerBody()?['MessageId']}",
+                      "MicChangedTime": "@{triggerBody()?['MicChangedTime']}",
+                      "MicValue": "@{triggerBody()?['MicValue']}"
+                    },
+                    "host": {
+                      "connection": {
+                        "name": "@parameters('$connections')['secondary']['connectionId']"
+                      }
+                    },
+                    "method": "put",
+                    "path": "/createOrUpdateMic"
+                  },
+                  "runAfter": { },
+                  "type": "ApiConnection"
+                }
+              },
+              "runafter": {},
+              "type": "Scope"
+            },
+            "Failed_Scope": {
+              "actions": {
+                "For_Each_Action": {
+                  "foreach": "@result('Run_Scope')",
+                  "runAfter": {},
+                  "type": "Foreach",
+                  "actions": {
+                    "If_Action_Failed": {
+                      "type": "If",
+                      "expression": "@equals(item()['status'], 'Failed')",
+                      "actions": {
+                        "Compose_Exception": {
+                          "type": "Compose",
+                          "inputs": {
+                            "metricName": "IntegrationException",
+                            "dimensions": {
+                              "service": "IntegrationService",
+                              "role": "LogicApp",
+                              "roleInstance": "@workflow().name",
+                              "component": "@item().name",
+                              "clientTrackingId": "@trigger()['clientTrackingId']",
+                              "runId": "@workflow().run.name",
+                              "businessUnit": "@coalesce(triggerOutputs()?.headers?.BusinessUnit, 'SharedServices')"
+                            },
+                            "log": "@item()"
+                          },
+                          "runAfter": {
+
+                          }
+                        },
+                        "Post_Exception": {
+                          "inputs": {
+                            "body": "@outputs('Compose_Exception')",
+                            "method": "POST",
+                            "retryPolicy": {
+                              "count": "@parameters('RetryCount')",
+                              "interval": "@concat('PT',parameters('RetryInterval'))",
+                              "type": "fixed"
+                            },
+                            "uri": "@{coalesce(json(coalesce(triggerOutputs()['headers']?['ExecutionContext'], '{}'))?['ServiceHealthRouter'], parameters('ServiceHealthRouterUrl'))}"
+                          },
+                          "runAfter": {
+                            "Compose_Exception": [ "Succeeded" ]
+                          },
+                          "type": "Http"
+                        }
+                      },
+                      "runAfter": {
+
+                      }
+                    }
+                  }
+                },
+                "Terminate": {
+                  "inputs": {
+                    "runError": {
+                      "code": "action failed",
+                      "message": "action failed"
+                    },
+                    "runStatus": "Failed"
+                  },
+                  "runAfter": {
+                    "For_Each_Action": [ "Succeeded" ]
+                  },
+                  "type": "Terminate"
+                }
+              },
+              "runAfter": {
+                "Run_Scope": [ "Failed" ]
+              },
+              "type": "Scope"
+            }
+          },
+          "parameters": {
+            "$connections": {
+              "defaultValue": { },
+              "type": "Object"
+            },
+            "RetryCount": {
+              "defaultValue": "4",
+              "type": "String"
+            },
+            "RetryInterval": {
+              "defaultValue": "30S",
+              "type": "String"
+            },
+            "ServiceHealthRouterUrl": {
+              "type": "SecureString",
+              "defaultValue": "[listCallBackUrl(concat(resourceGroup().id,'/providers/Microsoft.Logic/workflows/',parameters('ServiceHealthRouterLogicAppName'),'/triggers/manual'), '2016-06-01').value]"
+            }
+          },
+          "triggers": {
+            "When_a_MIC_value_is_created": {
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['primary']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/triggers/oncreatedmic"
+              },
+              "recurrence": {
+                "frequency": "Second",
+                "interval": "[variables('pollingInterval')]"
+              },
+              "splitOn": "@triggerBody()",
+              "type": "ApiConnection"
+            }
+          },
+          "contentVersion": "1.0.0.0",
+          "outputs": { }
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "primary": {
+                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', 'AS2')]",
+                "connectionId": "[resourceId('Microsoft.Web/connections', variables('sourceConnectionName'))]",
+                "connectionName": "[variables('sourceConnectionName')]"
+              },
+              "secondary": {
+                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/',  resourceGroup().location, '/managedApis/', 'AS2')]",
+                "connectionId": "[resourceId('Microsoft.Web/connections', variables('destinationConnectionName'))]",
+                "connectionName": "[variables('destinationConnectionName')]"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Web/connections",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[variables('sourceConnectionName')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "api": {
+          "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', 'AS2')]"
+        },
+        "displayName": "[variables('sourceConnectionName')]",
+        "parameterValues": {
+          "integrationAccountId": "[variables('sourceIntegrationAccountId')]",
+          "integrationAccountUrl": "[listCallbackUrl(variables('sourceIntegrationAccountId'), variables('apiVersion')).value]"
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Web/connections",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[variables('destinationConnectionName')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "api": {
+          "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', 'AS2')]"
+        },
+        "displayName": "[variables('destinationConnectionName')]",
+        "parameterValues": {
+          "integrationAccountId": "[variables('destinationIntegrationAccountId')]",
+          "integrationAccountUrl": "[listCallbackUrl(variables('destinationIntegrationAccountId'), variables('apiVersion')).value]"
+        }
+      }
+    }
+  ],
+  "outputs": { }
+}
