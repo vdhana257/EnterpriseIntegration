@@ -16,7 +16,7 @@
         IntegrationAccountKeyVaultNameSecondary	    -	<<Secondary Region Key Vault Name>>        
         IntegrationAccountSyncStorageAccountName	-	<<Sync Azure Stroage Account Name>>
         IntegrationAccountSyncStorageAccKey	        -	<<Sync Azure Stroage Account Key>>
-        IntegrationAccountSyncStorageContainerName	-	<<Azure Storage Container Name>> Example: intsync-demo
+        IntegrationAccountSyncStorageContainerName	-	<<Azure Storage Container Name>> Example: intsync-artifacts
         LastSyncDate	                            -	<<Last Sync Date in UTC>> Example: 2019-05-26T12:01:55.6672968Z
         TenantId	                                -	<<Orgnization Tenant ID>> Example: microsoft.onmicrosoft.com 
 .PARAMETER filterCondition
@@ -43,23 +43,20 @@
 .PARAMETER DeleteExtraSecondaryResources    
     Deletes an extra resources in secondary region if it's not there in primary region. By default enabled as True, change this param False if you want disable.
 .PARAMETER IsBlobStoreRequired    
-    Stores all Sync changes in Azure Storage Blob container for run. By default enabled as True, change this param False if you want disable
+    Stores all Sync changes in Azure Storage Blob container for run. By default enabled as True, change this param False if you want disable.
 .PARAMETER IsDateBasedSync    
     To avoid full comparison of all artifacts changes between region, the date based sync has been introduced to improve performance of Sync.
     By default enabled as True, change this param False if you want disable and enable full artifacts comparison.
 .PARAMETER IsReportNeeded    
     Generates comparison report(CSV) of two Integration Accounts regions. By default enabled as True, change this param False if you want enable.
 .INPUTS
-  <Inputs if any, otherwise state None>
+  No mandatory input params as all provided with default values. Schedule this PowerShell script as Azure Automation Job with custom parameters as per need.
 .OUTPUTS
-  <Outputs if any, otherwise state None - example: Log file stored in C:\Windows\Temp\<name>.log>
+  Two regions Integration Account Arifacts Synced.
 .NOTES
   Version:        1.0
   Author:         Dhanaekar Vellore(dhvellor@microsoft.com)
   Creation Date:  5/27/2019
-    
-.EXAMPLE
-  <Example goes here. Repeat this attribute for more than one example>
 #>
 param
 (       
