@@ -1,0 +1,231 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "SourceResourceGroupName": {
+      "type": "string"
+    },  
+    "SourceIntegrationAccountName": {
+      "type": "string"
+    },
+    "DestinationResourceGroupName": {
+      "type": "string"
+    },
+    "DestinationIntegrationAccountName": {
+      "type": "string"
+    },
+    "LogicAppState": {
+      "type": "string",
+      "allowedValues": ["Enabled","Disabled"]
+    },
+    "ServiceHealthRouterLogicAppName": {
+      "type": "string",
+      "defaultValue": "ServiceHealth"
+    }
+  },
+  "variables": {
+    "apiVersion": "2016-06-01",
+    "pollingInterval": "3",
+    "sourceConnectionName": "X12SyncSourceIntegrationAccountConnection",
+    "destinationConnectionName": "X12DestinationSourceIntegrationAccountConnection",
+    "sourceIntegrationAccountId": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().Name,'/providers/Microsoft.Logic/integrationAccounts/', parameters('SourceIntegrationAccountName'))]",
+    "destinationIntegrationAccountId": "[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/', parameters('DestinationResourceGroupName'), '/providers/Microsoft.Logic/integrationAccounts/', parameters('DestinationIntegrationAccountName'))]"
+  },
+  "resources": [
+    {
+      "name": "X12IntegrationAccountSynchronization",
+      "type": "Microsoft.Logic/workflows",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "[variables('apiVersion')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/connections', variables('sourceConnectionName'))]",
+        "[resourceId('Microsoft.Web/connections', variables('destinationConnectionName'))]"
+      ],
+      "properties": {
+        "state": "[parameters('LogicAppState')]",
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "actions": {
+            "Run_Scope": {
+              "actions": {
+                "AddOrUpdateControlNumbers": {
+                  "runAfter": { },
+                  "type": "ApiConnection",
+                  "inputs": {
+                    "body": "@triggerBody()",
+                    "host": {
+                      "connection": {
+                        "name": "@parameters('$connections')['destination']['connectionId']"
+                      }
+                    },
+                    "method": "put",
+                    "path": "/controlNumbers"
+                  }
+                }
+              },
+              "runafter": {},
+              "type": "Scope"
+            },
+            "Failed_Scope": {
+              "actions": {
+                "For_Each_Action": {
+                  "foreach": "@result('Run_Scope')",
+                  "runAfter": {},
+                  "type": "Foreach",
+                  "actions": {
+                    "If_Action_Failed": {
+                      "type": "If",
+                      "expression": "@equals(item()['status'], 'Failed')",
+                      "actions": {
+                        "Compose_Exception": {
+                          "type": "Compose",
+                          "inputs": {
+                            "metricName": "IntegrationException",
+                            "dimensions": {
+                              "service": "IntegrationService",
+                              "role": "LogicApp",
+                              "roleInstance": "@workflow().name",
+                              "component": "@item().name",
+                              "clientTrackingId": "@trigger()['clientTrackingId']",
+                              "runId": "@workflow().run.name",
+                              "businessUnit": "@coalesce(triggerOutputs()?.headers?.BusinessUnit, 'SharedServices')"
+                            },
+                            "log": "@item()"
+                          },
+                          "runAfter": {
+
+                          }
+                        },
+                        "Post_Exception": {
+                          "inputs": {
+                            "body": "@outputs('Compose_Exception')",
+                            "method": "POST",
+                            "retryPolicy": {
+                              "count": "@parameters('RetryCount')",
+                              "interval": "@concat('PT',parameters('RetryInterval'))",
+                              "type": "fixed"
+                            },
+                            "uri": "@{coalesce(json(coalesce(triggerOutputs()['headers']?['ExecutionContext'], '{}'))?['ServiceHealthRouter'], parameters('ServiceHealthRouterUrl'))}"
+                          },
+                          "runAfter": {
+                            "Compose_Exception": [ "Succeeded" ]
+                          },
+                          "type": "Http"
+                        }
+                      },
+                      "runAfter": { }
+                    }
+                  }
+                },
+                "Terminate": {
+                  "inputs": {
+                    "runError": {
+                      "code": "action failed",
+                      "message": "action failed"
+                    },
+                    "runStatus": "Failed"
+                  },
+                  "runAfter": {
+                    "For_Each_Action": [ "Succeeded" ]
+                  },
+                  "type": "Terminate"
+                }
+              },
+              "runAfter": {
+                "Run_Scope": [ "Failed" ]
+              },
+              "type": "Scope"
+            }
+          },
+          "parameters": {
+            "$connections": {
+              "defaultValue": { },
+              "type": "Object"
+            },
+            "RetryCount": {
+              "defaultValue": "4",
+              "type": "String"
+            },
+            "RetryInterval": {
+              "defaultValue": "30S",
+              "type": "String"
+            },
+            "ServiceHealthRouterUrl": {
+              "type": "SecureString",
+              "defaultValue": "[listCallBackUrl(concat(resourceGroup().id,'/providers/Microsoft.Logic/workflows/',parameters('ServiceHealthRouterLogicAppName'),'/triggers/manual'), '2016-06-01').value]"
+            }
+          },
+          "triggers": {
+            "WhenAControlNumberIsModified": {
+              "recurrence": {
+                "frequency": "Minute",
+                "interval": "[variables('pollingInterval')]"
+              },
+              "type": "ApiConnection",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['source']['connectionId']"
+                  }
+                },
+                "method": "get",
+                "path": "/triggers/onModifiedControlNumber"
+              }
+            }
+          },
+          "contentVersion": "1.0.0.0",
+          "outputs": { }
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "source": {
+                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', 'x12')]",
+                "connectionId": "[resourceId('Microsoft.Web/connections', variables('sourceConnectionName'))]",
+                "connectionName": "[variables('sourceConnectionName')]"
+              },
+              "destination": {
+                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', 'x12')]",
+                "connectionId": "[resourceId('Microsoft.Web/connections', variables('destinationConnectionName'))]",
+                "connectionName": "[variables('destinationConnectionName')]"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Web/connections",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[variables('sourceConnectionName')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "api": {
+          "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', 'x12')]"
+        },
+        "displayName": "[variables('sourceConnectionName')]",
+        "parameterValues": {
+          "integrationAccountId": "[variables('sourceIntegrationAccountId')]",
+          "integrationAccountUrl": "[listCallbackUrl(variables('sourceIntegrationAccountId'), variables('apiVersion')).value]"
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Web/connections",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[variables('destinationConnectionName')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "api": {
+          "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/', 'x12')]"
+        },
+        "displayName": "[variables('destinationConnectionName')]",
+        "parameterValues": {
+          "integrationAccountId": "[variables('destinationIntegrationAccountId')]",
+          "integrationAccountUrl": "[listCallbackUrl(variables('destinationIntegrationAccountId'), variables('apiVersion')).value]"
+        }
+      }
+    }
+  ],
+  "outputs": { }
+}
