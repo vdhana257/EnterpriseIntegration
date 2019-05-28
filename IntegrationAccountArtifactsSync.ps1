@@ -2,57 +2,56 @@
 .SYNOPSIS
   Enterprise Integration Account Artifacts Sync from one region to another.
 .DESCRIPTION
-  Syncs Integration Account Artifacts from one region to another,this feature will be helpful to perform Disastor Recovery of Integration Platform.
-  - Create Azure Automation Run As Account which will intern creates new Service Principal with contributor access in subscription.
-        * Make sure Azure Automation SP account has read access to primary region of Integration Account and Key-Vault "Keys" Read, List, Recover and Backup permissions.
-        * Make sure Azure Automation SP account has write/contributor access to secondary region of Integration Account and respective Key-Vault "Keys" Read, List, Recover and Backup permissions.
-  - Create Automation Variable's with String data type as shown below; These variable read during execution of PowerShell
-        AutomationAccountName	                    -	<<Hosted Automation Account Name>>
-        AutomationRG	                            -	<<Hosted Automation Account Resource Group Name>>        
-        IntegrationAccountNamePrimary	            -	<<Integration Account Name Primary>> 
-        IntegrationAccountNameSecondary	            -	<<Integration Account Name Secondary>>
-        IntegrationAccountResourceGroupNamePrimary	-	<<Integration Account Resource Group Name Primary>>
-        IntegrationAccountResourceGroupNameSecondary-	<<Integration Account Resource Group Name Secondary>>
-        IntegrationAccountKeyVaultNameSecondary	    -	<<Secondary Region Key Vault Name>>        
-        IntegrationAccountSyncStorageAccountName	-	<<Sync Azure Stroage Account Name>>
-        IntegrationAccountSyncStorageAccKey	        -	<<Sync Azure Stroage Account Key>>
-        IntegrationAccountSyncStorageContainerName	-	<<Azure Storage Container Name>> Example: intsync-artifacts
-        LastSyncDate	                            -	<<Last Sync Date in UTC>> Example: 2019-05-26T12:01:55.6672968Z
-        TenantId	                                -	<<Orgnization Tenant ID>> Example: microsoft.onmicrosoft.com 
+  Syncs Integration Account Artifacts from one region to another, this feature will be helpful to perform Disaster Recovery of Integration Platform.
+  - Create Azure Automation Run As Account which will intern creates new Service Principal with contributor access in the subscription.
+        * Make sure Azure Automation SP account has read access to a primary region of Integration Account and Key-Vault "Keys" Read, List, Recover and Backup permissions.
+        * Make sure Azure Automation SP account has write/contributor access to a secondary region of Integration Account and respective Key-Vault "Keys" Read, List, Recover and Backup permissions.
+  - Create Automation Variable's with String data type as shown below; These variables read during execution of PowerShell
+        AutomationAccountName                       -    <<Hosted Automation Account Name>>
+        AutomationRG                                -    <<Hosted Automation Account Resource Group Name>>        
+        IntegrationAccountNamePrimary               -    <<Integration Account Name Primary>> 
+        IntegrationAccountNameSecondary             -    <<Integration Account Name Secondary>>
+        IntegrationAccountResourceGroupNamePrimary  -    <<Integration Account Resource Group Name Primary>>
+        IntegrationAccountResourceGroupNameSecondary-    <<Integration Account Resource Group Name Secondary>>
+        IntegrationAccountKeyVaultNameSecondary     -    <<Secondary Region Key Vault Name>>        
+        IntegrationAccountSyncStorageAccountName    -    <<Sync Azure Stroage Account Name>>
+        IntegrationAccountSyncStorageAccKey         -    <<Sync Azure Stroage Account Key>>
+        IntegrationAccountSyncStorageContainerName  -    <<Azure Storage Container Name>> Example: intsync-artifacts
+        LastSyncDate                                -    <<Last Sync Date in UTC>> Example: 2019-05-26T12:01:55.6672968Z
+        TenantId                                    -    <<Orgnization Tenant ID>> Example: microsoft.onmicrosoft.com 
 .PARAMETER filterCondition
-    Artifacts Filter Condition, By default it will search all artifacts in IA as we have given wildcard(*) char. Change filter condition as per your need.
+    Artifacts Filter Condition criteria; By default, it will search all artifacts in Integration Account as we have given wildcard(*) char. Change filter condition as per your need.
 .PARAMETER IsSyncProvisionRequired    
-    Enable or Disable Sync Provision feature. By default enabled as True. Change this param False if you want just comparsion of artifacts between regions.
+    Enable or Disable Sync Provision feature. By default enabled as True. Change this param False if you want just comparison of artifacts between regions.
 .PARAMETER IsSchemaSyncRequired
-    Enable or Disable Integration Account Schema Sync Provision feature. By default enabled as True, change this param False if you want disable.
+    Enable or Disable Integration Account Schema Sync Provision feature. By default enabled as True, change this param False if you want to disable.
 .PARAMETER IsMapSyncRequired    
-    Enable or Disable Integration Account Maps(Xslt and Liquid) Sync Provision feature. By default enabled as True, change this param False if you want disable.
+    Enable or Disable Integration Account Maps(XSLT and Liquid) Sync Provision feature. By default enabled as True, change this param False if you want to disable.
 .PARAMETER IsCertSyncRequired
-    Enable or Disable Integration Account Certificates(suports public certifcates only; private certificates provision disabled) Sync Provision feature. 
-    By default enabled as True, change this param False if you want disable. Also enable private certificates provision in code if needed.
+    Enable or Disable Integration Account Certificates(public and private certificates) Sync Provision feature. By default enabled as True, change this param False if you want to disable.
 .PARAMETER IsPartnerSyncRequired    
-    Enable or Disable Integration Account Partner Sync Provision feature. By default enabled as True, change this param False if you want disable.
+    Enable or Disable Integration Account Partner Sync Provision feature. By default enabled as True, change this param False if you want to disable.
 .PARAMETER IsBatchConfigSyncRequired
-    Enable or Disable Integration Account Batch Configuration Sync Provision feature. By default enabled as True, change this param False if you want disable.
+    Enable or Disable Integration Account Batch Configuration Sync Provision feature. By default enabled as True, change this param False if you want to disable.
 .PARAMETER IsRosettaNetPIPSyncRequired    
-    Enable or Disable Integration Account RosettaNet PIP Sync Provision feature. By default enabled as True, change this param False if you want disable.
+    Enable or Disable Integration Account RosettaNet PIP Sync Provision feature. By default enabled as True, change this param False if you want to disable.
 .PARAMETER IsAssemblySyncRequired
-    Enable or Disable Integration Account Custom Assembly(DLL) Sync Provision feature. By default enabled as True, change this param False if you want disable.
+    Enable or Disable Integration Account Custom Assembly(DLL) Sync Provision feature. By default enabled as True, change this param False if you want to disable.
 .PARAMETER IsAgreementSyncRequired    
-    Enable or Disable Integration Account Agreement Sync Provision feature. By default enabled as True, change this param False if you want disable.
+    Enable or Disable Integration Account Agreement Sync Provision feature. By default enabled as True, change this param False if you want to disable.
 .PARAMETER DeleteExtraSecondaryResources    
-    Deletes an extra resources in secondary region if it's not there in primary region. By default enabled as True, change this param False if you want disable.
+    Deletes extra resources in the secondary region if it's not there in the primary region. By default enabled as True, change this param False if you want to disable.
 .PARAMETER IsBlobStoreRequired    
-    Stores all Sync changes in Azure Storage Blob container for run. By default enabled as True, change this param False if you want disable.
+    Stores all Sync changes in Azure Storage Blob container for the run. By default enabled as True, change this param False if you want to disable.
 .PARAMETER IsDateBasedSync    
     To avoid full comparison of all artifacts changes between region, the date based sync has been introduced to improve performance of Sync.
-    By default enabled as True, change this param False if you want disable and enable full artifacts comparison.
+    By default enabled as True, change this param False if you want to disable and enable full artifacts comparison.
 .PARAMETER IsReportNeeded    
-    Generates comparison report(CSV) of two Integration Accounts regions. By default enabled as True, change this param False if you want enable.
+    Generates a comparison report(CSV) of two Integration Accounts regions. By default enabled as True, change this param False if you want to enable.
 .INPUTS
   No mandatory input params as all provided with default values. Schedule this PowerShell script as Azure Automation Job with custom parameters as per need.
 .OUTPUTS
-  Two regions Integration Account Arifacts Synced.
+  Two regions Integration Account Artifacts Synced.
 .NOTES
   Version:        1.0
   Author:         Dhanaekar Vellore(dhvellor@microsoft.com)
@@ -1066,7 +1065,7 @@ Try {
         Write-Output "Artifacts Created between $LastSyncDate to $CurrentSyncDate (UTC)"
     }
     Write-Output "Log (Azure Blob) : $StorageAccountName\$StorageContainerName\$FolderName"
-    Write-Output "Note:= Private Certificate sync not supported currently."
+    Write-Output "Note:= Private Certificate sync disabled in code, please enable if needed."
 
     #Auth Header   
     $authHeader = New-AzureRestAuthorizationHeaderUsingCert -ApplicationId $connection.ApplicationID -TenantID $TenantId -CertificateThumbprint $connection.CertificateThumbprint 
