@@ -1,7 +1,3 @@
-# EnterpriseIntegration
-
-Enterprise Integration using Azure LogicApps and Integration Account.
-
 # Integration Account Runtime Sync
 LogicApps ARM Templates provided in folder (/IntegrationAccountSynchronization) for runtime sync(Control Numbers and MIC Algorithm) from primary to secondary region Integration account. Note these LogicApps scheduled to run every 3 mins, change the interval as needed.
   - AS2 Synchronization (MIC Algorithm) 
