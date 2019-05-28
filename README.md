@@ -3,13 +3,13 @@
 Enterprise Integration using Azure LogicApps and Integration Account.
 
 # Integration Account Runtime Sync
-LogicApps ARM Templates prvoided in folder (/IntegrationAccountSynchronization) to sync from primary to secondary region Integration account. These LogicApps scheduled to run every 3 mins, change interval if needed
+LogicApps ARM Templates provided in folder (/IntegrationAccountSynchronization) for runtime sync(Control Numbers and MIC Algorithm) from primary to secondary region Integration account. Note these LogicApps scheduled to run every 3 mins, change the interval as needed.
   - AS2 Synchronization (MIC Algorithm) 
   - X12 Synchronization (Control Numbers Sync)
   - EDIFACT Synchronization (Control Numbers Sync)
 
 # Integration Account Artifacts Sync
-Integration Account Artifacts sync powershell Azure Automation script (IntegrationAccountArtifactsSync.ps1) used to sync from primary to secondary region Integration account with below artifacts. 
+This PowerShell Azure Automation script (IntegrationAccountArtifactsSync.ps1) for sync artifacts mentioned below from primary to secondary region Integration Account. Make sure to schedule the Azure Automation Powershell Job as per your need to sync artifacts. More detailed instructions given in Powershell script notes, please check.
   - Schemas
   - Maps
   - Certificates
