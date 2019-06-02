@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.microsoft.com/Edi/EdifactServiceSchema" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://schemas.microsoft.com/Edi/EdifactServiceSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Edifact_ServiceSchema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="UNA" />
+        <xs:element minOccurs="0" ref="UNB" />
+        <xs:element minOccurs="0" ref="UNG" />
+        <xs:element minOccurs="0" ref="UNH" />
+        <xs:element minOccurs="0" ref="UNT" />
+        <xs:element minOccurs="0" ref="UNE" />
+        <xs:element minOccurs="0" ref="UNZ" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UNA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UNA1" type="xs:string" />
+        <xs:element name="UNA2" type="xs:string" />
+        <xs:element name="UNA3" type="xs:string" />
+        <xs:element name="UNA4" type="xs:string" />
+        <xs:element name="UNA5" type="xs:string" />
+        <xs:element name="UNA6" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UNB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UNB1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNB1.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_ID">
+                    <xs:maxLength value="4" />
+                    <xs:minLength value="4" />
+                    <xs:enumeration value="UNOA" />
+                    <xs:enumeration value="UNOB" />
+                    <xs:enumeration value="UNOC" />
+                    <xs:enumeration value="UNOD" />
+                    <xs:enumeration value="UNOE" />
+                    <xs:enumeration value="UNOF" />
+                    <xs:enumeration value="UNOG" />
+                    <xs:enumeration value="UNOH" />
+                    <xs:enumeration value="UNOI" />
+                    <xs:enumeration value="UNOJ" />
+                    <xs:enumeration value="UNOK" />
+                    <xs:enumeration value="UNOX" />
+                    <xs:enumeration value="UNOY" />
+                    <xs:enumeration value="KECA" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNB1.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_ID">
+                    <xs:length value="1" />
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                    <xs:enumeration value="3" />
+                    <xs:enumeration value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNB1.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNB1.4">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UNB2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNB2.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="35" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNB2.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_ID">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="4" />
+                    <xs:enumeration value="5" />
+                    <xs:enumeration value="8" />
+                    <xs:enumeration value="9" />
+                    <xs:enumeration value="12" />
+                    <xs:enumeration value="14" />
+                    <xs:enumeration value="18" />
+                    <xs:enumeration value="22" />
+                    <xs:enumeration value="30" />
+                    <xs:enumeration value="31" />
+                    <xs:enumeration value="33" />
+                    <xs:enumeration value="34" />
+                    <xs:enumeration value="51" />
+                    <xs:enumeration value="52" />
+                    <xs:enumeration value="53" />
+                    <xs:enumeration value="54" />
+                    <xs:enumeration value="55" />
+                    <xs:enumeration value="57" />
+                    <xs:enumeration value="58" />
+                    <xs:enumeration value="59" />
+                    <xs:enumeration value="61" />
+                    <xs:enumeration value="63" />
+                    <xs:enumeration value="65" />
+                    <xs:enumeration value="80" />
+                    <xs:enumeration value="82" />
+                    <xs:enumeration value="84" />
+                    <xs:enumeration value="85" />
+                    <xs:enumeration value="86" />
+                    <xs:enumeration value="87" />
+                    <xs:enumeration value="89" />
+                    <xs:enumeration value="90" />
+                    <xs:enumeration value="91" />
+                    <xs:enumeration value="92" />
+                    <xs:enumeration value="103" />
+                    <xs:enumeration value="128" />
+                    <xs:enumeration value="129" />
+                    <xs:enumeration value="144" />
+                    <xs:enumeration value="145" />
+                    <xs:enumeration value="146" />
+                    <xs:enumeration value="147" />
+                    <xs:enumeration value="148" />
+                    <xs:enumeration value="Z01" />
+                    <xs:enumeration value="ZZZ" />
+                    <xs:enumeration value="BT" />
+                    <xs:maxLength value="4" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNB2.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="35" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNB2.4">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="35" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UNB3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNB3.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="35" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNB3.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_ID">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="4" />
+                    <xs:enumeration value="5" />
+                    <xs:enumeration value="8" />
+                    <xs:enumeration value="9" />
+                    <xs:enumeration value="12" />
+                    <xs:enumeration value="14" />
+                    <xs:enumeration value="18" />
+                    <xs:enumeration value="22" />
+                    <xs:enumeration value="30" />
+                    <xs:enumeration value="31" />
+                    <xs:enumeration value="33" />
+                    <xs:enumeration value="34" />
+                    <xs:enumeration value="51" />
+                    <xs:enumeration value="52" />
+                    <xs:enumeration value="53" />
+                    <xs:enumeration value="54" />
+                    <xs:enumeration value="55" />
+                    <xs:enumeration value="57" />
+                    <xs:enumeration value="58" />
+                    <xs:enumeration value="59" />
+                    <xs:enumeration value="61" />
+                    <xs:enumeration value="63" />
+                    <xs:enumeration value="65" />
+                    <xs:enumeration value="80" />
+                    <xs:enumeration value="82" />
+                    <xs:enumeration value="84" />
+                    <xs:enumeration value="85" />
+                    <xs:enumeration value="86" />
+                    <xs:enumeration value="87" />
+                    <xs:enumeration value="89" />
+                    <xs:enumeration value="90" />
+                    <xs:enumeration value="91" />
+                    <xs:enumeration value="92" />
+                    <xs:enumeration value="103" />
+                    <xs:enumeration value="128" />
+                    <xs:enumeration value="129" />
+                    <xs:enumeration value="144" />
+                    <xs:enumeration value="145" />
+                    <xs:enumeration value="146" />
+                    <xs:enumeration value="147" />
+                    <xs:enumeration value="148" />
+                    <xs:enumeration value="Z01" />
+                    <xs:enumeration value="ZZZ" />
+                    <xs:enumeration value="BT" />
+                    <xs:maxLength value="4" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNB3.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="35" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNB3.4">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="35" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UNB4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNB4.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="8" />
+                    <xs:minLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNB4.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="4" />
+                    <xs:minLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UNB5">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNB6">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNB6.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="14" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNB6.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="2" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNB7">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNB8">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_A">
+              <xs:length value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNB9">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_ID">
+              <xs:length value="1" />
+              <xs:enumeration value="0" />
+              <xs:enumeration value="1" />
+              <xs:enumeration value="2" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNB10">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="35" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNB11">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_N">
+              <xs:length value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UNG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UNG1">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="6" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="UNG2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNG2.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="35" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNG2.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="4" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UNG3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNG3.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="35" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNG3.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="4" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNG4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNG4.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="8" />
+                    <xs:minLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNG4.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="4" />
+                    <xs:minLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UNG5">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="UNG6">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="3" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="UNG7">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNG7.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNG7.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNG7.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNG8">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UNH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UNH1">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="UNH2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNH2.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNH2.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNH2.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNH2.4">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH2.5">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH2.6">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH2.7">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNH3">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="35" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNH4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNH4.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="2" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH4.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_A">
+                    <xs:length value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNH5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNH5.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="14" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH5.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH5.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH5.4">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNH6">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNH6.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="14" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH6.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:minLength value="1" />
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH6.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH6.4">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UNH7">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNH7.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="14" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH7.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH7.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UNH7.4">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UNT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UNT1">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_N">
+              <xs:maxLength value="10" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="UNT2">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UNE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UNE1">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_N">
+              <xs:maxLength value="6" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="UNE2">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UNZ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UNZ1">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_N">
+              <xs:maxLength value="6" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="UNZ2">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+              <xs:minLength value="1" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="EDIFACT_AN">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="EDIFACT_A">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="EDIFACT_N">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="EDIFACT_ID">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://TrackerProperties.PropertySchema" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://TrackerProperties.PropertySchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <b:schemaInfo schema_type="property" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReceiverQualifier" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="4d87a6ab-28c3-45b1-8448-bcf0e2e0877f" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ReceiverKey" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c81f6f15-a28b-4f3c-851b-4c6e2a595a40" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TransactionType" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="0c16f0eb-0fd7-481b-8e36-e311fdebbbfe" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Standard" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="718e064e-792a-45b2-87ae-45aa9c0f394e" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Version" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="df0881d9-f3d2-4e58-866f-263dfb20c92f" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="SenderQualifier" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="807a51b8-ce11-4aed-8baa-aac56ba8fb51" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="SenderKey" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9a9f5b20-602d-475e-b6d2-07b8ead8312b" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocumentName" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="6f29e7ed-5b23-4a03-89a6-230b23074def" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ControlNumber" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="39faa079-a90d-4c45-bee1-631ff52cab5d" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Status" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="66c00ae2-4358-40db-a4e2-d7159ee32944" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="59334a0f-6919-464a-9e69-c9dd78987602" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="1fbcc579-fd71-4bfd-a265-1713733b35eb" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef3" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="7bb5ff67-b2c2-4355-8b46-56a3670df21a" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef4" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c02b5dd0-33c8-473e-91f7-c81deb3486eb" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef5" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="5e8ce5c9-b4f9-4730-9674-84c5d8ac1db6" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef6" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="a86905b5-ef00-463c-b34d-a4c84314dc76" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef7" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="65a0b1df-5d96-49cc-9549-e3d2cb3326b8" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef8" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="52ede406-173f-4bf1-8f40-286b2f261e5e" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef9" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="a0f64e9c-1e84-464d-8b92-022175b6ca63" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef10" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="45ec3b70-0453-4bb9-b7d4-c990a3e3e5e9" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GroupControlNumber" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="f33f1452-1c0a-473e-9576-9499ff9c16cb" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ExpectOrGenerateAck" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="1a091ef9-3a8b-43c9-a95d-e1dc09fdea13" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocRef11" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="2350efc5-ed78-44e0-8556-cbd84f7742e9" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="PartnerKey" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="a0e6e686-4f13-44df-9cf1-0b789ac59553" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,24 @@
+{
+  "id": "02e167de-2e07-41fa-8989-e894c04ddfa5",
+  "schemaId": "f8471ebe-1ac6-4d46-81e2-793f7c050e76",
+  "recordType": "obFlowPartnerContext",
+  "transformId": "8b1a3a08-de7a-420e-bf37-33117c038b14",
+  "description": " 855 Message from Contoso",
+  "docKey": {
+    "partnerIdentifierValue": "855",
+    "obFlowContextId": "1045674f-6566-472c-954e-f0878f853c22",
+    "partnerDetailsId": "d9e2261a-d34d-4d64-90d6-f762da540ec6"
+  },
+  "documentKey": "http://MSIT.EAS.ICOE.VL.X12855.MSLicensePos.Schemas.AP.X1200401855#X12_00401_855",
+  "documentType": "Xml",
+  "preTransformProcessing": [],
+  "postTransformProcessing": [],
+  "schemaValidationRequired": true,
+  "ediOverrideDelimiters": {
+    "dataElementSeparator": 42,
+    "componentSeparator": 58,
+    "replacementCharacter": 36,
+    "segmentTerminator": 126,
+    "segmentTerminatorSuffix": "None"
+  }
+}

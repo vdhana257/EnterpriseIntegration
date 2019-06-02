@@ -1,0 +1,964 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://MSIT.EAS.ICOE.VL.X12850.MSLI3.Schemas.PA.MSLI3XMLOrder" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://MSIT.EAS.ICOE.VL.X12850.MSLI3.Schemas.PA.MSLI3XMLOrder" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <b:schemaInfo BizTalkServerEditorTool_Version="1.5" root_reference="MSLI3XMLOrder" displayroot_reference="MSLI3XMLOrder" standard="XML" xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+      </b:schemaInfo>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:documentation>Schema name: MSLI3XMLOrder</xs:documentation>
+  </xs:annotation>
+  <xs:element name="routing">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:recordInfo tag_name="routing" tag_position="1" structure="positional" skip_CR="no" skip_LF="yes" xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        </b:recordInfo>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute b:posStart="8" b:posEnd="47" name="ReceiverQualifier" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute b:posStart="48" b:posEnd="87" name="ReceiverKey" use="required">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+            <xs:minLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute b:posStart="88" b:posEnd="119" name="TransactionType" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="32" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute b:posStart="120" b:posEnd="120" name="Standard" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute b:posStart="121" b:posEnd="135" name="Version" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="15" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute b:posStart="136" b:posEnd="175" name="SenderQualifier" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute b:posStart="176" b:posEnd="215" name="SenderKey" use="required">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+            <xs:minLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute b:posStart="216" b:posEnd="246" name="DocumentName" use="required">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="31" />
+            <xs:minLength value="10" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute b:posStart="247" b:posEnd="278" name="ControlNumber" use="required">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="32" />
+            <xs:minLength value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute b:posStart="279" b:posEnd="279" name="Status" use="required">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:length value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Summary">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:recordInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        </b:recordInfo>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="TransactionType" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="TradingPartner" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="13" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="LineCount" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:list itemType="xs:integer" />
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="HashQuantity" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:list itemType="xs:integer" />
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="POTotalAmt" type="r4" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShipTo">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:recordInfo tag_name="ShipTo" xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        </b:recordInfo>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="TransactionType" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="TradingPartner" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="13" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToOrganizationName" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="60" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToContactName" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="60" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToContactPhoneNumber" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToContactFaxNumber" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToContactEmailAddress" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="80" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToAddressLine1" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToAddressLine2" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToAddressLine3" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToAddressLine4" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToCity" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="35" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToStateProvince" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="35" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToPostalCode" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToCountryCode" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Reference" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="80" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="CarrierCode" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="20" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="CarrierAccountNumber" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="30" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="CorrespondenceLanguageCode" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ShipToPartnerNumber" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Participant">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:recordInfo tag_name="Participant" xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        </b:recordInfo>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="TransactionType" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="TradingPartner" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="13" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ParticipantType" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="2" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ParticipantName" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="35" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ParticipantID" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="17" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ParticipantReference" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="30" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MSLI3XMLOrder">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:recordInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        </b:recordInfo>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="routing">
+          <xs:annotation>
+            <xs:appinfo>
+              <b:recordInfo tag_name="routing" tag_position="1" structure="positional" skip_CR="no" skip_LF="yes" xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+              </b:recordInfo>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" ref="Header">
+          <xs:annotation>
+            <xs:appinfo>
+              <b:recordInfo tag_name="Header" xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+              </b:recordInfo>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Participant">
+          <xs:annotation>
+            <xs:appinfo>
+              <b:recordInfo tag_name="Participant" xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+              </b:recordInfo>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" ref="ShipTo">
+          <xs:annotation>
+            <xs:appinfo>
+              <b:recordInfo tag_name="ShipTo" xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+              </b:recordInfo>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="LineItem">
+          <xs:annotation>
+            <xs:appinfo>
+              <b:recordInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+              </b:recordInfo>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" ref="Summary">
+          <xs:annotation>
+            <xs:appinfo>
+              <b:recordInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+              </b:recordInfo>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineItem">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:recordInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        </b:recordInfo>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="References">
+          <xs:complexType>
+            <xs:attribute default="abc" name="Type">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="0" />
+                  <xs:maxLength value="30" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute default="abc" name="Value">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="0" />
+                  <xs:maxLength value="30" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="TransactionType" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="TradingPartner" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="13" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="LineNo" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="11" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Quantity" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:list itemType="xs:int" />
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Price" type="r4" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="MSSKU" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="30" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="UM" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="2" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="UMQty" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Header">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:recordInfo tag_name="Header" xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        </b:recordInfo>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="TransactionType" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="TradingPartner" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="13" />
+            <xs:minLength value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="TransactionSetPurposeCode" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="2" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="PONumber" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="22" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="PODate" type="date" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="POType" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="2" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="CurrencyCode" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ProgCode" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="30" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="UsageDate" type="date" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="Application" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="12" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Version" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="EDIProcessedDate" type="date" use="optional">
+        <xs:annotation>
+          <xs:appinfo>
+            <b:fieldInfo xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+            </b:fieldInfo>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="CSTCode" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="5" />
+            <xs:minLength value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="date">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(\d*-\d\d-\d\d)*" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="r4">
+    <xs:list itemType="xs:float" />
+  </xs:simpleType>
+</xs:schema>

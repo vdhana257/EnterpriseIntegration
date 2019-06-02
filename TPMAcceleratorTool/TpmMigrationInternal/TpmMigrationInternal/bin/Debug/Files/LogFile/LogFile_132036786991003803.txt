@@ -1,0 +1,47 @@
+-
+30-05-2019 14:02:51 Exporting Partner to Json: Contoso
+30-05-2019 14:02:51 No certificate is configured with the Partner
+30-05-2019 14:02:52 Partner Contoso exported to Json with Name Contoso
+30-05-2019 14:02:52 Partner Export to Json Successfull: Contoso
+-
+-
+30-05-2019 14:03:05 Exporting agreement to Json: Fabrikam_850-855
+30-05-2019 14:03:28 Agreement Fabrikam_850-855 Exported to Json with Name Fabrikam_850-855
+30-05-2019 14:03:28 Agreement Export to Json Successfull: Fabrikam_850-855
+-
+30-05-2019 14:05:02 Schema Output Directory is Files\Schemas\ 
+30-05-2019 14:05:04 The configured DLL Directory Location is Empty. Assuming DLLs are to be read from the GAC
+30-05-2019 14:05:43 Migrating partner : Contoso
+30-05-2019 14:05:47 Partner Migration Successfull: Contoso
+-
+-
+30-05-2019 14:05:48 Migrating agreement: Fabrikam_850-855
+Agreement includes following details:
+Host Partner Fabrikam present in IA with name Fabrikam
+Guest Partner Contoso will be migrated to IA with name Contoso
+Receive Agreement Properties:
+Schema Reference http://MSIT.EAS.ICOE.VL.X12850.Shared.Schemas.PA.X1200401850 mapped to schema MSIT_EAS_ICOE_VL_X12850_Shared_Schemas_PA_V1_0_0_0_X1200401850 from IA
+Send Agreement Properties:
+Schema Reference http://MSIT.EAS.ICOE.VL.X12855.MSLicensePos.Schemas.AP.X1200401855 mapped to schema MSIT_EAS_ICOE_VL_X12855_MSLicensePos_Schemas_AP_V1_0_0_0_X1200401855 from IA
+30-05-2019 14:05:50 Agreement Migration Successfull: Fabrikam_850-855
+-
+Status : Prepare Artifact(s) Json
+Certificate(s) :
+None of the partners require any certificate. No Certificates were migrated. 
+Partner(s) :
+1 of 1 partners were successfully exported to Json.
+Agreement(s):
+1 of 1 agreements were successfully exported to Json.
+Schema(s):
+No Schemas were selected
+
+
+Status: Migrate Artifacts to Integration Account
+Schema(s):
+No Schemas to migrate
+Certificate(s):
+None of the partners require any certificate. No Certificates were migrated. 
+Partner(s):
+1 of 1 partners were successfully migrated to IA.
+Agreement(s):
+1 of 1 agreements were successfully migrated to IA.

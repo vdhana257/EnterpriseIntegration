@@ -1,0 +1,13 @@
+-
+28-05-2019 11:57:32 Exporting Partner to Json: Contoso
+28-05-2019 11:57:32 No certificate is configured with the Partner
+28-05-2019 11:57:32 Partner Contoso exported to Json with Name Contoso
+28-05-2019 11:57:32 Partner Export to Json Successfull: Contoso
+-
+-
+28-05-2019 11:57:36 Exporting agreement to Json: 850
+28-05-2019 12:05:00 Agreement Export to Json Failed. Reason:
+Invalid object name 'EDIPartyLookUp'.
+-
+-
+28-05-2019 12:05:00 Exporting agreement to Json: 810

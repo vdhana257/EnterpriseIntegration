@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.microsoft.com/Edi/Edifact" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="http://schemas.microsoft.com/Edi/EdifactServiceSchema" targetNamespace="http://schemas.microsoft.com/Edi/Edifact" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="Microsoft.BizTalk.Edi.BaseArtifacts.EdifactServiceSchema" namespace="http://schemas.microsoft.com/Edi/EdifactServiceSchema" />
+  <xs:annotation>
+    <xs:appinfo>
+      <b:references>
+        <b:reference targetNamespace="http://schemas.microsoft.com/Edi/EdifactServiceSchema" />
+      </b:references>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Efact_Contrl_Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns0:UNH" />
+        <xs:element name="UCI">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UCI1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="14" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UCI2">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="UCI2.1">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="35" />
+                          <xs:minLength value="1" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCI2.2">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="4" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCI2.3">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="35" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCI2.4">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="35" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="UCI3">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="UCI3.1">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="35" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCI3.2">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="4" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCI3.3">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="35" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCI3.4">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="4" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="UCI4">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCI5">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCI6">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCI7">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="UCI7.1">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_N">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCI7.2">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_N">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCI7.3">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_N">
+                          <xs:maxLength value="6" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCI8">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCI9">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="SG1Loop">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="UCM" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="SG2Loop">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="UCS" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" ref="UCD" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="SG3Loop">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UCF">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="UCF1">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="14" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="UCF2">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="UCF2.1">
+                            <xs:simpleType>
+                              <xs:restriction base="EDIFACT_AN">
+                                <xs:maxLength value="35" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="UCF2.2">
+                            <xs:simpleType>
+                              <xs:restriction base="EDIFACT_AN">
+                                <xs:maxLength value="4" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UCF3">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="UCF3.1">
+                            <xs:simpleType>
+                              <xs:restriction base="EDIFACT_AN">
+                                <xs:maxLength value="35" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="UCF3.2">
+                            <xs:simpleType>
+                              <xs:restriction base="EDIFACT_AN">
+                                <xs:maxLength value="4" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UCF4">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCF5">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCF6">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCF7">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="UCF7.1">
+                            <xs:simpleType>
+                              <xs:restriction base="EDIFACT_N">
+                                <xs:maxLength value="3" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="UCF7.2">
+                            <xs:simpleType>
+                              <xs:restriction base="EDIFACT_N">
+                                <xs:maxLength value="3" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="UCF7.3">
+                            <xs:simpleType>
+                              <xs:restriction base="EDIFACT_N">
+                                <xs:maxLength value="6" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCF8">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_AN">
+                          <xs:maxLength value="14" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="UCF9">
+                      <xs:simpleType>
+                        <xs:restriction base="EDIFACT_N">
+                          <xs:maxLength value="6" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="SG4Loop">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="UCM" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="SG5Loop">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element ref="UCS" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" ref="UCD" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="ns0:UNT" />
+      </xs:sequence>
+      <xs:attribute name="IsGeneratedAck" type="xs:string" use="optional" />
+      <xs:attribute name="InterchangeActivityId" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UCS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UCS1">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_N">
+              <xs:maxLength value="6" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UCS2">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="3" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UCD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UCD1">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="3" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="UCD2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UCD2.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCD2.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCD2.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UCM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UCM1">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UCM2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UCM2.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UCM2.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UCM2.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UCM2.4">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCM2.5">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCM2.6">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCM2.7">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UCM3">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="3" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UCM4">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="3" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UCM5">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="3" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UCM6">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UCM6.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCM6.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="UCM6.3">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_N">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UCM7">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="35" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UCM8">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UCM8.1">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UCM8.2">
+                <xs:simpleType>
+                  <xs:restriction base="EDIFACT_AN">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UCM9">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_AN">
+              <xs:maxLength value="14" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="UCM10">
+          <xs:simpleType>
+            <xs:restriction base="EDIFACT_N">
+              <xs:maxLength value="6" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="EDIFACT_AN">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="EDIFACT_A">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="EDIFACT_N">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+</xs:schema>

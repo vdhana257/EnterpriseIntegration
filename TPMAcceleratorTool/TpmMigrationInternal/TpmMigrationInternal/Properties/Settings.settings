@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Biztalk Database Name</Value>
+    </Setting>
+    <Setting Name="ServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Biztalk Database Server Name</Value>
+    </Setting>
+    <Setting Name="RemoteServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Remote Server Name</Value>
+    </Setting>
+    <Setting Name="RemoteDomainName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Domain</Value>
+    </Setting>
+    <Setting Name="RemoteUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">UserName</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.PartnerSelectionPageView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:tpmMigration="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration"
+      mc:Ignorable="d"
+      d:DesignHeight="503" d:DesignWidth="721">
+    <UserControl.Resources>
+        <tpmMigration:BoolToVisibilityConverter x:Key="booleanToVisibiltyConverter"/>
+        <tpmMigration:TextInputToVisibilityConverter x:Key="TextInputToVisibilityConverter" />
+        <tpmMigration:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+    </UserControl.Resources>
+    <Grid Name="Layout" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--<Label  Margin="10,0,0,49.6" Grid.RowSpan="2" Foreground="DarkGray">Enter specific partner name to search or press search button to display all partner names</Label>-->
+        <TextBlock Width="570" Height="30"
+                   Text="Enter specific partner name to search or press search button to display all partner names" 
+                   Foreground="DarkGray"
+                   Margin="0,0,0,0" Grid.Row="0" Grid.RowSpan="2"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center" FontStyle="Normal" FontWeight="Light" FontSize="13"> 
+            <TextBlock.Visibility>
+                <MultiBinding Converter="{StaticResource TextInputToVisibilityConverter}">
+                    <Binding ElementName="PartnerFilterTextBox" Path="Text.IsEmpty"/>
+                    <Binding ElementName="PartnerFilterTextBox" Path="IsFocused"/>
+                </MultiBinding>
+            </TextBlock.Visibility>
+        </TextBlock>
+
+        <TextBox Background ="Transparent" BorderBrush="Indigo" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="570" Margin="0,0,0,0" Grid.Row="0"  FontSize="14" Text="{Binding PartnerFilter}" 
+                 Name="PartnerFilterTextBox" Grid.RowSpan="2" />
+        <Button Content="Search" HorizontalAlignment="Left" Margin="580,0,0,0" Width="90" Grid.Row="0"  Background="#0080c0" Name="PartnerSearchButton" Height="30" VerticalAlignment="Top" Command="{Binding SearchButtonClickCommand}" Grid.RowSpan="2" />
+        <Grid  Grid.Row="1" Width="700" Margin="10,38.6,-10.2,-38.4">
+            <DataGrid ItemsSource="{Binding SelectionItems, Mode=OneWay}" Width="721" 
+                x:Name="PartnerSelectionDataGrid"
+                Style="{StaticResource StandardDataGrid}" HorizontalAlignment="Left" VerticalAlignment="Top"
+                VerticalScrollBarVisibility="Visible"
+                Visibility = "{Binding Path=PartnerDataGridEnabled, Converter={StaticResource booleanToVisibiltyConverter},  FallbackValue=Hidden}">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn IsReadOnly="True" Width="50">
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <CheckBox x:Name="selectAllCheckBox" IsChecked="{Binding DataContext.SelectAll, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Height="15" Margin="9,0,0,0" HorizontalAlignment="Center"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" Height="15" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn tpmMigration:DataGridExtensions.HeaderName="{Binding PartnerNameColumnHeader, Source={StaticResource Resources}}"  
+                        Binding="{Binding MigrationEntity.Name}"
+                        CanUserReorder="True" CanUserResize="True" CanUserSort="True" IsReadOnly="True" Width="60*" />
+
+                    <DataGridTextColumn tpmMigration:DataGridExtensions.HeaderName="{Binding ProfileCountColumnHeader, Source={StaticResource Resources}}"
+                        Binding="{Binding Count}" 
+                        CanUserReorder="True" CanUserResize="True" CanUserSort="True" IsReadOnly="True" 
+                        Width="90*" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</UserControl>

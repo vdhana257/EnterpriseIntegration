@@ -1,0 +1,9 @@
+-
+22-05-2019 09:32:10 Exporting Partner to Json: Sarcom
+22-05-2019 09:32:10 No certificate is configured with the Partner
+22-05-2019 09:32:10 Partner Sarcom exported to Json with Name Sarcom
+22-05-2019 09:32:10 Partner Export to Json Successfull: Sarcom
+-
+Fail: Integration service details not found in application context
+-
+22-05-2019 09:43:42 Exporting agreement to Json: Microsoft_Sarcom_867_810_850_855

@@ -1,0 +1,18 @@
+-
+28-05-2019 17:47:09 Exporting Partner to Json: Contoso
+28-05-2019 17:47:09 No certificate is configured with the Partner
+28-05-2019 17:47:09 Partner Contoso exported to Json with Name Contoso
+28-05-2019 17:47:09 Partner Export to Json Successfull: Contoso
+-
+-
+28-05-2019 17:47:13 Exporting agreement to Json: 850
+28-05-2019 17:47:41 Agreement Export to Json Failed. Reason:
+Incorrect syntax near the keyword 'and'.
+-
+-
+28-05-2019 17:47:41 Exporting agreement to Json: 810
+28-05-2019 17:48:03 Agreement 810 Exported to Json with Name 810
+28-05-2019 17:48:03 Agreement Export to Json Successfull: 810
+-
+-
+28-05-2019 17:48:03 Exporting agreement to Json: 867

@@ -1,0 +1,8 @@
+-
+28-05-2019 11:55:44 Exporting Partner to Json: Contoso
+28-05-2019 11:55:44 No certificate is configured with the Partner
+28-05-2019 11:55:45 Partner Contoso exported to Json with Name Contoso
+28-05-2019 11:55:45 Partner Export to Json Successfull: Contoso
+-
+-
+28-05-2019 11:55:49 Exporting agreement to Json: 850

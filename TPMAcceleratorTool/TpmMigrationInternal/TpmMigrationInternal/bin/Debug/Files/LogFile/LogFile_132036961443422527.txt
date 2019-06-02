@@ -1,0 +1,11 @@
+-
+30-05-2019 18:52:47 Exporting Partner to Json: Contoso
+30-05-2019 18:52:47 No certificate is configured with the Partner
+30-05-2019 18:52:47 Partner Contoso exported to Json with Name Contoso
+30-05-2019 18:52:47 Partner Export to Json Successfull: Contoso
+-
+-
+30-05-2019 18:52:52 Exporting agreement to Json: Fabrikam_850-855
+30-05-2019 18:53:16 Agreement Fabrikam_850-855 Exported to Json with Name Fabrikam_850-855
+30-05-2019 18:53:16 Agreement Export to Json Successfull: Fabrikam_850-855
+-

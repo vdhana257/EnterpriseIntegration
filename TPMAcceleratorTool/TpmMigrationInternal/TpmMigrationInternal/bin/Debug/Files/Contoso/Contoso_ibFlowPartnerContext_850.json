@@ -1,0 +1,14 @@
+{
+  "id": "6ebdb361-3138-45b1-8fc0-2192ceeb5d7d",
+  "ibFlowContextId": "76b88f19-4415-64a4-3a7c-87d632cc1599",
+  "recordType": "ibFlowPartnerContext",
+  "transformId": "721dd7ee-a205-b7bb-0f68-dcc3ab6ee531",
+  "description": " 850 Message from Contoso",
+  "docKey": {
+    "schemaXpathValue": "Default",
+    "schemaId": "6c958550-c84f-4785-be35-7199586c6176",
+    "partnerDetailId": "0a1794f1-831b-4d48-a7ef-caf037be793b"
+  },
+  "preTransformProcessing": [],
+  "schemaValidationRequired": true
+}

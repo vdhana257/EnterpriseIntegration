@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.AgreementSelectionPageView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:tpmMigration="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration"
+      mc:Ignorable="d" d:DesignHeight="503" d:DesignWidth="721">
+
+    <UserControl.Resources>
+        <tpmMigration:BoolToOppositeBoolConverter x:Key="boolToOppositeBoolConverter" />
+        <tpmMigration:BoolToVisibilityConverter x:Key="booleanToVisibiltyConverter"/>
+    </UserControl.Resources>
+
+    <Grid x:Name="Layout" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <CheckBox  Grid.Row="0" IsChecked="{Binding IsConsolidationSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="20" HorizontalAlignment="Left" Margin="17,10,0,10" Content="  Consolidate Agreements" Visibility="{Binding AgreementDataGridEnabled, Converter={StaticResource booleanToVisibiltyConverter}, FallbackValue=Hidden}"/>
+        <DataGrid ItemsSource="{Binding SelectionItems, Mode=OneWay}"
+            x:Name="AgreementSelectionDataGrid" Width="721" 
+            Grid.Row="1"
+            Style="{StaticResource StandardDataGrid}"
+            Visibility = "{Binding AgreementDataGridEnabled, Converter={StaticResource booleanToVisibiltyConverter}, FallbackValue=Hidden}">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn IsReadOnly="True" Width="50" >
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <CheckBox x:Name="selectAllCheckBox" IsChecked="{Binding DataContext.SelectAll, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Height="15" Margin="9,0,0,0" HorizontalAlignment="Center"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="15" HorizontalAlignment="Center"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn tpmMigration:DataGridExtensions.HeaderName="{Binding AgreementNameColumnHeader, Source={StaticResource Resources}}"  
+                    Binding="{Binding MigrationEntity.Name}" 
+                    CanUserReorder="True" CanUserResize="True" CanUserSort="True" IsReadOnly="True" Width="90*" />
+
+                <DataGridTextColumn tpmMigration:DataGridExtensions.HeaderName="{Binding ProtocolColumnHeader, Source={StaticResource Resources}}"
+                    Binding="{Binding MigrationEntity.Protocol}" 
+                    CanUserReorder="True" CanUserResize="True" CanUserSort="True" IsReadOnly="True" 
+                    Width="40*" />
+
+                <DataGridTextColumn tpmMigration:DataGridExtensions.HeaderName="{Binding HostedPartnerColumnHeader, Source={StaticResource Resources}}"
+                    Binding ="{Binding MigrationEntity.ReceiverDetails.Partner}" 
+                    Width="60*" CanUserReorder="True" CanUserResize="True" IsReadOnly="True"/>
+
+                <DataGridTextColumn tpmMigration:DataGridExtensions.HeaderName="{Binding GuestPartnerColumnHeader, Source={StaticResource Resources}}"
+                    Binding ="{Binding MigrationEntity.SenderDetails.Partner}" 
+                    Width="60*" CanUserReorder="True" CanUserResize="True" IsReadOnly="True"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <CheckBox Grid.Row="0" IsChecked="{Binding IsContextGenerationSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="20"  HorizontalAlignment="Left" Margin="405,10,0,0" Content="  Create MetaData Context" VerticalAlignment="Top" Visibility="{Binding AgreementDataGridEnabled, Converter={StaticResource booleanToVisibiltyConverter}, FallbackValue=Hidden}" />
+    </Grid>
+</UserControl>

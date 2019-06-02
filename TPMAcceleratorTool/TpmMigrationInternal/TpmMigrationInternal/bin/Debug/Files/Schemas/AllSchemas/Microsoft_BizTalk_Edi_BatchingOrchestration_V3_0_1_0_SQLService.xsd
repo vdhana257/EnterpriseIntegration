@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://SQLControlMessage.IssueSelect" xmlns:ns0="http://schemas.microsoft.com/Edi/PropertySchema" xmlns:msbtssql="http://schemas.microsoft.com/BizTalk/2003" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://SQLControlMessage.IssueSelect" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <msbtssql:sqlScript value="select top 1 * from PAM_Control for xml auto, elements" xmlns:msbtssql="http://schemas.microsoft.com/BizTalk/2003" />
+      <msbtssql:imports>
+        <msbtssql:namespace prefix="ns0" uri="http://schemas.microsoft.com/Edi/PropertySchema" location="EDI.PropertySchema" />
+      </msbtssql:imports>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PAM_Control" type="PAM_ControlType">
+    <xs:annotation>
+      <xs:appinfo>
+        <msbtssql:properties>
+          <msbtssql:property name="ns0:ControlActionType" xpath="/*[local-name()='PAM_Control' and namespace-uri()='http://SQLControlMessage.IssueSelect']/*[local-name()='ActionType' and namespace-uri()='http://SQLControlMessage.IssueSelect']" />
+          <msbtssql:property name="ns0:ToBeBatched" xpath="/*[local-name()='PAM_Control' and namespace-uri()='http://SQLControlMessage.IssueSelect']/*[local-name()='ToBeBatched' and namespace-uri()='http://SQLControlMessage.IssueSelect']" />
+          <msbtssql:property name="ns0:EncodingType" xpath="/*[local-name()='PAM_Control' and namespace-uri()='http://SQLControlMessage.IssueSelect']/*[local-name()='EdiMessageType' and namespace-uri()='http://SQLControlMessage.IssueSelect']" />
+          <msbtssql:property name="ns0:BatchId" xpath="/*[local-name()='PAM_Control' and namespace-uri()='http://SQLControlMessage.IssueSelect']/*[local-name()='BatchId' and namespace-uri()='http://SQLControlMessage.IssueSelect']" />
+          <msbtssql:property name="ns0:BatchName" xpath="/*[local-name()='PAM_Control' and namespace-uri()='http://SQLControlMessage.IssueSelect']/*[local-name()='BatchName' and namespace-uri()='http://SQLControlMessage.IssueSelect']" />
+          <msbtssql:property name="ns0:SenderPartyName" xpath="/*[local-name()='PAM_Control' and namespace-uri()='http://SQLControlMessage.IssueSelect']/*[local-name()='SenderPartyName' and namespace-uri()='http://SQLControlMessage.IssueSelect']" />
+          <msbtssql:property name="ns0:AgreementName" xpath="/*[local-name()='PAM_Control' and namespace-uri()='http://SQLControlMessage.IssueSelect']/*[local-name()='AgreementName' and namespace-uri()='http://SQLControlMessage.IssueSelect']" />
+          <msbtssql:property name="ns0:ReceiverPartyName" xpath="/*[local-name()='PAM_Control' and namespace-uri()='http://SQLControlMessage.IssueSelect']/*[local-name()='ReceiverPartyName' and namespace-uri()='http://SQLControlMessage.IssueSelect']" />
+        </msbtssql:properties>
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="PAM_ControlType">
+    <xs:choice>
+      <xs:element name="ActionType" type="ActionTypeType" />
+      <xs:element name="UsedOnce" type="UsedOnceType" />
+      <xs:element name="ActionDateTime" type="ActionDateTimeType" />
+      <xs:element name="ToBeBatched" type="ToBeBatchedType" />
+      <xs:element minOccurs="0" name="EdiMessageType" nillable="true" type="EncodingTypeType" />
+      <xs:element name="BatchId" type="BatchIdType" />
+      <xs:element name="BatchName" type="BatchNameType" />
+      <xs:element minOccurs="0" name="SenderPartyName" nillable="true" type="SenderPartyNameType" />
+      <xs:element minOccurs="0" name="AgreementName" nillable="true" type="AgreementNameType" />
+      <xs:element minOccurs="0" name="ReceiverPartyName" nillable="true" type="ReceiverPartyNameType" />
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="ActionTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ActionDateTimeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:dateTime" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UsedOnceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:boolean" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ToBeBatchedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:boolean" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="EncodingTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:short" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BatchIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BatchNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SenderPartyNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AgreementNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ReceiverPartyNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

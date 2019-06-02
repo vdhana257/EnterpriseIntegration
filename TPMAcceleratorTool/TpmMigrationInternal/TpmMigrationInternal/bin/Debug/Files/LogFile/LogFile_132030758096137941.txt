@@ -1,0 +1,17 @@
+-
+23-05-2019 14:34:12 Exporting Partner to Json: Sarcom
+23-05-2019 14:34:12 No certificate is configured with the Partner
+23-05-2019 14:34:12 Partner Sarcom exported to Json with Name Sarcom
+23-05-2019 14:34:12 Partner Export to Json Successfull: Sarcom
+-
+-
+23-05-2019 14:34:48 Exporting agreement to Json: Microsoft_Sarcom_867_810_850_855
+23-05-2019 14:39:26 Agreement Export to Json Failed. Reason:
+Could not find a part of the path 'D:\Project\Others\INT-PLT-AISc-AIS-B2B-BtoB\Src\Tools\TpmMigrationInternal\TpmMigrationInternal\bin\Debug\Files\Sarcom\Sarcom_InboundPartnerDetails.json'.
+-
+23-05-2019 14:39:26 Agreement Export to Json Failed. Reason:
+Failed to create individual agreement MSFT_Sarcom_867_00401_CMODS_IN. One or more errors occurred. : Could not find a part of the path 'D:\Project\Others\INT-PLT-AISc-AIS-B2B-BtoB\Src\Tools\TpmMigrationInternal\TpmMigrationInternal\bin\Debug\Files\Sarcom\Sarcom_InboundPartnerDetails.json'.
+-
+-
+23-05-2019 14:40:07 Exporting agreement to Json: Microsoft_Sarcom_867_810_850_855
+23-05-2019 14:41:04 Agreement MSFT_Sarcom_867_00401_CMODS_IN Exported to Json with Name MSFT_Sarcom_867_00401_CMODS_IN

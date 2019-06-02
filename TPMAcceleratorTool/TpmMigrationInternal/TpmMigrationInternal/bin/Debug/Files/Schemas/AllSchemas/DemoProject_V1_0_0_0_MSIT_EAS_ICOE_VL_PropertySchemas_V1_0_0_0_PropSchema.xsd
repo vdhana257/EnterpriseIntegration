@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://VLProperties.VLPropertySchema" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="http://MSIT.EAS.ICOE.VL.PropertySchemas.PropSchema" targetNamespace="http://MSIT.EAS.ICOE.VL.PropertySchemas.PropSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <b:schemaInfo schema_type="property" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PartnerID" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="32936b06-121e-49aa-ba87-b82a6f67c5e5" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Transaction" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="fc2f65d5-0595-4242-8023-441bac1c5088" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TransactionVersion" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="a7d53624-c562-4e6b-8cd5-5adb35491bc5" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TransactionQualifier" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c1f10867-4781-4ae1-a3f0-49943ca54f2f" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DocNum" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="92a752a7-5880-4ca2-895e-8b9ad44fce89" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="CreDat" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="16162bce-29e5-41f3-a7f3-69e133c596aa" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="SAPID" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="1bafd554-1b8a-462e-8fde-45c8eb512b12" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="EDICode" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="036b9f57-9ee8-47b2-a716-f3876d68d4a5" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ProgramType" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9212387d-c94d-4f53-a106-535b535bf46a" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ProgramTypeWS" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="304b62d4-675e-4310-9294-6b744f9c99e0" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Move" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="071b07f2-6320-44d3-ab50-d446eb87ba4a" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="POLineItemStatus" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="434a670c-17af-4c74-9bd7-60157a06bae2" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

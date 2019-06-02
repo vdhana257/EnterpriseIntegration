@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AADInstanceLabel" xml:space="preserve">
+    <value>AAD Instance : </value>
+  </data>
+  <data name="AcsDetailsValidatioError" xml:space="preserve">
+    <value>Entered ACS details are incorrect</value>
+  </data>
+  <data name="AcsNamespaceLabel" xml:space="preserve">
+    <value>ACS Namespace :</value>
+  </data>
+  <data name="AcsNamespaceValidationError" xml:space="preserve">
+    <value>ACS Namespace cannot be empty</value>
+  </data>
+  <data name="AgreementImportPageTitle" xml:space="preserve">
+    <value>Prepare Agreement(s) Json</value>
+  </data>
+  <data name="AgreementImportStepDescriptionText" xml:space="preserve">
+    <value>Prepare Agreements Json</value>
+  </data>
+  <data name="AgreementImportSummaryFormat" xml:space="preserve">
+    <value>{0} of {1} agreements were successfully exported to Json.</value>
+  </data>
+  <data name="AgreementNameColumnHeader" xml:space="preserve">
+    <value>Agreement Name</value>
+  </data>
+  <data name="AgreementSelectionPageTitle" xml:space="preserve">
+    <value>Select Agreements</value>
+  </data>
+  <data name="AgreementSelectionStepDescriptionText" xml:space="preserve">
+    <value>Select Agreements</value>
+  </data>
+  <data name="AgreementType" xml:space="preserve">
+    <value>Microsoft.Logic/integrationAccounts/agreements</value>
+  </data>
+  <data name="AuthenticationSectionTitle" xml:space="preserve">
+    <value>Authentication Credentials</value>
+  </data>
+  <data name="BizTalkManagementDbDetailsPageTitle" xml:space="preserve">
+    <value>Provide BizTalk Management Database Connection Details</value>
+  </data>
+  <data name="CertificateImportSummaryFormat" xml:space="preserve">
+    <value>{0} of {1} certificates were successfully exported to Json.</value>
+  </data>
+  <data name="ClientIdLabel" xml:space="preserve">
+    <value>Application ID : </value>
+  </data>
+  <data name="ClientSecretLabel" xml:space="preserve">
+    <value>Application Secret : </value>
+  </data>
+  <data name="CloseNavigationButtonLabel" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="DatabaseNameLabel" xml:space="preserve">
+    <value>Database :</value>
+  </data>
+  <data name="DatabaseNameValidationError" xml:space="preserve">
+    <value>Database Name cannot be empty</value>
+  </data>
+  <data name="DbPasswordLabel" xml:space="preserve">
+    <value>Password :</value>
+  </data>
+  <data name="DbUserNameLabel" xml:space="preserve">
+    <value>User name :</value>
+  </data>
+  <data name="DeploymentUrlLabel" xml:space="preserve">
+    <value>Deployment Url :</value>
+  </data>
+  <data name="DeploymentUrlValidationError" xml:space="preserve">
+    <value>Deployment Url cannot be empty</value>
+  </data>
+  <data name="DestinationDetailsStepDescriptionText" xml:space="preserve">
+    <value>IA (Destination)</value>
+  </data>
+  <data name="ErrorGettingACSToken" xml:space="preserve">
+    <value>Error occured in fetching ACS token</value>
+  </data>
+  <data name="ErrorReadingTpmConfig" xml:space="preserve">
+    <value>An error was encountered while reading TPM configuration from BizTalk DB.</value>
+  </data>
+  <data name="ErrorSummaryMessage" xml:space="preserve">
+    <value>One or more errors were encountered by the TPM migration tool.</value>
+  </data>
+  <data name="ExportingArtifactsProgressBarText" xml:space="preserve">
+    <value>Migrating {0} to Integration Account</value>
+  </data>
+  <data name="ExportToIAPageTitle" xml:space="preserve">
+    <value>Select Artifacts To Migrate To Integration Account</value>
+  </data>
+  <data name="ExportToIntegrationAccountStepDescription" xml:space="preserve">
+    <value>Migrate To IA</value>
+  </data>
+  <data name="FilePath" xml:space="preserve">
+    <value>Migration.log</value>
+  </data>
+  <data name="GuestPartnerColumnHeader" xml:space="preserve">
+    <value>Guest Partner</value>
+  </data>
+  <data name="HostedPartnerColumnHeader" xml:space="preserve">
+    <value>Hosted Partner</value>
+  </data>
+  <data name="HostedPartnerSelectionColumnHeader" xml:space="preserve">
+    <value>Hosted Partner</value>
+  </data>
+  <data name="ImportingAgreementsProgressBarText" xml:space="preserve">
+    <value>Preparing agreements with data from Biztalk Database Server</value>
+  </data>
+  <data name="ImportingPartnersProgressBarText" xml:space="preserve">
+    <value>Preparing partners with data from Biztalk Database Server</value>
+  </data>
+  <data name="IntegrationServiceDetailsPageTitle" xml:space="preserve">
+    <value>Provide Logic Apps Platform Details</value>
+  </data>
+  <data name="InterationAccountDetailsLabel" xml:space="preserve">
+    <value>Integration Account Details</value>
+  </data>
+  <data name="IssuerKeyLabel" xml:space="preserve">
+    <value>Issuer Key :</value>
+  </data>
+  <data name="IssuerKeyValidationError" xml:space="preserve">
+    <value>Issuer Key cannot be empty</value>
+  </data>
+  <data name="IssuerNameLabel" xml:space="preserve">
+    <value>Issuer Name :</value>
+  </data>
+  <data name="IssuerNameValidationError" xml:space="preserve">
+    <value>Issuer Name cannot be empty</value>
+  </data>
+  <data name="JsonAgreementFilesLocalPath" xml:space="preserve">
+    <value>Files\Agreements\{0}{1}</value>
+  </data>
+  <data name="JsonCertificateFilesLocalPath" xml:space="preserve">
+    <value>Files\Certificates\{0}{1}</value>
+  </data>
+  <data name="JsonPartnerAgreementType" xml:space="preserve">
+    <value>Microsoft.Logic/integrationAccounts/agreements</value>
+  </data>
+  <data name="JsonPartnerFilesLocalPath" xml:space="preserve">
+    <value>Files\Partners\{0}{1}</value>
+  </data>
+  <data name="JsonPartnerID" xml:space="preserve">
+    <value>/subscriptions/{0}/resourceGroups/{1}/providers/Microsoft.Logic/integrationAccounts/{2}/partners/{3}</value>
+  </data>
+  <data name="JsonPartnerType" xml:space="preserve">
+    <value>Microsoft.Logic/integrationAccounts/partners</value>
+  </data>
+  <data name="JsonPartnerTypeB2B" xml:space="preserve">
+    <value>B2B</value>
+  </data>
+  <data name="LogFileLabel" xml:space="preserve">
+    <value>Logfile</value>
+  </data>
+  <data name="MigrationErrorSummaryMessageForAgreement" xml:space="preserve">
+    <value>Note: Errors were encountered while {0} of one or more agreement(s).</value>
+  </data>
+  <data name="MigrationErrorSummaryMessageForCert" xml:space="preserve">
+    <value>Note: Errors were encountered while {0} of one or more certificate(s).</value>
+  </data>
+  <data name="MigrationErrorSummaryMessageForPartner" xml:space="preserve">
+    <value>Note: Errors were encountered while {0} of one or more partner(s).</value>
+  </data>
+  <data name="MigrationPartialMessageText" xml:space="preserve">
+    <value>Signing and/or encryption settings have not been migrated for this artifact</value>
+  </data>
+  <data name="MigrationStatusColumnHeader" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ImportSuccessMessageText" xml:space="preserve">
+    <value>{0} Json prepared successfully</value>
+  </data>
+  <data name="NextNavigationButtonLabel" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoAgreementsOrPartnersSelectedErrorMessage" xml:space="preserve">
+    <value>No partners/agreements were selected for migration.</value>
+  </data>
+  <data name="NoCertificatesRequiredSummary" xml:space="preserve">
+    <value>None of the partners require any certificate. No Certificates were migrated. </value>
+  </data>
+  <data name="NoPartnerSelectedSoNoCertificateMigrated" xml:space="preserve">
+    <value>Since no partner was selected, no certificates were migrated.</value>
+  </data>
+  <data name="PartnerImportPageTitle" xml:space="preserve">
+    <value>Prepare Partner(s) Json</value>
+  </data>
+  <data name="PartnerImportStepDescriptionText" xml:space="preserve">
+    <value>Prepare Partners Json</value>
+  </data>
+  <data name="PartnerImportSummaryFormat" xml:space="preserve">
+    <value>{0} of {1} partners were successfully exported to Json.</value>
+  </data>
+  <data name="PartnerNameColumnHeader" xml:space="preserve">
+    <value>Partner Name</value>
+  </data>
+  <data name="PartnerSelectionPageTitle" xml:space="preserve">
+    <value>Select Partners</value>
+  </data>
+  <data name="PartnerSelectionStepDescriptionText" xml:space="preserve">
+    <value>Select Partners</value>
+  </data>
+  <data name="PasswordValidationError" xml:space="preserve">
+    <value>Password cannot be empty</value>
+  </data>
+  <data name="PreviousNavigationButtonLabel" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="ProfileCountColumnHeader" xml:space="preserve">
+    <value>Profile Count</value>
+  </data>
+  <data name="ProtocolColumnHeader" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="ReadingAgreementsProgressBarText" xml:space="preserve">
+    <value>Reading agreements from BizTalk Server</value>
+  </data>
+  <data name="ReadingPartnersProgressBarText" xml:space="preserve">
+    <value>Reading partners from BizTalk Server</value>
+  </data>
+  <data name="ResourceGroupLabel" xml:space="preserve">
+    <value>Resource Group Name</value>
+  </data>
+  <data name="ResourceLabel" xml:space="preserve">
+    <value>Resource : </value>
+  </data>
+  <data name="ServerNameLabel" xml:space="preserve">
+    <value>Server :</value>
+  </data>
+  <data name="ServerNameValidationError" xml:space="preserve">
+    <value>Server Name cannot be empty</value>
+  </data>
+  <data name="SourceDetailsStepDescriptionText" xml:space="preserve">
+    <value>BizTalk Server (Source)</value>
+  </data>
+  <data name="SqlAuthenticationLabel" xml:space="preserve">
+    <value>SQL Server Authentication</value>
+  </data>
+  <data name="SqlConnectionValidationError" xml:space="preserve">
+    <value>Entered SQL details are incorrect</value>
+  </data>
+  <data name="SubscriptionNameLabel" xml:space="preserve">
+    <value>Subscription Name</value>
+  </data>
+  <data name="SummaryPageTitle" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="SummaryStepDescriptionText" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="TpmMigrationToolTitle" xml:space="preserve">
+    <value>BizTalk To Logic Apps Migration Tool</value>
+  </data>
+  <data name="UnknownErrorMessage" xml:space="preserve">
+    <value>An unknown error was encountered.</value>
+  </data>
+  <data name="UserIdValidationError" xml:space="preserve">
+    <value>User Id cannot be empty</value>
+  </data>
+  <data name="ValidationError" xml:space="preserve">
+    <value>{0} : Missing, Field cannot be empty.</value>
+  </data>
+  <data name="WelcomePageTitle" xml:space="preserve">
+    <value>Before You Begin</value>
+  </data>
+  <data name="WelcomeStepDescriptionText" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>TPM wizard guides you in migrating X12, EDIFACT and AS2 agreements from BizTalk Server to Logic Apps.
+
+In the wizard you will specify access information of both BizTalk Server and Azure Logic Apps. You will also have the option to choose the Partners and Agreements to be migrated. 
+
+After the migration is complete, you can login to the Azure management portal and verify the migrated partner and agreement settings.</value>
+  </data>
+  <data name="WindowsAuthenticationLabel" xml:space="preserve">
+    <value>Windows Authentication</value>
+  </data>
+  <data name="ExportSuccessMessageText" xml:space="preserve">
+    <value>{0} migrated successfully</value>
+  </data>
+  <data name="AgreementExportSummaryFormat" xml:space="preserve">
+    <value>{0} of {1} agreements were successfully migrated to IA.</value>
+  </data>
+  <data name="CertificateExportSummaryFormat" xml:space="preserve">
+    <value>{0} of {1} certificates were successfully migrated to IA.</value>
+  </data>
+  <data name="PartnerExportSummaryFormat" xml:space="preserve">
+    <value>{0} of {1} partners were successfully migrated to IA.</value>
+  </data>
+  <data name="ArtifactNameColumnHeader" xml:space="preserve">
+    <value>Artifact Name</value>
+  </data>
+  <data name="ArtifactTypeColumnHeader" xml:space="preserve">
+    <value>Artifact Type</value>
+  </data>
+  <data name="ExportArtifactsStatusPageTitle" xml:space="preserve">
+    <value>Migrating Artifacts To Integration Account</value>
+  </data>
+  <data name="ExportArtifactsStatusStepDescription" xml:space="preserve">
+    <value>Migration Status</value>
+  </data>
+  <data name="IntegrationAccountNameLabel" xml:space="preserve">
+    <value>Integration Account Name</value>
+  </data>
+  <data name="ExportToJsonSummaryTitle" xml:space="preserve">
+    <value>Status : Prepare Artifact(s) Json</value>
+  </data>
+  <data name="ExportToJsonText" xml:space="preserve">
+    <value>Preparing Json</value>
+  </data>
+  <data name="MigrateToIASumaryTitle" xml:space="preserve">
+    <value>Status: Migrate Artifacts to Integration Account</value>
+  </data>
+  <data name="MigrateToIaText" xml:space="preserve">
+    <value>Migrating</value>
+  </data>
+  <data name="NoOverWriteArtfact" xml:space="preserve">
+    <value>{0} of {1} {2} already exists in IA. Since the Overwrite was disabled, they were not overwritten.</value>
+  </data>
+  <data name="OverWriteArtifact" xml:space="preserve">
+    <value>{0} of {1} {2} already exists in IA. Since Overwrite was enabled, they were overwritten in IA.</value>
+  </data>
+  <data name="UnSuccesfullImport" xml:space="preserve">
+    <value>{0} of {1} {2} Json creation failed. They cannot be migrated to IA.</value>
+  </data>
+  <data name="DifferentAccountSectionTitle" xml:space="preserve">
+    <value>Do you wish to Use different account to access Certificates from Remote Biztalk Server?</value>
+  </data>
+  <data name="RemoteDomainNameLabel" xml:space="preserve">
+    <value>Domain :</value>
+  </data>
+  <data name="RemotePasswordLabel" xml:space="preserve">
+    <value>Password :</value>
+  </data>
+  <data name="RemoteServerNameLabel" xml:space="preserve">
+    <value>Biztalk Server Name : </value>
+  </data>
+  <data name="RemoteServerSectionTitle" xml:space="preserve">
+    <value>Remote Biztalk Server Details</value>
+  </data>
+  <data name="RemoteUserNameLabel" xml:space="preserve">
+    <value>Username : </value>
+  </data>
+  <data name="RemoteValidationError" xml:space="preserve">
+    <value>{0} cannot be empty</value>
+  </data>
+  <data name="AssemblynameColumnHeader" xml:space="preserve">
+    <value>Assembly Name</value>
+  </data>
+  <data name="FileLocationText" xml:space="preserve">
+    <value>All {0} can be found at {1}{2}</value>
+  </data>
+  <data name="SchemaNameColumnHeader" xml:space="preserve">
+    <value>Schema Name</value>
+  </data>
+  <data name="SchemaSelectionPageTitle" xml:space="preserve">
+    <value>Select Schemas</value>
+  </data>
+  <data name="VersionColumnHeader" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="ReadingSchemasProgressBarText" xml:space="preserve">
+    <value>Reading schemas from BizTalk Server</value>
+  </data>
+  <data name="SchemaImportStepDescriptionText" xml:space="preserve">
+    <value>Prepare Schemas Definitions</value>
+  </data>
+  <data name="SchemaSelectionStepDescriptionText" xml:space="preserve">
+    <value>Select Schemas</value>
+  </data>
+  <data name="JsonSchemasFilesLocalPath" xml:space="preserve">
+    <value>Files\Schemas\{0}{1}</value>
+  </data>
+  <data name="SchemaImportPageTitle" xml:space="preserve">
+    <value>Prepare Schema(s) Definitions</value>
+  </data>
+  <data name="ImportingSchemasProgressBarText" xml:space="preserve">
+    <value>Preparing Schemas with data from Biztalk Database Server</value>
+  </data>
+  <data name="JsonSchemaFilesLocalPath" xml:space="preserve">
+    <value>Files\Schemas\</value>
+  </data>
+  <data name="MigrationErrorSummaryMessageForSchema" xml:space="preserve">
+    <value>Note: Errors were encountered while {0} of one or more schema(s).</value>
+  </data>
+  <data name="SchemaExportSummaryFormat" xml:space="preserve">
+    <value>{0} of {1} schemas were successfully migrated to IA.</value>
+  </data>
+  <data name="SchemaImportSummaryFormat" xml:space="preserve">
+    <value>{0} of {1} schemas were successfully prepared</value>
+  </data>
+  <data name="UnSuccesfullExport" xml:space="preserve">
+    <value>{0} of {1} {2} Json migration failed. They cannot be migrated to IA.</value>
+  </data>
+  <data name="JsonKeyVaultFilesLocalPath" xml:space="preserve">
+    <value>Files\KeyVault\{0}{1}</value>
+  </data>
+  <data name="LogFilePath" xml:space="preserve">
+    <value>Files\LogFile\{0}</value>
+  </data>
+  <data name="DocumentationLink" xml:space="preserve">
+    <value>ReadMe\MigrationToolReadme.docx</value>
+  </data>
+  <data name="KeyVaultNameLabel" xml:space="preserve">
+    <value>Key Vault Name</value>
+  </data>
+  <data name="SupportDL" xml:space="preserve">
+    <value>BTSMigrationTool@microsoft.com</value>
+  </data>
+  <data name="MetaDataContextPath" xml:space="preserve">
+    <value>Files\{0}\</value>
+  </data>
+</root>

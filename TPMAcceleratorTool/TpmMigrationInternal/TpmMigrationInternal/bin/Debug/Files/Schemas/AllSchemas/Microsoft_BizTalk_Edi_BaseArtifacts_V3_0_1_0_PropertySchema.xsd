@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.microsoft.com/Edi/PropertySchema" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://schemas.microsoft.com/Edi/PropertySchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <b:schemaInfo schema_type="property" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ISA05" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="d5ae9aa4-6b3f-42a0-984b-9e43d43723bf" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA06" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="2792f20a-716b-421a-8e04-b569a150b40a" propSchFieldBase="MessageContextPropertyBase" rootTypeName="ISA06" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA07" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="caa8c90e-61b7-4f56-8bc2-f4159a6e8538" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA08" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="4e62db76-6577-405f-b32e-ae753c68d099" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA15" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="62ae9f4b-cb26-4fbd-a08f-9b58ea5ccc03" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS01" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="f8d00c34-cc91-4b6a-b2c9-b3e3731dd5cc" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS02" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="38876213-fde3-4707-b3be-1fc4bbd70ac0" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS03" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="db6e932a-2f17-46bf-9edc-5c656057cda2" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS08" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="52c425ff-abfa-4350-bbc5-b9ab5b1edd35" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GE01" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="86222fbc-d02c-483e-8c5a-665556de41b8" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ST01" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="ce67a089-1ef5-441a-b139-a2fc78e4ae28" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ST03" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="2e618c05-d6d8-48f0-8389-4cf585e8700a" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ReuseEnvelope" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="33310deb-d4a7-4cdb-8ca8-30a5d1bbeda8" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB2_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="dcad8251-e454-4c8d-8477-444e464bcd93" propSchFieldBase="MessageContextPropertyBase" rootTypeName="Unb21" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB2_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="3004636f-f7df-4053-a001-8b9b8d6f9bdc" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB2_3" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c449410e-b788-4f5a-89d9-5404b45b5051" propSchFieldBase="MessageContextPropertyBase" rootTypeName="UNB2_3" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB2_4" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9f7ccee0-e324-4dc9-9fde-bbc219d3d4b5" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB3_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="7e073ea2-a257-40bb-af1d-27ddbd06bd65" propSchFieldBase="MessageContextPropertyBase" rootTypeName="Unb31" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB3_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="5a34a56c-2a80-4036-9208-e32f9bb29b67" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB3_3" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c06cea1f-5c3b-4af2-9f6e-4c85504d5026" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB3_4" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9000dc2b-f535-41da-844b-6cc199bf685a" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB11" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="5b46e27e-3a53-4b61-95ed-1fc1d3845239" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="6a344a8e-595e-485a-ad96-2597d8057540" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG2_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="716e79b6-c506-4f2b-a2b6-f1322342e097" propSchFieldBase="MessageContextPropertyBase" rootTypeName="Ung21" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG3_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="158c9669-5e60-43dd-9be2-f6ec817bc4c4" propSchFieldBase="MessageContextPropertyBase" rootTypeName="Ung31" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNH2_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="faac3898-bb6d-41ff-9fc1-a5cbf642d811" propSchFieldBase="MessageContextPropertyBase" rootTypeName="Unh21" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNH2_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="b2241a24-09ae-46fe-bf57-7348e201a8c9" propSchFieldBase="MessageContextPropertyBase" rootTypeName="Unh22" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNH2_3" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="f7f4c908-8a9b-4cd4-8d39-87fcc741fc19" propSchFieldBase="MessageContextPropertyBase" rootTypeName="Unh23" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB_Segment" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="d5f32a29-78dc-4b3b-8b27-3157c7b5c40e" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG_Segment" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="2bceb7c7-58d1-4eae-b35d-a0c5f766e748" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="CodePage" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="8e42e130-2011-4c96-af60-72383150ca4d" propSchFieldBase="MessageContextPropertyBase" rootTypeName="CharacterSet" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA_Segment" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="bdb5201f-31d7-4804-a0ab-2ead5189ac87" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS_Segment" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="1e25fee8-6498-45d9-bdb4-f0cbc32fc2a6" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNA_Segment" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="46e44dec-7a5a-4328-9850-360352a6d12c" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DestinationPartyId" type="xs:int">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="760328f0-11e5-47cc-a466-0a89f0c3e1ad" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="BatchElementValidationFailure" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9d1b7327-650c-4a56-9477-f55c60c01409" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="BatchingError" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="a012c622-bd99-44d6-94b3-a73e94af4916" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="StatusReportContinuationId" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="7df4debf-44c7-4fb0-8cf9-3bd39c582ed2" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ControlActionType" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="ff406e0b-7bb1-4d0b-bb79-bf65cf072e60" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ToBeBatched" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="bf9dc6a6-96d7-48be-a793-2b14aef4f2da" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ToBeRouted" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="1e0a0d93-61e1-45a0-9440-20324b85b1c2" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DestinationParties" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="b98a545e-8810-47cf-a6e2-300108f64192" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="PopulateInterchangeValues" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="b65c62cf-af70-4618-aac7-8e6351c806d4" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TsSequenceNumberInGroup" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="71faa9bc-d3a0-4377-aa9a-f7eb51bbd188" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DestinationPartyName" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="dc77fc2c-f5e4-4c4f-ae1f-5fc9826cd475" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="EncodingType" type="xs:short">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="d664657b-449f-45c6-a902-197c52f44359" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS07" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="07edb6db-66e5-438c-9954-98b68ef2fd56" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsSystemGeneratedAck" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="18c918ce-f823-43ae-a077-18c1dba66871" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TA1_TA104" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="1ff3563f-4fae-423a-b57e-bff50b464962" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="AK901" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="6083ef44-2fd1-4e58-9892-c3052d65aece" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="CONTRL_UCI4" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="442d0259-de9d-4902-8981-885455d3aa5d" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="BatchEncodingType" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="f1d3cc2e-53a8-47d1-9be2-c6e472cb7c41" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DestinationEncodingTypes" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="159eb306-ee97-46c8-a19b-95b95f62968b" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IgnoreEncodingType" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="7e1f003e-f77c-4021-99d7-ad3c338ed674" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ErrorDescription" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="8e26cbf3-b1ef-4823-8299-4dd4907c02a7" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DestinationPartySenderQualifier" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="f8a12ba8-1671-4ce6-ae7b-b185c3ea735f" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DestinationPartySenderIdentifier" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="7d052167-1c23-42c5-b35e-b2ea9f2ecbf9" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DestinationPartyReceiverQualifier" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="184c9db6-1ba9-4095-8232-8b2faa2912e5" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DestinationPartyReceiverIdentifier" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="563ba789-98bd-407a-856d-dfc17c835109" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="BatchId" type="xs:int">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="cde1c36f-e480-45b7-9434-5cf4dfdbbf55" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="BatchName" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="1773235a-9fad-4532-b92f-a73ed9830f2f" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="BatchIds" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="b64d3f61-f18d-4472-9ee7-9bd649436311" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsResendControlMessage" type="xs:int">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="640e7a7f-1c46-4ce2-a3dd-4315394d725d" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="AttachmentId" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="7c1318b0-d8a6-4bd2-b4cd-3fc67ef62a43" propSchFieldBase="PartContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="SenderPartyName" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="8e50f6b0-d19b-4963-a006-db1d8aa02eeb" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ReceiverPartyName" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="85795074-3B66-475d-894D-9E399FC37D14" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="AgreementName" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="eb69a796-a162-4a6c-80c4-bc03eda5c958" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="SenderPartyNameForSend" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="AC3635F9-17C2-44fc-849F-32D1B84857FF" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ReceiverPartyNameForSend" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="2FE289C6-D4E6-4aa5-A6A8-9F3B871AA7DE" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="AgreementNameForSend" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="508C6932-AA42-432b-B87B-DF6EEEA99D0A" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="AgreementID" type="xs:int">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="F05E1F30-E73B-440a-8BF5-A92D814EBC57" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="AgreementPartIDOnReceive" type="xs:int">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="6F4BE599-9B2B-4c35-B567-A13B8486E159" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="AgreementPartIDForSend" type="xs:int">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="E576D030-C0EF-4d2f-AD9A-B6B773783718" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

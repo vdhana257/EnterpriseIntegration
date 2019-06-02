@@ -1,0 +1,21 @@
+{
+  "id": "d9e2261a-d34d-4d64-90d6-f762da540ec6",
+  "recordType": "PartnerDetails",
+  "description": "EDI AS2 Partner Details For Contoso",
+  "docKey": {
+    "messageFormat": "X12",
+    "senderQualifier": "ZZ",
+    "senderIdentifier": "CDE",
+    "receiverQualifier": "ZZ",
+    "receiverIdentifier": "ABC"
+  },
+  "as2Config": {
+    "as2From": "NA",
+    "as2To": "NA"
+  },
+  "preDecodeProcessing": [],
+  "postDecodeProcessing": [],
+  "preEncodeProcessing": [],
+  "postEncodeProcessing": [],
+  "epDetailId": "ff1725aa-1db5-495d-ac9e-ad10754d1d69"
+}

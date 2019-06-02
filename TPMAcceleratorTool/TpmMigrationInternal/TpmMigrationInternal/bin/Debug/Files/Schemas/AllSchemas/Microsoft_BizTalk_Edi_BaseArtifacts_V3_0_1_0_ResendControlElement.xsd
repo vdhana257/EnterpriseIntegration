@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.microsoft.com/BizTalk/2006/reliability-properties" xmlns:ns0="http://schemas.microsoft.com/Edi/PropertySchema" xmlns:msbtssql="http://schemas.microsoft.com/BizTalk/2003" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/BizTalk/2006/reliability-properties" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <msbtssql:sqlScript value="select top 1 * from Resend_Control for xml auto, elements" xmlns:msbtssql="http://schemas.microsoft.com/BizTalk/2003" />
+      <msbtssql:imports>
+        <msbtssql:namespace prefix="ns0" uri="http://schemas.microsoft.com/Edi/PropertySchema" location="EDI.PropertySchema" />
+      </msbtssql:imports>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Resend_Control" type="Resend_ControlType">
+    <xs:annotation>
+      <xs:appinfo>
+        <msbtssql:properties>
+          <msbtssql:property name="ns0:IsResendControlMessage" xpath="/*[local-name()='Resend_Control' and namespace-uri()='http://schemas.microsoft.com/BizTalk/2006/reliability-properties']/*[local-name()='IsResendControlMessage' and namespace-uri()='http://schemas.microsoft.com/BizTalk/2006/reliability-properties']" />
+        </msbtssql:properties>
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Resend_ControlType">
+    <xs:choice>
+      <xs:element name="IsResendControlMessage" type="IsResendControlMessageType" />
+      <xs:element name="CorrelationId" type="CorrelationIdType" />
+      <xs:element name="TrackingActivityID" type="TrackingActivityIdType" />
+      <xs:element name="ContentId" type="ContentIdType" />
+      <xs:element name="Action" type="ActionType" />
+      <xs:element name="RetryCount" type="RetryCountType" />
+      <xs:element name="RetryInterval" type="RetryIntervalType" />
+      <xs:element name="RetryTimeout" type="RetryTimeoutType" />
+      <xs:element name="ResendIndex" type="ResendIndexType" />
+      <xs:element name="ResendInterval" type="ResendIntervalType" />
+      <xs:element name="MaxResendCount" type="MaxResendCountType" />
+      <xs:element name="ResendTimeout" type="ResendTimeoutType" />
+      <xs:element name="OriginalSendTime" type="OriginalSendTimeType" />
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="IsResendControlMessageType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CorrelationIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ActionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ContentIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RetryCountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RetryIntervalType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RetryTimeoutType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ResendIndexType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ResendIntervalType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MaxResendCountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ResendTimeoutType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="OriginalSendTimeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:dateTime" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TrackingActivityIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:dateTime" />
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

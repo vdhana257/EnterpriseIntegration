@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://SQLControlMessage.IssueSelect" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://SQLControlMessage.IssueSelect" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <b:schemaInfo is_envelope="yes" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ControlMessage">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:recordInfo body_xpath="/*[local-name()='ControlMessage' and namespace-uri()='http://SQLControlMessage.IssueSelect']" />
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any processContents="lax" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

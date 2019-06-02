@@ -1,0 +1,16 @@
+-
+23-05-2019 14:55:46 Exporting Partner to Json: Sarcom
+23-05-2019 14:55:46 No certificate is configured with the Partner
+23-05-2019 14:55:47 Partner Sarcom exported to Json with Name Sarcom
+23-05-2019 14:55:47 Partner Export to Json Successfull: Sarcom
+-
+-
+23-05-2019 14:56:28 Exporting agreement to Json: Microsoft_Sarcom_867_810_850_855
+23-05-2019 14:57:54 Agreement MSFT_Sarcom_867_00401_CMODS_IN Exported to Json with Name MSFT_Sarcom_867_00401_CMODS_IN
+23-05-2019 15:06:50 Agreement MSFT_Sarcom_INV_X12 Exported to Json with Name MSFT_Sarcom_INV_X12
+23-05-2019 15:08:52 Agreement MSFT_Sarcom_MSL_X12 Exported to Json with Name MSFT_Sarcom_MSL_X12
+23-05-2019 15:08:56 Agreement Microsoft_Sarcom_867_810_850_855 Exported to Json with Name Microsoft_Sarcom_867_810_850_855
+23-05-2019 15:08:56 Agreement Export to Json Successfull: Microsoft_Sarcom_867_810_850_855
+-
+23-05-2019 15:09:00 Schema Output Directory is Files\Schemas\ 
+23-05-2019 15:09:02 The configured DLL Directory Location is Empty. Assuming DLLs are to be read from the GAC

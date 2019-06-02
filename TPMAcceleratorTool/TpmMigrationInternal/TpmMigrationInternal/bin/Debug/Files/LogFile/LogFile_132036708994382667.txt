@@ -1,0 +1,21 @@
+-
+30-05-2019 11:52:01 Exporting Partner to Json: Contoso
+30-05-2019 11:52:01 No certificate is configured with the Partner
+30-05-2019 11:52:01 Partner Contoso exported to Json with Name Contoso
+30-05-2019 11:52:01 Partner Export to Json Successfull: Contoso
+-
+-
+30-05-2019 11:52:07 Exporting agreement to Json: 850-855
+30-05-2019 11:52:31 Agreement 850-855 Exported to Json with Name 850-855
+30-05-2019 11:52:31 Agreement Export to Json Successfull: 850-855
+-
+30-05-2019 11:54:17 Schema Output Directory is Files\Schemas\ 
+30-05-2019 11:54:17 The configured DLL Directory Location is Empty. Assuming DLLs are to be read from the GAC
+30-05-2019 11:54:52 Migrating partner : Contoso
+30-05-2019 11:54:57 Partner Migration Successfull: Contoso
+-
+-
+30-05-2019 11:54:58 Migrating agreement: 850-855
+30-05-2019 11:54:59 Agreement Export to Json Failed. Reason:
+The Host Partner Fabrikam with identity ZZ:CDE doesn't exist in IA. Please migrate this partner identity/Partner before migrating the agreement
+-

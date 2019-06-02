@@ -1,0 +1,16 @@
+-
+22-05-2019 12:35:35 Exporting Partner to Json: Sarcom
+22-05-2019 12:35:35 No certificate is configured with the Partner
+22-05-2019 12:35:35 Partner Sarcom exported to Json with Name Sarcom
+22-05-2019 12:35:35 Partner Export to Json Successfull: Sarcom
+-
+-
+22-05-2019 12:36:16 Exporting agreement to Json: Microsoft_Sarcom_867_810_850_855
+22-05-2019 12:36:48 Agreement Export to Json Failed. Reason:
+The filename, directory name, or volume label syntax is incorrect.
+
+-
+22-05-2019 12:36:49 Agreement Export to Json Failed. Reason:
+Failed to create individual agreement MSFT_Sarcom_867_00401_CMODS_IN. One or more errors occurred. : The filename, directory name, or volume label syntax is incorrect.
+
+-

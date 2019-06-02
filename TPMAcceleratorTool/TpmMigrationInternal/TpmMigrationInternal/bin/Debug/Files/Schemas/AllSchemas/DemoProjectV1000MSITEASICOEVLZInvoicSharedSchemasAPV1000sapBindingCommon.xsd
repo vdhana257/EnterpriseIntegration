@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="http://TrackerProperties.PropertySchema" xmlns:ns4="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" elementFormDefault="qualified" targetNamespace="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema">
+  <annotation>
+    <appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">IDocSharedTypes</fileNameHint>
+      <b:imports>
+        <b:namespace prefix="ns0" uri="http://TrackerProperties.PropertySchema" location="DemoProject.TrackerProperties_V1_2_0_0_PropertySchema" />
+      </b:imports>
+    </appinfo>
+  </annotation>
+  <complexType name="EDI_DC">
+    <annotation>
+      <documentation>
+        <doc:description xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">Control record for the interface to the EDI subsystem</doc:description>
+      </documentation>
+      <appinfo>
+        <groupInfo sequence_number="0" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+        </groupInfo>
+      </appinfo>
+    </annotation>
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="TABNAM" nillable="true" type="string">
+        <annotation>
+          <documentation>Name of external structure</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="10" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="MANDT" nillable="true" type="string">
+        <annotation>
+          <documentation>Client</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="3" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="DOCNUM" nillable="true" type="string">
+        <annotation>
+          <documentation>IDoc number</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="16" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="DOCREL" nillable="true" type="string">
+        <annotation>
+          <documentation>SAP Release for IDoc</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="4" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="STATUS" nillable="true" type="string">
+        <annotation>
+          <documentation>Status of IDoc</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="2" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="DOCTYP" nillable="true" type="string">
+        <annotation>
+          <documentation>IDoc type</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="8" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="DIRECT" nillable="true" type="string">
+        <annotation>
+          <documentation>Direction for IDoc transmission</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="1" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="RCVPOR" nillable="true" type="string">
+        <annotation>
+          <documentation>Receiver port (SAP System, EDI subsystem)</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="10" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="RCVPRT" nillable="true" type="string">
+        <annotation>
+          <documentation>Partner Type of Receiver</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="2" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="RCVPRN" nillable="true" type="string">
+        <annotation>
+          <documentation>Partner Number of Receiver</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="10" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="RCVSAD" nillable="true" type="string">
+        <annotation>
+          <documentation>IDoc: SADR fields in total</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="21" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="RCVLAD" nillable="true" type="string">
+        <annotation>
+          <documentation>Logical address of recipient</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="70" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="STD" nillable="true" type="string">
+        <annotation>
+          <documentation>EDI Standard</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="1" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="STDVRS" nillable="true" type="string">
+        <annotation>
+          <documentation>Version of EDI standard</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="6" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="STDMES" nillable="true" type="string">
+        <annotation>
+          <documentation>EDI message type</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="6" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="MESCOD" nillable="true" type="string">
+        <annotation>
+          <documentation>Logical message code</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="3" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="MESFCT" nillable="true" type="string">
+        <annotation>
+          <documentation>Logical message function</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="3" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="OUTMOD" nillable="true" type="string">
+        <annotation>
+          <documentation>Output Mode</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="1" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="TEST" nillable="true" type="string">
+        <annotation>
+          <documentation>Test flag</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="1" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="SNDPOR" nillable="true" type="string">
+        <annotation>
+          <documentation>Sender port (SAP System, EDI subsystem)</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="10" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="SNDPRT" nillable="true" type="string">
+        <annotation>
+          <documentation>Partner type of sender</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="2" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="SNDPRN" nillable="true" type="string">
+        <annotation>
+          <documentation>Partner Number of Sender</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="10" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="SNDSAD" nillable="true" type="string">
+        <annotation>
+          <documentation>IDoc: SADR fields in total</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="21" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="SNDLAD" nillable="true" type="string">
+        <annotation>
+          <documentation>Logical address of sender</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="70" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="REFINT" nillable="true" type="string">
+        <annotation>
+          <documentation>Reference to interchange file</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="14" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="REFGRP" nillable="true" type="string">
+        <annotation>
+          <documentation>Reference to message group</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="14" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="REFMES" nillable="true" type="string">
+        <annotation>
+          <documentation>Reference to message</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="14" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="ARCKEY" nillable="true" type="string">
+        <annotation>
+          <documentation>EDI archive key</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="70" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="CREDAT" nillable="true" type="string">
+        <annotation>
+          <documentation>IDoc Created On</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="8" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="CRETIM" nillable="true" type="string">
+        <annotation>
+          <documentation>IDoc creation time</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="6" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="MESTYP" nillable="true" type="string">
+        <annotation>
+          <documentation>Logical message type</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="6" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="IDOCTYP" nillable="true" type="string">
+        <annotation>
+          <documentation>Name of basic type</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="8" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="CIMTYP" nillable="true" type="string">
+        <annotation>
+          <documentation>Extension</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="8" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="RCVPFC" nillable="true" type="string">
+        <annotation>
+          <documentation>Partner Function of Recipient</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="2" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="SNDPFC" nillable="true" type="string">
+        <annotation>
+          <documentation>Partner Function of Sender</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="2" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="SERIAL" nillable="true" type="string">
+        <annotation>
+          <documentation>EDI/ALE: Serialization field</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="20" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="EXPRSS" nillable="true" type="string">
+        <annotation>
+          <documentation>Overriding in inbound processing</documentation>
+          <appinfo>
+            <fieldInfo pad_char="0x20" pad_char_type="hex" justification="left" pos_offset="0" pos_length="1" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+            </fieldInfo>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <element name="EDI_DC" nillable="true" type="ns4:EDI_DC" />
+</schema>

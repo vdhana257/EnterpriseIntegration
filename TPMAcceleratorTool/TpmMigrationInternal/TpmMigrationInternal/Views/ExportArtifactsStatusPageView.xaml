@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.ExportArtifactsStatusPageView"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:tpmMigration="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration"
+              mc:Ignorable="d"
+              d:DesignHeight="503" d:DesignWidth="721">
+
+    <UserControl.Resources>
+        <tpmMigration:MigrationStatusEnumToImagePathConverter x:Key="migrationStatusEnumToImagePathConverter" />
+        <tpmMigration:NullToVisibilityConverter x:Key="nullToVisibilityConverter" />
+        <tpmMigration:ProgressBarStateToVisibilityConverter x:Key="progressBarStateToVisibilityConverter" />
+    </UserControl.Resources>
+
+    <Grid Name="Layout" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90" />
+            <RowDefinition Height="AUTO" />
+        </Grid.RowDefinitions>
+        <TextBlock Name ="progressTextBlock" Text="{Binding ProgressBarStatusText}" 
+                   Visibility="{Binding ProgressVisible}"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" Grid.Row="0" Height="30" Width="700" Margin="0,10,0,49.6">
+        </TextBlock>
+        <ProgressBar Minimum="0" Maximum="{Binding TotalArtifacts}"
+                     Value= "{Binding  Progress}" 
+                     Visibility="{Binding ProgressVisible}"
+                     Name="pbStatus" Grid.Row="0"
+                     VerticalAlignment="Top" Margin="0,45,0,0" Height="30"/>
+        <!--{Binding ElementName=pbStatus, Path=Value, StringFormat={}{0:0}%, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}-->
+        <DataGrid ItemsSource="{Binding ExportedItems, Mode=OneWay}"
+                  Width="700" Grid.Row="1"
+                  Name="ExportArtifcatsDataGrid"
+                  Style="{StaticResource StandardDataGrid}" Margin="0,0,0,0.2">
+            <DataGrid.Columns>
+                <DataGridTextColumn tpmMigration:DataGridExtensions.HeaderName="{Binding ArtifactNameColumnHeader, Source={StaticResource Resources}}"  
+                                                    Binding="{Binding ArtifactName}" 
+                                                    CanUserReorder="True" CanUserResize="True" CanUserSort="True" IsReadOnly="True" Width="60*" />
+
+                <DataGridTextColumn tpmMigration:DataGridExtensions.HeaderName="{Binding ArtifactTypeColumnHeader, Source={StaticResource Resources}}"
+                                                    Binding="{Binding ArtifactType}" 
+                                                    CanUserReorder="True" CanUserResize="True" CanUserSort="True" IsReadOnly="True" 
+                                                    Width="90*" />
+
+                <DataGridTemplateColumn IsReadOnly="True" Width="70" tpmMigration:DataGridExtensions.HeaderName="{Binding MigrationStatusColumnHeader, Source={StaticResource Resources}}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding ExportStatus, Converter={StaticResource migrationStatusEnumToImagePathConverter}}" Height="15">
+                                <Image.ToolTip>
+                                    <ToolTip Visibility="{Binding ExportStatusText, Converter={StaticResource nullToVisibilityConverter}}"  MaxWidth="700">
+                                        <TextBlock Text="{Binding ExportStatusText}" TextWrapping="Wrap" />
+                                    </ToolTip>
+                                </Image.ToolTip>
+                            </Image>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

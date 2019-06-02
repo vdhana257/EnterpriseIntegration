@@ -1,0 +1,29 @@
+-
+30-05-2019 09:42:43 Exporting Partner to Json: Contoso
+30-05-2019 09:42:43 No certificate is configured with the Partner
+30-05-2019 09:42:43 Partner Contoso exported to Json with Name Contoso
+30-05-2019 09:42:43 Partner Export to Json Successfull: Contoso
+-
+-
+30-05-2019 09:42:51 Exporting agreement to Json: 850
+30-05-2019 09:43:25 Agreement 850 Exported to Json with Name 850
+30-05-2019 09:43:25 Agreement Export to Json Successfull: 850
+-
+-
+30-05-2019 09:43:25 Exporting agreement to Json: 810
+30-05-2019 09:44:07 Agreement 810 Exported to Json with Name 810
+30-05-2019 09:44:07 Agreement Export to Json Successfull: 810
+-
+-
+30-05-2019 09:44:07 Exporting agreement to Json: 867
+30-05-2019 09:44:38 Agreement 867 Exported to Json with Name 867
+30-05-2019 09:44:38 Agreement Export to Json Successfull: 867
+-
+-
+30-05-2019 09:54:12 Exporting Partner to Json: Contoso
+30-05-2019 09:54:12 No certificate is configured with the Partner
+30-05-2019 09:54:12 Partner Contoso exported to Json with Name Contoso
+30-05-2019 09:54:12 Partner Export to Json Successfull: Contoso
+-
+-
+30-05-2019 09:54:21 Exporting agreement to Json: Fabrikam

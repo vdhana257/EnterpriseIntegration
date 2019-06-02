@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.microsoft.com/BizTalk/2006/edi-properties" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://schemas.microsoft.com/BizTalk/2006/edi-properties" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <b:schemaInfo schema_type="property" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OverrideEDIHeader" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="841f75a9-0c7d-44b4-aac7-b428fc20e02c" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA01" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c59c6340-5163-4c85-aea4-dd7a07515fa3" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA02" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="1dfa427b-d34b-45c5-a2a8-da1f78794334" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA03" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="8cd83e26-639c-41a0-b192-41706b3f72a0" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA04" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="d225ddb4-67ef-4e98-a356-a355d3e67454" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA05" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="f3903041-3674-4d9a-b6a2-2d1af339187e" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA06" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="a7e95961-29f9-409d-b822-af761e7d07aa" propSchFieldBase="MessageContextPropertyBase" rootTypeName="ISA06" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA07" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c18913d7-f005-4fac-b38c-ba39191e4ce9" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA08" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="046a3184-7dd1-4087-8dc9-69286dbefaa9" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA09" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="2df65d79-d7a9-4a23-be1c-23a261cdb974" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA10" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9be0bfdc-93a5-4d8a-903a-1cbb6d481c95" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA11" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c445c15e-d81b-407b-b114-19d75b3910e3" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA12" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="507f40db-13fb-454e-9823-5372c25204e3" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA13" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="d9e19273-b50b-4079-a956-f365ef0792d3" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA14" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="6619fa3f-bd28-47e2-b5b4-d3a32b77b45a" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA15" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c0d2992d-28f7-4a5c-ac38-3bd3381305d5" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ISA16" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="7b2f7dc5-0b70-4f29-b48e-db2ffc2c5950" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS01" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c96d1e06-cb65-418b-8d52-047cc8481d10" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS02" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="30230cf1-010a-4268-afb4-b83e5fa7326b" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS03" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="886ff1ae-9f6b-415e-b6b3-f576628c6cbc" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS04" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="1d5059dc-3b7c-4c84-a4b9-1018d9f8b3cc" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS05" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="b549bab8-e88f-4ae1-be60-4b839d2c7587" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS06" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="32251aa9-956f-46a9-b536-bee7317a27a2" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS07" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="98c06cfc-3963-48a8-bcda-f4a59d14e233" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GS08" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="74922ced-80fc-49f0-ad5f-6484a98ff43f" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ST02" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="ccb6e7e8-1b1d-4c55-8fa5-7f379e2d9c58" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GenerateUNA" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="df93ec49-a9ac-42bc-ba8f-ff102d7ffd27" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNA1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="cd896abb-cbfc-476a-9f2e-0f6fa8842332" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNA2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="15793272-87e0-4bbb-b9f6-00beca06ea82" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNA3" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="5fbacbbe-3835-4497-9614-ea1cf070424f" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNA4" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="56f65f06-20a5-4cc5-b92e-b690f7fe5408" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNA5" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="b8300492-6528-423e-9bfa-8db28df9ee00" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNA6" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="af7dc103-1f14-4a3c-a5bb-db235dbd6a24" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNA6Suffix" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="69d3a151-5551-45d6-9d2e-d24a6e0b2b9a" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB1_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="4df02439-f92c-49ba-bc9d-968a0e4fb9b3" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB1_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="32a382f7-1f68-4b10-9c63-69e98a238224" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB1_3" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="34601219-9e4d-492e-ae70-10506d4d8e9b" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB1_4" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="e13cf19c-55e4-402b-b4ee-2b40378a1c2b" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB2_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="8e1f77e4-64a3-4f49-ad91-6e69bd7589dc" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB2_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="0ccf61b6-04ab-4ec5-8a9e-09b1f210ec68" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB2_3" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="66085455-f6ad-4a75-9458-b29e5ce8f39f" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB2_4" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9a26ac34-5449-42df-8baa-ca6f08921dd7" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB3_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="83c042e4-e745-4d62-a4aa-6598c655eed7" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB3_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="ed9ac7ed-a724-44a6-8a61-1399129ad866" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB3_3" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="0626edaa-c8ba-4cba-9154-687a96128fd4" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB3_4" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="ea5a343c-30b3-4ac7-b21d-99ef2d44215b" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB4_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="0d6783ec-c4d1-44de-9d89-089f1e2738f7" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB4_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="825a4919-b1a6-4688-8604-4fadb8fda2f9" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB5" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="77050030-cfa8-42c7-8752-1b8dce01c720" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB6_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="5104c556-39b8-461e-80f4-6777e0e700c5" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB6_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="fa67d63e-1e71-4798-811a-c10561d56796" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB7" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="da10ee3d-ace7-4fa1-9657-79b9f088175d" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB8" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="fbc647c7-bf75-455b-aef7-607d6b45129f" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB9" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="bc2512eb-1af1-45b2-bdef-974712ca9cdf" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB10" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="95b5bd66-96ea-46c6-9451-9e1c8675eb88" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNB11" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="99ce778d-4bae-4390-8d17-baa41c431be3" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="GenerateUNG" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="0718a7b0-33bb-4f5a-95d0-fd42612a84d0" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c01191fd-4a90-4d06-855d-c8a5b860ee0b" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG2_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="df53d484-dbc5-406a-8d98-a49b13c42544" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG2_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="4386b57b-e172-4826-afb3-c9f862cbe08b" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG3_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="aa3d7d15-e538-4467-99e7-f74499c66633" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG3_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9bf2ee11-c43c-4cb4-aedb-318c074bb037" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG4_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="bb5bda7e-51b9-42e3-80ef-6f62724ff6e9" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG4_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="60b779cb-4b20-44ca-8b68-ff2d57b8fada" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG5" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="293ed2cd-37f4-4423-9a5f-dbc23430a5b9" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG6" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="11f0797d-4c7a-480d-8996-619bd1e14874" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG7_1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="651c1836-7019-4b8c-ad7b-816dfea12196" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG7_2" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="ec2db393-0d8f-444b-a18d-792e9069dfb9" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG7_3" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="2a109e44-5a2f-49e7-a878-c2e97b3c2ab8" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNG8" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="62127fa7-4809-448b-917a-93a0a926849a" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UNH1" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="3d3e0ce6-d335-49d4-ad23-38336626d477" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

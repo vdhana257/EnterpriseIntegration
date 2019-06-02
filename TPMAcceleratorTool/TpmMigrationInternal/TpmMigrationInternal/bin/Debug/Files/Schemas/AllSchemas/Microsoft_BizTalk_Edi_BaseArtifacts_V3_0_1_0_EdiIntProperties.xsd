@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.microsoft.com/BizTalk/2006/as2-properties" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://schemas.microsoft.com/BizTalk/2006/as2-properties" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <b:schemaInfo schema_type="property" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AS2From" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="c82a9c75-4e9a-4836-a9b7-d1853b5cb8ad" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="AS2To" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="72237584-1c5f-4907-bcf9-d98eb5ce9215" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="MDNAsyncURI" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="d7a4ccf4-7050-40b5-99c6-b16860420d0e" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="SendMDN" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="ecd9ff2d-b3b7-403f-acff-65f4744ba36a" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="MessageId" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="a863df03-41ed-4417-a039-5e7a57a2e735" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DispositionType" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="4b910048-60bd-41ea-93d2-bb97b928de30" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DispositionMode" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="dda270a1-4803-42d1-9730-e04015f6be5e" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="OriginalMessageId" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="e8c06a07-4605-468e-9c37-216b80a7b974" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsAS2Http200OKResponse" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="be787e88-a8af-41cf-9e25-994791a456dc" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsAS2PayloadMessage" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9b54d43d-8383-4622-bd7c-f78852e5d245" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsAS2FailedMessage" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="9e0bb853-4853-47b5-9afd-0d647049911c" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsAS2MessageSigned" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="7b36f6d1-9fcd-4471-98b7-fa350ae9e2eb" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsAS2MessageEncrypted" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="6cf534a4-d7a8-4489-a924-d103fa244909" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsAS2MessageCompressed" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="85fdd692-02e1-47e3-935d-b3f03330496d" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsAS2AsynchronousMdn" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="07c76228-09f5-4d6f-8db3-f95844eeafcd" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsAS2MdnResponseMessage" type="xs:boolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="bac6ac0f-ebf2-41f6-b933-d69213862b81" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="AS2PayloadContentType" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="83a94abc-e940-43c7-840f-c51738a57ef9" propSchFieldBase="MessageContextPropertyBase" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="PreservedFileName" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="d569184d-bb29-4f50-bf05-2a7d3e064efc" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IsAS2MessageDuplicate" type="xs:string">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid="8184a65f-dd14-4d43-96d9-cf57fe36b3a1" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

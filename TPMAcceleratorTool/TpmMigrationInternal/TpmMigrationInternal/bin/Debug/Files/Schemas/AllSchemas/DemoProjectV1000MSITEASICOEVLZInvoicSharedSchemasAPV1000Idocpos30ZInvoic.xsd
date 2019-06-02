@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic" xmlns:ns1="http://TrackerProperties.PropertySchema" xmlns:ns2="http://MSIT.EAS.ICOE.VL.PropertySchemas.PropSchema" elementFormDefault="qualified" targetNamespace="http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="DemoProject.MSIT_EAS_ICOE_VL_ZInvoic_Shared_Schemas_AP_V1_0_0_0_sapBinding__x330E" namespace="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E" />
+  <annotation>
+    <appinfo>
+      <b:schemaInfo default_pad_char=" " pad_char_type="char" count_positions_by_byte="false" parser_optimization="speed" lookahead_depth="3" suppress_empty_nodes="false" generate_empty_nodes="true" allow_early_termination="false" early_terminate_optional_fields="false" allow_message_breakup_of_infix_root="false" compile_parse_tables="false" standard="Flat File" root_reference="Idocpos_30_ZInvoic" />
+      <schemaEditorExtension:schemaInfo namespaceAlias="b" extensionClass="Microsoft.BizTalk.FlatFileExtension.FlatFileExtension" standardName="Flat File" xmlns:schemaEditorExtension="http://schemas.microsoft.com/BizTalk/2003/SchemaEditorExtensions" />
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">IDocOperation.INVOIC01.ZINVOIC02.30E.2.Receive</fileNameHint>
+      <b:references>
+        <b:reference targetNamespace="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E" />
+        <b:reference targetNamespace="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+      </b:references>
+      <b:imports>
+        <b:namespace prefix="ns1" uri="http://TrackerProperties.PropertySchema" location="DemoProject.TrackerProperties_V1_2_0_0_PropertySchema" />
+        <b:namespace prefix="ns2" uri="http://MSIT.EAS.ICOE.VL.PropertySchemas.PropSchema" location="DemoProject.MSIT_EAS_ICOE_VL_PropertySchemas_V1_0_0_0_PropSchema" />
+      </b:imports>
+    </appinfo>
+  </annotation>
+  <element name="Idocpos_30_ZInvoic">
+    <annotation>
+      <documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.Sap/2007/03/Idoc/2/INVOIC01/ZINVOIC02/30E/Receive</doc:action>
+      </documentation>
+      <appinfo>
+        <recordInfo structure="delimited" child_delimiter_type="hex" child_delimiter="0xd 0xa" child_order="infix" preserve_delimiter_for_empty_data="True" suppress_trailing_delimiters="False" xmlns="http://schemas.microsoft.com/BizTalk/2003" sequence_number="1">
+        </recordInfo>
+        <b:properties>
+          <b:property name="ns1:DocRef3" xpath="/*[local-name()='Idocpos_30_ZInvoic' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='idocData' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='EDI_DC' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E']/*[local-name()='DOCNUM' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/']" />
+          <b:property name="ns1:DocRef2" xpath="/*[local-name()='Idocpos_30_ZInvoic' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='idocData' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='EDI_DC' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E']/*[local-name()='CREDAT' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/']" />
+          <b:property name="ns1:DocRef1" xpath="/*[local-name()='Idocpos_30_ZInvoic' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='idocData' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='E2EDK01001GRP' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E']/*[local-name()='E2EDK01001' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E']/*[local-name()='BELNR' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E']" />
+          <b:property name="ns2:SAPID" xpath="/*[local-name()='Idocpos_30_ZInvoic' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='idocData' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='EDI_DC' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E']/*[local-name()='RCVPRN' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/']" />
+          <b:property name="ns2:Transaction" xpath="/*[local-name()='Idocpos_30_ZInvoic' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='idocData' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='EDI_DC' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E']/*[local-name()='STDMES' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/']" />
+          <b:property name="ns2:TransactionQualifier" xpath="/*[local-name()='Idocpos_30_ZInvoic' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='idocData' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='EDI_DC' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E']/*[local-name()='MESFCT' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/']" />
+          <b:property name="ns2:TransactionVersion" xpath="/*[local-name()='Idocpos_30_ZInvoic' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='idocData' and namespace-uri()='http://MSIT.EAS.ICOE.VL.ZInvoic.Shared.Schemas.AP.Idocpos30ZInvoic']/*[local-name()='EDI_DC' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E']/*[local-name()='STDVRS' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/']" />
+        </b:properties>
+      </appinfo>
+    </annotation>
+    <complexType>
+      <sequence>
+        <annotation>
+          <appinfo>
+            <groupInfo sequence_number="0" xmlns="http://schemas.microsoft.com/BizTalk/2003" />
+          </appinfo>
+        </annotation>
+        <element xmlns:q2="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/2/INVOIC01/ZINVOIC02/30E" minOccurs="1" maxOccurs="1" name="idocData" nillable="true" type="q2:INVOIC01">
+          <annotation>
+            <appinfo>
+              <recordInfo structure="delimited" child_delimiter_type="hex" child_delimiter="0xd 0xa" child_order="postfix" preserve_delimiter_for_empty_data="True" suppress_trailing_delimiters="False" xmlns="http://schemas.microsoft.com/BizTalk/2003" sequence_number="1">
+              </recordInfo>
+            </appinfo>
+          </annotation>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+  <annotation>
+    <appinfo>
+      <schemaEditorExtension:schemaInfo extensionClass="Microsoft.BizTalk.FlatFileExtension.FlatFileExtension" standardName="Flat File" xmlns:schemaEditorExtension="http://schemas.microsoft.com/BizTalk/2003/SchemaEditorExtensions">
+      </schemaEditorExtension:schemaInfo>
+      <schemaInfo root_reference="Receive" standard="Flat File" count_positions_by_byte="false" parser_optimization="complexity" allow_early_termination="true" default_pad_char=" " pad_char_type="char" allow_message_breakup_of_infix_root="false" compile_parse_tables="false" suppress_empty_nodes="true" generate_empty_nodes="false" early_terminate_optional_fields="true" xmlns="http://schemas.microsoft.com/BizTalk/2003">
+      </schemaInfo>
+    </appinfo>
+  </annotation>
+</schema>

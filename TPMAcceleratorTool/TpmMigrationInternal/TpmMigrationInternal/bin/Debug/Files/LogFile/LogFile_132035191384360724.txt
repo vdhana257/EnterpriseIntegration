@@ -1,0 +1,36 @@
+-
+28-05-2019 17:42:29 Exporting Partner to Json: Contoso
+28-05-2019 17:42:29 No certificate is configured with the Partner
+28-05-2019 17:42:29 Partner Contoso exported to Json with Name Contoso
+28-05-2019 17:42:29 Partner Export to Json Successfull: Contoso
+-
+-
+28-05-2019 17:42:45 Exporting agreement to Json: 850
+28-05-2019 17:43:14 Agreement Export to Json Failed. Reason:
+Could not find a part of the path 'D:\Project\Others\INT-PLT-AISc-AIS-B2B-BtoB\Src\Tools\TpmMigrationInternal\TpmMigrationInternal\bin\Debug\Files\Contoso\Contoso_InboundPartnerDetails.json'.
+-
+-
+28-05-2019 17:43:14 Exporting agreement to Json: 810
+28-05-2019 17:43:36 Agreement 810 Exported to Json with Name 810
+28-05-2019 17:43:36 Agreement Export to Json Successfull: 810
+-
+-
+28-05-2019 17:43:36 Exporting agreement to Json: 867
+28-05-2019 17:43:57 Agreement Export to Json Failed. Reason:
+Incorrect syntax near the keyword 'and'.
+-
+-
+28-05-2019 17:45:39 Exporting agreement to Json: 850
+28-05-2019 17:46:01 Agreement Export to Json Failed. Reason:
+Incorrect syntax near the keyword 'and'.
+-
+-
+28-05-2019 17:46:01 Exporting agreement to Json: 810
+28-05-2019 17:46:23 Agreement 810 Exported to Json with Name 810
+28-05-2019 17:46:23 Agreement Export to Json Successfull: 810
+-
+-
+28-05-2019 17:46:23 Exporting agreement to Json: 867
+28-05-2019 17:46:45 Agreement Export to Json Failed. Reason:
+Incorrect syntax near the keyword 'and'.
+-

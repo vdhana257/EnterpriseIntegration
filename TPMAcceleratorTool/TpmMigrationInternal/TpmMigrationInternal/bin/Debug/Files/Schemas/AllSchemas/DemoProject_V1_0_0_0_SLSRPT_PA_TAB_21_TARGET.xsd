@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://MSIT.EPS.ICOE.VL.X12867.CMODS.Schemas.PA.SLSRPTPATARGET" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://MSIT.EPS.ICOE.VL.X12867.CMODS.Schemas.PA.SLSRPTPATARGET" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <schemaEditorExtension:schemaInfo namespaceAlias="b" extensionClass="Microsoft.BizTalk.FlatFileExtension.FlatFileExtension" standardName="Flat File" xmlns:schemaEditorExtension="http://schemas.microsoft.com/BizTalk/2003/SchemaEditorExtensions" />
+      <b:schemaInfo standard="Flat File" codepage="65001" default_pad_char=" " pad_char_type="char" count_positions_by_byte="false" parser_optimization="complexity" lookahead_depth="3" suppress_empty_nodes="true" generate_empty_nodes="true" allow_early_termination="true" early_terminate_optional_fields="false" allow_message_breakup_of_infix_root="false" compile_parse_tables="false" root_reference="CMODSSlsRptTarget21" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CMODSSlsRptTarget21">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:recordInfo structure="delimited" child_order="postfix" sequence_number="1" preserve_delimiter_for_empty_data="true" suppress_trailing_delimiters="true" child_delimiter_type="hex" child_delimiter="0x0D 0x0A" />
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:annotation>
+          <xs:appinfo>
+            <groupInfo sequence_number="0" xmlns="http://schemas.microsoft.com/BizTalk/2003" />
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:element minOccurs="0" name="Preprocessing" type="xs:string">
+          <xs:annotation>
+            <xs:appinfo>
+              <b:fieldInfo justification="left" sequence_number="1" />
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="SalesReportHeader">
+          <xs:annotation>
+            <xs:appinfo>
+              <b:recordInfo structure="delimited" child_delimiter_type="hex" child_order="postfix" preserve_delimiter_for_empty_data="true" suppress_trailing_delimiters="true" child_delimiter="0x09" sequence_number="2" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:annotation>
+                <xs:appinfo>
+                  <groupInfo sequence_number="0" xmlns="http://schemas.microsoft.com/BizTalk/2003" />
+                </xs:appinfo>
+              </xs:annotation>
+              <xs:element minOccurs="0" name="Header">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:recordInfo structure="delimited" preserve_delimiter_for_empty_data="true" suppress_trailing_delimiters="false" sequence_number="1" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:attribute default="CMODHEADER" name="CMODHEADER">
+                    <xs:annotation>
+                      <xs:appinfo>
+                        <b:fieldInfo sequence_number="1" justification="left" pad_char_type="hex" pad_char="0x20" />
+                      </xs:appinfo>
+                    </xs:annotation>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="0" />
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="EDICode">
+                    <xs:annotation>
+                      <xs:appinfo>
+                        <b:fieldInfo sequence_number="2" justification="left" pad_char_type="hex" pad_char="0x20" min_length_with_pad="17" />
+                      </xs:appinfo>
+                    </xs:annotation>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="17" />
+                        <xs:minLength value="0" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="GS">
+                    <xs:annotation>
+                      <xs:appinfo>
+                        <b:fieldInfo sequence_number="3" justification="left" pad_char_type="hex" pad_char="0x20" min_length_with_pad="17" />
+                      </xs:appinfo>
+                    </xs:annotation>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="17" />
+                        <xs:minLength value="0" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute default="DI" name="HReport">
+                    <xs:annotation>
+                      <xs:appinfo>
+                        <b:fieldInfo sequence_number="4" justification="left" pad_char_type="hex" pad_char="0x20" min_length_with_pad="4" />
+                      </xs:appinfo>
+                    </xs:annotation>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                        <xs:minLength value="0" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="HCompanyName">
+                    <xs:annotation>
+                      <xs:appinfo>
+                        <b:fieldInfo sequence_number="5" justification="left" pad_char_type="hex" pad_char="0x20" min_length_with_pad="35" />
+                      </xs:appinfo>
+                    </xs:annotation>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="35" />
+                        <xs:minLength value="0" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="CompanyName" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="2" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="CompanyDunsNumber" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="3" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ResendIndicator" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="4" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ReportCloseDate" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="5" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromName" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="6" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromIdentifier" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="7" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromAddress1" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="8" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromAddress2" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="9" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromCity" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="10" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromStateOrProvince" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="11" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromPostalCode" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="12" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromCountry" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="13" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromContactName" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="14" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromContactTelephone" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="15" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SellFromContactFax" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="16" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromName" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="17" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromIdentifier" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="18" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromAddress1" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="19" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromAddress2" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="20" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromCity" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="21" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromStateOrProvince" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="22" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromPostalCode" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="23" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromCountry" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="24" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromContactName" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="25" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromContactTelephone" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="26" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipFromContactFax" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="27" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="EndUserFlag" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="28" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToName" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="29" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToIdentifier" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="30" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToAddress1" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="31" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToAddress2" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="32" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToCity" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="33" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToStateOrProvince" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="34" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToPostalCode" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="35" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToCountry" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="36" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToContactName" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="37" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToContactTelephone" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="38" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="BillToContactFax" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="39" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipToName" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="40" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipToIdentifier" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="41" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipToTaxID" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="42" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipToAddress1" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="43" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipToAddress2" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="44" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipToCity" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="45" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipToStateOrProvince" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="46" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipToPostalCode" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="47" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ShipToCountry" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="48" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="SoldQuantity" type="xs:float">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="49" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ReturnQuantity" type="xs:float">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="50" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="TransferQuantity" type="xs:float">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="51" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ManufacturerPartNum" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="52" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="UPCPartNum" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="53" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="VendorPartNum" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="54" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="UnitPrice" type="xs:float">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="55" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="ItemDescription" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo sequence_number="56" justification="left">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="InvoiceNum" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo justification="left" sequence_number="57">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="InvoiceDate" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <b:fieldInfo justification="left" sequence_number="58">
+                    </b:fieldInfo>
+                  </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

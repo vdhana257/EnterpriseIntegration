@@ -1,0 +1,14 @@
+-
+28-05-2019 14:31:04 Exporting Partner to Json: Contoso
+28-05-2019 14:31:04 No certificate is configured with the Partner
+28-05-2019 14:31:04 Partner Contoso exported to Json with Name Contoso
+28-05-2019 14:31:04 Partner Export to Json Successfull: Contoso
+-
+-
+28-05-2019 14:31:09 Exporting agreement to Json: 850
+28-05-2019 14:33:12 Agreement Export to Json Failed. Reason:
+Value cannot be null.
+Parameter name: source
+-
+-
+28-05-2019 14:33:12 Exporting agreement to Json: 810

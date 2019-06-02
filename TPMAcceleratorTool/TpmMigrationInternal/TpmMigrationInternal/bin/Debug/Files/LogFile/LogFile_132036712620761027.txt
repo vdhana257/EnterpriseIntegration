@@ -1,0 +1,11 @@
+-
+30-05-2019 11:57:57 Exporting Partner to Json: Fabrikam
+30-05-2019 11:57:57 No certificate is configured with the Partner
+30-05-2019 11:57:57 Partner Fabrikam exported to Json with Name Fabrikam
+30-05-2019 11:57:57 Partner Export to Json Successfull: Fabrikam
+-
+-
+30-05-2019 11:58:03 Exporting agreement to Json: 850-855
+30-05-2019 11:58:29 Agreement Export to Json Failed. Reason:
+Could not find a part of the path 'D:\Project\Others\INT-PLT-AISc-AIS-B2B-BtoB\Src\Tools\TpmMigrationInternal\TpmMigrationInternal\bin\Debug\Files\Contoso\Contoso_InboundPartnerDetails.json'.
+-

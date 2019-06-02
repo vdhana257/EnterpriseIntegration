@@ -1,0 +1,1 @@
+{"properties":{"partnerType":"B2B","content":{"b2b":{"businessIdentities":[{"qualifier":"ZZ","value":"ABC"}]}},"createdTime":"2019-05-30T18:52:47.446691+05:30","changedTime":"2019-05-30T18:52:47.446691+05:30","metadata":{"migrationInfo":{"originalName":"Contoso"}}},"id":"","name":"Contoso","type":"Microsoft.Logic/integrationAccounts/partners"}

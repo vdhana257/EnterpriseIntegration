@@ -1,0 +1,6 @@
+-
+21-05-2019 10:28:07 Exporting Partner to Json: Sarcom
+21-05-2019 10:28:07 No certificate is configured with the Partner
+21-05-2019 10:28:08 Partner Sarcom exported to Json with Name Sarcom
+21-05-2019 10:28:08 Partner Export to Json Successfull: Sarcom
+-

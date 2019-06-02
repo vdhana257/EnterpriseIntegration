@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.microsoft.com/Edi/X12" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://schemas.microsoft.com/Edi/X12" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="X12_997_Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="ST" />
+        <xs:element name="AK1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AK101">
+                <xs:simpleType>
+                  <xs:restriction base="X12_ID">
+                    <xs:minLength value="2" />
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AK102">
+                <xs:simpleType>
+                  <xs:restriction base="X12_ID">
+                    <xs:minLength value="1" />
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="AK103">
+                <xs:simpleType>
+                  <xs:restriction base="X12_ID">
+                    <xs:minLength value="1" />
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="AK2Loop">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AK2">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AK201">
+                      <xs:simpleType>
+                        <xs:restriction base="X12_ID">
+                          <xs:minLength value="3" />
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="AK202">
+                      <xs:simpleType>
+                        <xs:restriction base="X12_ID">
+                          <xs:maxLength value="9" />
+                          <xs:minLength value="4" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="AK203">
+                      <xs:simpleType>
+                        <xs:restriction base="X12_ID">
+                          <xs:minLength value="1" />
+                          <xs:maxLength value="35" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="AK2AK3Loop">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="AK3">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="AK301">
+                            <xs:simpleType>
+                              <xs:restriction base="X12_ID">
+                                <xs:maxLength value="3" />
+                                <xs:minLength value="2" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="AK302">
+                            <xs:simpleType>
+                              <xs:restriction base="X12_N0">
+                                <xs:maxLength value="6" />
+                                <xs:minLength value="1" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="AK303">
+                            <xs:simpleType>
+                              <xs:restriction base="X12_AN">
+                                <xs:maxLength value="6" />
+                                <xs:minLength value="1" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="AK304">
+                            <xs:simpleType>
+                              <xs:restriction base="X12_ID">
+                                <xs:enumeration value="1" />
+                                <xs:enumeration value="2" />
+                                <xs:enumeration value="3" />
+                                <xs:enumeration value="4" />
+                                <xs:enumeration value="5" />
+                                <xs:enumeration value="6" />
+                                <xs:enumeration value="7" />
+                                <xs:enumeration value="8" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="AK4">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="AK41">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="AK41.1">
+                                  <xs:simpleType>
+                                    <xs:restriction base="X12_N0">
+                                      <xs:maxLength value="2" />
+                                      <xs:minLength value="1" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element minOccurs="0" name="AK41.2">
+                                  <xs:simpleType>
+                                    <xs:restriction base="X12_N0">
+                                      <xs:maxLength value="2" />
+                                      <xs:minLength value="1" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element minOccurs="0" name="AK41.3">
+                                  <xs:simpleType>
+                                    <xs:restriction base="X12_N0">
+                                      <xs:minLength value="1" />
+                                      <xs:maxLength value="4" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="AK42" type="xs:string" />
+                          <xs:element name="AK43">
+                            <xs:simpleType>
+                              <xs:restriction base="X12_ID">
+                                <xs:enumeration value="1" />
+                                <xs:enumeration value="2" />
+                                <xs:enumeration value="3" />
+                                <xs:enumeration value="4" />
+                                <xs:enumeration value="5" />
+                                <xs:enumeration value="6" />
+                                <xs:enumeration value="7" />
+                                <xs:enumeration value="8" />
+                                <xs:enumeration value="9" />
+                                <xs:enumeration value="10" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="AK44">
+                            <xs:simpleType>
+                              <xs:restriction base="X12_ID">
+                                <xs:maxLength value="99" />
+                                <xs:minLength value="1" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AK5">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AK501">
+                      <xs:simpleType>
+                        <xs:restriction base="X12_ID">
+                          <xs:enumeration value="A" />
+                          <xs:enumeration value="E" />
+                          <xs:enumeration value="M" />
+                          <xs:enumeration value="R" />
+                          <xs:enumeration value="W" />
+                          <xs:enumeration value="X" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="AK502">
+                      <xs:simpleType>
+                        <xs:restriction base="X12_ID">
+                          <xs:enumeration value="1" />
+                          <xs:enumeration value="2" />
+                          <xs:enumeration value="3" />
+                          <xs:enumeration value="4" />
+                          <xs:enumeration value="5" />
+                          <xs:enumeration value="6" />
+                          <xs:enumeration value="7" />
+                          <xs:enumeration value="8" />
+                          <xs:enumeration value="9" />
+                          <xs:enumeration value="10" />
+                          <xs:enumeration value="11" />
+                          <xs:enumeration value="12" />
+                          <xs:enumeration value="13" />
+                          <xs:enumeration value="15" />
+                          <xs:enumeration value="16" />
+                          <xs:enumeration value="17" />
+                          <xs:enumeration value="23" />
+                          <xs:enumeration value="24" />
+                          <xs:enumeration value="25" />
+                          <xs:enumeration value="26" />
+                          <xs:enumeration value="27" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="AK503" type="xs:string" />
+                    <xs:element minOccurs="0" name="AK504" type="xs:string" />
+                    <xs:element minOccurs="0" name="AK505" type="xs:string" />
+                    <xs:element minOccurs="0" name="AK506" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AK9">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AK901">
+                <xs:simpleType>
+                  <xs:restriction base="X12_ID">
+                    <xs:enumeration value="A" />
+                    <xs:enumeration value="E" />
+                    <xs:enumeration value="M" />
+                    <xs:enumeration value="P" />
+                    <xs:enumeration value="R" />
+                    <xs:enumeration value="W" />
+                    <xs:enumeration value="X" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AK902">
+                <xs:simpleType>
+                  <xs:restriction base="X12_N0">
+                    <xs:maxLength value="6" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AK903">
+                <xs:simpleType>
+                  <xs:restriction base="X12_N0">
+                    <xs:maxLength value="6" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AK904">
+                <xs:simpleType>
+                  <xs:restriction base="X12_N0">
+                    <xs:maxLength value="6" />
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="AK905">
+                <xs:simpleType>
+                  <xs:restriction base="X12_ID">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                    <xs:enumeration value="3" />
+                    <xs:enumeration value="4" />
+                    <xs:enumeration value="5" />
+                    <xs:enumeration value="6" />
+                    <xs:enumeration value="7" />
+                    <xs:enumeration value="8" />
+                    <xs:enumeration value="9" />
+                    <xs:enumeration value="10" />
+                    <xs:enumeration value="11" />
+                    <xs:enumeration value="12" />
+                    <xs:enumeration value="13" />
+                    <xs:enumeration value="14" />
+                    <xs:enumeration value="15" />
+                    <xs:enumeration value="16" />
+                    <xs:enumeration value="17" />
+                    <xs:enumeration value="18" />
+                    <xs:enumeration value="19" />
+                    <xs:enumeration value="20" />
+                    <xs:enumeration value="21" />
+                    <xs:enumeration value="22" />
+                    <xs:enumeration value="23" />
+                    <xs:enumeration value="24" />
+                    <xs:enumeration value="25" />
+                    <xs:enumeration value="26" />
+                    <xs:enumeration value="27" />
+                    <xs:enumeration value="28" />
+                    <xs:enumeration value="29" />
+                    <xs:enumeration value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="AK906">
+                <xs:simpleType>
+                  <xs:restriction base="X12_ID">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                    <xs:enumeration value="3" />
+                    <xs:enumeration value="4" />
+                    <xs:enumeration value="5" />
+                    <xs:enumeration value="6" />
+                    <xs:enumeration value="7" />
+                    <xs:enumeration value="8" />
+                    <xs:enumeration value="9" />
+                    <xs:enumeration value="10" />
+                    <xs:enumeration value="11" />
+                    <xs:enumeration value="12" />
+                    <xs:enumeration value="13" />
+                    <xs:enumeration value="14" />
+                    <xs:enumeration value="15" />
+                    <xs:enumeration value="16" />
+                    <xs:enumeration value="17" />
+                    <xs:enumeration value="18" />
+                    <xs:enumeration value="19" />
+                    <xs:enumeration value="20" />
+                    <xs:enumeration value="21" />
+                    <xs:enumeration value="22" />
+                    <xs:enumeration value="23" />
+                    <xs:enumeration value="24" />
+                    <xs:enumeration value="25" />
+                    <xs:enumeration value="26" />
+                    <xs:enumeration value="27" />
+                    <xs:enumeration value="28" />
+                    <xs:enumeration value="29" />
+                    <xs:enumeration value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="AK907">
+                <xs:simpleType>
+                  <xs:restriction base="X12_ID">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                    <xs:enumeration value="3" />
+                    <xs:enumeration value="4" />
+                    <xs:enumeration value="5" />
+                    <xs:enumeration value="6" />
+                    <xs:enumeration value="7" />
+                    <xs:enumeration value="8" />
+                    <xs:enumeration value="9" />
+                    <xs:enumeration value="10" />
+                    <xs:enumeration value="11" />
+                    <xs:enumeration value="12" />
+                    <xs:enumeration value="13" />
+                    <xs:enumeration value="14" />
+                    <xs:enumeration value="15" />
+                    <xs:enumeration value="16" />
+                    <xs:enumeration value="17" />
+                    <xs:enumeration value="18" />
+                    <xs:enumeration value="19" />
+                    <xs:enumeration value="20" />
+                    <xs:enumeration value="21" />
+                    <xs:enumeration value="22" />
+                    <xs:enumeration value="23" />
+                    <xs:enumeration value="24" />
+                    <xs:enumeration value="25" />
+                    <xs:enumeration value="26" />
+                    <xs:enumeration value="27" />
+                    <xs:enumeration value="28" />
+                    <xs:enumeration value="29" />
+                    <xs:enumeration value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="AK908">
+                <xs:simpleType>
+                  <xs:restriction base="X12_ID">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                    <xs:enumeration value="3" />
+                    <xs:enumeration value="4" />
+                    <xs:enumeration value="5" />
+                    <xs:enumeration value="6" />
+                    <xs:enumeration value="7" />
+                    <xs:enumeration value="8" />
+                    <xs:enumeration value="9" />
+                    <xs:enumeration value="10" />
+                    <xs:enumeration value="11" />
+                    <xs:enumeration value="12" />
+                    <xs:enumeration value="13" />
+                    <xs:enumeration value="14" />
+                    <xs:enumeration value="15" />
+                    <xs:enumeration value="16" />
+                    <xs:enumeration value="17" />
+                    <xs:enumeration value="18" />
+                    <xs:enumeration value="19" />
+                    <xs:enumeration value="20" />
+                    <xs:enumeration value="21" />
+                    <xs:enumeration value="22" />
+                    <xs:enumeration value="23" />
+                    <xs:enumeration value="24" />
+                    <xs:enumeration value="25" />
+                    <xs:enumeration value="26" />
+                    <xs:enumeration value="27" />
+                    <xs:enumeration value="28" />
+                    <xs:enumeration value="29" />
+                    <xs:enumeration value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="AK909">
+                <xs:simpleType>
+                  <xs:restriction base="X12_ID">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                    <xs:enumeration value="3" />
+                    <xs:enumeration value="4" />
+                    <xs:enumeration value="5" />
+                    <xs:enumeration value="6" />
+                    <xs:enumeration value="7" />
+                    <xs:enumeration value="8" />
+                    <xs:enumeration value="9" />
+                    <xs:enumeration value="10" />
+                    <xs:enumeration value="11" />
+                    <xs:enumeration value="12" />
+                    <xs:enumeration value="13" />
+                    <xs:enumeration value="14" />
+                    <xs:enumeration value="15" />
+                    <xs:enumeration value="16" />
+                    <xs:enumeration value="17" />
+                    <xs:enumeration value="18" />
+                    <xs:enumeration value="19" />
+                    <xs:enumeration value="20" />
+                    <xs:enumeration value="21" />
+                    <xs:enumeration value="22" />
+                    <xs:enumeration value="23" />
+                    <xs:enumeration value="24" />
+                    <xs:enumeration value="25" />
+                    <xs:enumeration value="26" />
+                    <xs:enumeration value="27" />
+                    <xs:enumeration value="28" />
+                    <xs:enumeration value="29" />
+                    <xs:enumeration value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" ref="SE" />
+      </xs:sequence>
+      <xs:attribute name="IsGeneratedAck" type="xs:string" use="optional" />
+      <xs:attribute name="InterchangeActivityId" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="X12_ID">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="X12_AN">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="X12_N0">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:element name="ST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ST01">
+          <xs:simpleType>
+            <xs:restriction base="X12_AN">
+              <xs:maxLength value="3" />
+              <xs:minLength value="3" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ST02">
+          <xs:simpleType>
+            <xs:restriction base="X12_AN">
+              <xs:minLength value="4" />
+              <xs:maxLength value="9" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="ST03">
+          <xs:simpleType>
+            <xs:restriction base="X12_AN">
+              <xs:minLength value="1" />
+              <xs:maxLength value="35" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SE01">
+          <xs:simpleType>
+            <xs:restriction base="X12_AN">
+              <xs:minLength value="1" />
+              <xs:maxLength value="10" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="SE02">
+          <xs:simpleType>
+            <xs:restriction base="X12_AN">
+              <xs:minLength value="4" />
+              <xs:maxLength value="9" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

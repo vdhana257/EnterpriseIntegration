@@ -1,0 +1,13 @@
+-
+30-05-2019 15:31:38 Exporting Partner to Json: Contoso
+30-05-2019 15:31:38 No certificate is configured with the Partner
+30-05-2019 15:31:39 Partner Contoso exported to Json with Name Contoso
+30-05-2019 15:31:39 Partner Export to Json Successfull: Contoso
+-
+-
+30-05-2019 15:32:13 Exporting agreement to Json: Fabrikam_850-855
+30-05-2019 15:32:40 Agreement Fabrikam_850-855 Exported to Json with Name Fabrikam_850-855
+30-05-2019 15:32:40 Agreement Export to Json Successfull: Fabrikam_850-855
+-
+30-05-2019 15:35:58 Schema Output Directory is Files\Schemas\ 
+30-05-2019 15:36:00 The configured DLL Directory Location is Empty. Assuming DLLs are to be read from the GAC

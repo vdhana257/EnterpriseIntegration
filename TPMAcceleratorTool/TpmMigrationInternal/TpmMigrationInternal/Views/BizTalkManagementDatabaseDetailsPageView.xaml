@@ -1,0 +1,111 @@
+﻿<UserControl x:Class="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.BizTalkManagementDatabaseDetailsPageView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:tpmMigration="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration"
+      xmlns:password="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration"
+      mc:Ignorable="d" d:DesignWidth="721" d:DesignHeight="503">
+
+    <UserControl.Resources>
+        <tpmMigration:BoolToOppositeBoolConverter x:Key="boolToOppositeBoolConverter" />
+        <tpmMigration:BoolToVisibilityConverter x:Key="boolToVisibilityConverter"/>
+    </UserControl.Resources>
+
+    <Grid Name="Layout">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="33" />
+            <RowDefinition Height="33" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="33" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="(Please note that this database should contain the details of all parties and agreements)" Margin="0,0,-0.2,33.4" Grid.RowSpan="2" Foreground="DarkGray" Grid.Column="1"/>
+        <!-- Server Name-->
+        <Grid Grid.Row="1" Grid.Column="1" Margin="3,0.2,-0.2,0.4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{Binding ServerNameLabel, Source={StaticResource Resources}}" Name="ServerNameLabel" VerticalAlignment="Center"/>
+            <TextBox Style="{StaticResource StandardTextBox}" Grid.Column="1" Text="{Binding Path=ServerName}" Name="ServerNameTextBox" Width="379" VerticalAlignment="Top"/>
+        </Grid>
+
+        <!--Database Name-->
+        <Grid Grid.Row="1" Grid.Column="1" Margin="3,33.2,-0.2,0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{Binding DatabaseNameLabel, Source={StaticResource Resources}}" Name="DatabaseNameLabel" VerticalAlignment="Center"/>
+            <TextBox Style="{StaticResource StandardTextBox}" Grid.Column="1" Text="{Binding DatabaseName}" Name="DatabaseNameTextBox" Width="379" VerticalAlignment="Top"/>
+        </Grid>
+
+        <!--Credentials-->
+
+        <TextBlock Text="{Binding AuthenticationSectionTitle, Source={StaticResource Resources}}" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="0,30,-0.2,0" FontWeight="Black" Height="16"/>
+        <Grid Grid.Row="4" Grid.Column="1" Margin="3,0.2,-0.2,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Content="(Please note that the account being used for authentication should have read access to Biztalk Management Database)" Grid.ColumnSpan="3" Margin="-3,0,19.4,10" Grid.Row="0"  Grid.Column="0"  Foreground="DarkGray"></Label>
+            <!--Windows Auth-->
+            <RadioButton Style="{StaticResource StandardRadioButton}" Grid.Row="1" Grid.ColumnSpan="3" Content="{Binding WindowsAuthenticationLabel, Source={StaticResource Resources}}" IsChecked="{Binding Path=IsIntegratedSecurity}"/>
+
+            <!--SQL Auth-->
+            <RadioButton Style="{StaticResource StandardRadioButton}" Grid.Row="2" Grid.ColumnSpan="3" Content="{Binding SqlAuthenticationLabel, Source={StaticResource Resources}}" IsChecked="{Binding Path=IsIntegratedSecurity, Converter={StaticResource boolToOppositeBoolConverter}}" Name="SQLAuthentication"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding DbUserNameLabel, Source={StaticResource Resources}}" Visibility="{Binding IsChecked, ElementName=SQLAuthentication,Converter={StaticResource boolToVisibilityConverter}}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox Style="{StaticResource StandardTextBox}" Grid.Row="3" Grid.Column="2" Text="{Binding Path=UserName}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="379" Visibility="{Binding IsChecked, ElementName=SQLAuthentication,Converter={StaticResource boolToVisibilityConverter}}" />
+            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding DbPasswordLabel, Source={StaticResource Resources}}" Visibility="{Binding IsChecked, ElementName=SQLAuthentication,Converter={StaticResource boolToVisibilityConverter}}" VerticalAlignment="Center"/>
+            <password:BindablePasswordBox  Password ="{Binding Path=Password}" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="379" Height="28" Visibility="{Binding IsChecked, ElementName=SQLAuthentication,Converter={StaticResource boolToVisibilityConverter}}" Margin="5.2,5,0,-0.2"/>
+        </Grid>
+
+
+        <!--Different Account -->
+        <!--<TextBlock Text="{Binding RemoteServerSectionTitle, Source={StaticResource Resources}}" Grid.Row="4" Grid.ColumnSpan="2" VerticalAlignment="Top"  FontWeight="Black"/>
+        <Grid Grid.Row="5" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="{Binding RemoteServerNameLabel,Source={StaticResource Resources}}" Name="RemoteServerNameLabel" VerticalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="3" Height="24" Margin="31,6,0,10" HorizontalAlignment="Left" Width="133"/>
+            <TextBox Style="{StaticResource StandardTextBox}" Width ="200" Text="{Binding RemoteServerName}" Name="RemoteServerNameTextBox" VerticalAlignment="Top" Grid.Row="0" Margin="40,0,250.8,0" Grid.Column="2"/>
+
+            <CheckBox Grid.Row="1" Grid.ColumnSpan="2" Content="{Binding DifferentAccountSectionTitle, Source={StaticResource Resources}}" IsChecked="{Binding Path=UseDifferentAccount , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="UseDifferentAccount" Grid.Column="1" Margin="10.4,10,-59.2,21.2" Grid.RowSpan="5"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding RemoteDomainNameLabel, Source={StaticResource Resources}}" Visibility="{Binding IsChecked, ElementName=UseDifferentAccount,Converter={StaticResource boolToVisibilityConverter}}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox Style="{StaticResource StandardTextBox}" Grid.Row="2" Grid.Column="2" Text="{Binding Path=RemoteDomainName}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="379" Visibility="{Binding IsChecked, ElementName=UseDifferentAccount,Converter={StaticResource boolToVisibilityConverter}}" />
+            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding RemoteUserNameLabel, Source={StaticResource Resources}}" Visibility="{Binding IsChecked, ElementName=UseDifferentAccount,Converter={StaticResource boolToVisibilityConverter}}" VerticalAlignment="Center"/>
+            <TextBox Style="{StaticResource StandardTextBox}" Grid.Row="3" Grid.Column="2" Text="{Binding Path=RemoteUserName}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="379" Visibility="{Binding IsChecked, ElementName=UseDifferentAccount,Converter={StaticResource boolToVisibilityConverter}}" />
+            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding RemotePasswordLabel, Source={StaticResource Resources}}" Visibility="{Binding IsChecked, ElementName=UseDifferentAccount,Converter={StaticResource boolToVisibilityConverter}}" VerticalAlignment="Center"/>
+            <password:BindablePasswordBox  Password ="{Binding Path=RemoteUserPassword}" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="379" Height="28" Visibility="{Binding IsChecked, ElementName=UseDifferentAccount,Converter={StaticResource boolToVisibilityConverter}}" Margin="5.2,5,0,-0.2"/>
+        </Grid>-->
+    </Grid>
+</UserControl>

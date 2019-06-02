@@ -1,0 +1,9 @@
+-
+28-05-2019 16:00:51 Exporting Partner to Json: Contoso
+28-05-2019 16:00:51 No certificate is configured with the Partner
+28-05-2019 16:00:51 Partner Contoso exported to Json with Name Contoso
+28-05-2019 16:00:51 Partner Export to Json Successfull: Contoso
+-
+-
+28-05-2019 16:00:56 Exporting agreement to Json: 850
+28-05-2019 16:04:59 Error while Consolidating agreements. Cannot Read the agreement 850 from local folder. Reason : Could not find file 'D:\Project\Others\INT-PLT-AISc-AIS-B2B-BtoB\Src\Tools\TpmMigrationInternal\TpmMigrationInternal\bin\Debug\Files\Agreements\850.json'.

@@ -1,0 +1,14 @@
+-
+23-05-2019 11:28:27 Exporting Partner to Json: Sarcom
+23-05-2019 11:28:27 No certificate is configured with the Partner
+23-05-2019 11:28:27 Partner Sarcom exported to Json with Name Sarcom
+23-05-2019 11:28:27 Partner Export to Json Successfull: Sarcom
+-
+-
+23-05-2019 11:29:11 Exporting agreement to Json: Microsoft_Sarcom_867_810_850_855
+23-05-2019 11:33:00 Agreement Export to Json Failed. Reason:
+Index was outside the bounds of the array.
+-
+23-05-2019 11:33:08 Agreement Export to Json Failed. Reason:
+Failed to create individual agreement MSFT_Sarcom_867_00401_CMODS_IN. One or more errors occurred. : Index was outside the bounds of the array.
+-

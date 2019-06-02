@@ -1,0 +1,8 @@
+-
+22-05-2019 20:12:47 Exporting Partner to Json: Sarcom
+22-05-2019 20:12:47 No certificate is configured with the Partner
+22-05-2019 20:12:47 Partner Sarcom exported to Json with Name Sarcom
+22-05-2019 20:12:47 Partner Export to Json Successfull: Sarcom
+-
+-
+22-05-2019 20:13:14 Exporting agreement to Json: MSFT_Sarcom_MSL_X12

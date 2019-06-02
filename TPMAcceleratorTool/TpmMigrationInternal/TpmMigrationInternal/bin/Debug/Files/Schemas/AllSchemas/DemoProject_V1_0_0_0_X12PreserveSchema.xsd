@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.microsoft.com/BizTalk/EDI/X12/2006/InterchangeXML" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="http://schemas.microsoft.com/Edi/X12ServiceSchema" xmlns:ns3="http://MSIT.EAS.ICOE.COM.X128674010.Schemas.PA.X1200401867" targetNamespace="http://schemas.microsoft.com/BizTalk/EDI/X12/2006/InterchangeXML" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="DemoProject.MSIT_EAS_ICOE_COM_X128674010_Shared_Schemas_PA_V1_0_0_0_Headers" namespace="http://schemas.microsoft.com/Edi/X12ServiceSchema" />
+  <xs:import schemaLocation="DemoProject.X1200401867" namespace="http://MSIT.EAS.ICOE.COM.X128674010.Schemas.PA.X1200401867" />
+  <xs:annotation>
+    <xs:appinfo>
+      <b:references>
+        <b:reference targetNamespace="http://MSIT.EAS.ICOE.COM.X128674010.Schemas.PA.X1200401867" />
+        <b:reference targetNamespace="http://schemas.microsoft.com/Edi/X12ServiceSchema" />
+      </b:references>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="X12InterchangeXml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns0:ISA" />
+        <xs:element name="FunctionalGroup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="ns0:GS" />
+              <xs:element maxOccurs="unbounded" name="TransactionSet">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" ref="ns3:X12_00401_867" />
+                  </xs:sequence>
+                  <xs:attribute name="DocType" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element ref="ns0:GE" />
+            </xs:sequence>
+            <xs:attribute name="DocType" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="ns0:IEA" />
+      </xs:sequence>
+      <xs:attribute name="DelimiterSetSerializedData" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
