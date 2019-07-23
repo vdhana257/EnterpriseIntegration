@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--<Import Project="$(INETROOT)\private\source\Integration\Microsoft.Build.AppFabricICB.Settings" />-->
+  <PropertyGroup>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F3441E1-45DA-473B-B1F0-04CE216FA470}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration</RootNamespace>
+    <AssemblyName>MigrationSuite</AssemblyName>
+    <StyleCopVersion>4.7</StyleCopVersion>
+    <FxCopUserFlags>$(FxCopUserFlags) /ruleset:=$(PrivateExternalPath)\fxcop\BizTalkMinimum.ruleset</FxCopUserFlags>
+    <StartupObject>Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.App</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="DiffPlex, Version=1.4.4.0, Culture=neutral, PublicKeyToken=1d35e91d1bd7bc0f, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiffPlex.1.4.4\lib\net40\DiffPlex.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Documents.Client, Version=1.19.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Azure.Documents.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.KeyVault.2.0.6\lib\net45\Microsoft.Azure.KeyVault.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.WebKey, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.KeyVault.WebKey.2.0.4\lib\net45\Microsoft.Azure.KeyVault.WebKey.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Management.Logic">
+      <HintPath>References\Microsoft.Azure.Management.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.B2B.PartnerManagement">
+      <HintPath>References\Microsoft.BizTalk.B2B.PartnerManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.ExplorerOM, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Microsoft.BizTalk.ExplorerOM.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\New folder\ServerMigrationTool2\MigrationTool\bin\Debug\Microsoft.BizTalk.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Biztalk.RuleEngineExtensions, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\New folder\ServerMigrationTool2\MigrationTool\bin\Debug\Microsoft.Biztalk.RuleEngineExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(INETROOT)\private\external\WCFDataServices\v5.3\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(INETROOT)\private\external\WCFDataServices\v5.3\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(INETROOT)\private\external\WCFDataServices\v5.3\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.17.2.31801, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.17.2\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.17.2.31801, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.17.2\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.2.3.2\lib\net45\Microsoft.Rest.ClientRuntime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime.Azure, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.Azure.3.3.1\lib\net45\Microsoft.Rest.ClientRuntime.Azure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.RuleEngine, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\New folder\ServerMigrationTool2\MigrationTool\bin\Debug\Microsoft.RuleEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.3.2.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.3.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Storage.9.3.3\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Spatial, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(INETROOT)\private\external\WCFDataServices\v5.3\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Views\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ServerMigration\BizTalkAdminOperations.xaml.cs" />
+    <Compile Include="ServerMigration\BizTalkApp.cs" />
+    <Compile Include="ServerMigration\BizTalkAssemblies.cs" />
+    <Compile Include="Common\AppConstants.cs" />
+    <Compile Include="Common\ApplicationContext.cs" />
+    <Compile Include="Common\BindablePasswordBox.cs" />
+    <Compile Include="Common\Command.cs" />
+    <Compile Include="Common\Converters\BoolToColorConverter.cs" />
+    <Compile Include="Common\Converters\BoolToOppositeBoolConverter.cs" />
+    <Compile Include="Common\Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Common\Converters\MigrationStatusEnumToImagePathConverter.cs" />
+    <Compile Include="Common\Converters\NullToVisibilityConverter.cs" />
+    <Compile Include="Common\Converters\ProgressBarStateToVisibilityConverter.cs" />
+    <Compile Include="Common\Converters\SelectionToVisibilityConverter.cs" />
+    <Compile Include="Common\Converters\StatusInfoTypeEnumToImagePathConverter.cs" />
+    <Compile Include="Common\Converters\TextInputToVisibilityConverter.cs" />
+    <Compile Include="Common\DataContextChangedHelper.cs" />
+    <Compile Include="Common\DataGridExtensions.cs" />
+    <Compile Include="Common\DocumentDbHelper.cs" />
+    <Compile Include="Common\ErrorEventArgs.cs" />
+    <Compile Include="Common\MetaDataContext.cs" />
+    <Compile Include="ServerMigration\HomePage.xaml.cs" />
+    <Compile Include="ServerMigration\HostInstance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServerMigration\HostSchema.cs" />
+    <Compile Include="ServerMigration\HostSetting.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogicConfiguration\CompareResult.xaml.cs">
+      <DependentUpon>CompareResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogicConfiguration\JsonList.cs" />
+    <Compile Include="LogicConfiguration\LogicAppDetails.cs" />
+    <Compile Include="LogicConfiguration\LogicAppsContext.cs" />
+    <Compile Include="LogicConfiguration\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogicConfiguration\ResourceGroups.cs" />
+    <Compile Include="LogicConfiguration\ResultsInfo.xaml.cs">
+      <DependentUpon>ResultsInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogicConfiguration\Subscriptions.cs" />
+    <Compile Include="LogicConfiguration\UriHelper.cs" />
+    <Compile Include="LogicConfiguration\VersionSelection.xaml.cs">
+      <DependentUpon>VersionSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogicConfiguration\Workflows.cs" />
+    <Compile Include="LogicConfiguration\WorkflowVersion.cs" />
+    <Compile Include="ServerMigration\MainWindow.xaml.cs" />
+    <Compile Include="Migrators\CerificateMigrator.cs" />
+    <Compile Include="Migrators\IApplicationContext.cs" />
+    <Compile Include="Common\IDataContextChangedHandler.cs" />
+    <Compile Include="Common\UserImpersonation.cs" />
+    <Compile Include="Common\IntegrationAccountContext.cs" />
+    <Compile Include="Common\Navigator.cs" />
+    <Compile Include="Common\NavigatorNavigatingEventArgs.cs" />
+    <Compile Include="Common\PropertyChangedHelper.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\ServiceReference.cs" />
+    <Compile Include="Common\TpmContext.cs" />
+    <Compile Include="Common\TpmContextFactory.cs" />
+    <Compile Include="Migrators\LAPartnerMigrator.cs" />
+    <Compile Include="Migrators\MapMigrator.cs" />
+    <Compile Include="Migrators\MetaDataContextMigrator.cs" />
+    <Compile Include="Migrators\SchemaMigrator.cs" />
+    <Compile Include="Models\ApplicationDetails.cs" />
+    <Compile Include="Models\AuthenticationAccessToken.cs" />
+    <Compile Include="Models\BiztalkServerDetails.cs" />
+    <Compile Include="Models\Certificate.cs" />
+    <Compile Include="Models\CertificateStore.cs" />
+    <Compile Include="Models\ImportedArtifact.cs" />
+    <Compile Include="Models\IntegrationAccount.cs" />
+    <Compile Include="Models\IntegrationAccountDetails.cs" />
+    <Compile Include="Models\JsonCertificate.cs" />
+    <Compile Include="Models\EDIFACTAgreementJson.cs" />
+    <Compile Include="Models\ExportedArtifact.cs" />
+    <Compile Include="Models\KeyVault.cs" />
+    <Compile Include="Models\Metadata.cs" />
+    <Compile Include="Models\MigrationAuditInformation.cs" />
+    <Compile Include="Models\JsonPartner.cs" />
+    <Compile Include="Models\JsonSchema.cs" />
+    <Compile Include="Models\ResourceGroup.cs" />
+    <Compile Include="Models\SendPortDetails.cs" />
+    <Compile Include="Models\Subscriptions.cs" />
+    <Compile Include="Models\X12AgreementJson.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ServerMigration\RcvSndHandlers.cs" />
+    <Compile Include="ServerMigration\ServerHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServerMigration\Servers.cs" />
+    <Compile Include="ServerMigration\Settings.xaml.cs" />
+    <Compile Include="Utilities\DatabaseHelper.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Utilities\ExceptionHelper.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DataServiceContextExtensions.cs" />
+    <Compile Include="Utilities\FileOperations.cs" />
+    <Compile Include="Utilities\Mappings.cs" />
+    <Compile Include="Utilities\StringOperations.cs" />
+    <Compile Include="Utilities\TraceProvider.cs" />
+    <Compile Include="Migrators\AgreementMigrator.cs" />
+    <Compile Include="Migrators\BusinessIdentityMigrator.cs" />
+    <Compile Include="Migrators\BusinessProfileMigrator.cs" />
+    <Compile Include="Migrators\CustomSettingsMigrator.cs" />
+    <Compile Include="Migrators\EnvelopeOverridesMigrator.cs" />
+    <Compile Include="Migrators\OnewayAgreementMigrator.cs" />
+    <Compile Include="Migrators\ProtocolSettingsMigrator.cs" />
+    <Compile Include="Migrators\TpmMigrator.cs" />
+    <Compile Include="Migrators\TpmMigrationException.cs" />
+    <Compile Include="Migrators\ValidationOverridesMigrator.cs" />
+    <Compile Include="Models\IntegrationServiceDetails.cs" />
+    <Compile Include="Models\MigrationStatus.cs" />
+    <Compile Include="Utilities\AcsHelper.cs" />
+    <Compile Include="Utilities\UrlHelper.cs" />
+    <Compile Include="ViewModels\ControlViewModels\ApplicationWizardNavigationViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\AgreementMigrationItemViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\AgreementSelectionItemViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\MapMigrationItemViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\MapSelectionItemViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\MigrationItemViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\PartnerMigrationItemViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\PartnerSelectionItemViewModel.cs" />
+    <Compile Include="Models\AS2AgreementJson.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\SchemaMigrationItemViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\SchemaSelectionItemViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\ApplicationManagementWorkspaceViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\ApplicationSelectionPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\ExportArtifactsStatusPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\ExportToIntegrationAccountPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\LogicAppAgreementViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\ManagementWorkspaceViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\MapMigrationPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\MapSelectionPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\MigrationPageViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\SelectionItemViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\SchemaMigrationPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\SchemaSelectionPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\SelectionPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\AgreementMigrationPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\AgreementSelectionPageViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\IPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\IntegrationServiceDetailsPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\PartnerMigrationPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\PartnerSelectionPageViewModel.cs" />
+    <Compile Include="ViewModels\ControlViewModels\ProgressBarViewModel.cs" />
+    <Compile Include="ViewModels\ControlViewModels\StatusBarViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\SummaryPageViewModel.cs" />
+    <Compile Include="ViewModels\PageViewModels\WelcomePageViewModel.cs" />
+    <Compile Include="ViewModels\ListItemViewModels\WizardStepsListItemViewModel.cs" />
+    <Compile Include="Views\AgreementMigrationPageView.xaml.cs">
+      <DependentUpon>AgreementMigrationPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AgreementSelectionPageView.xaml.cs">
+      <DependentUpon>AgreementSelectionPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ApplicationExportToIntegrationAccountPageView.xaml.cs">
+      <DependentUpon>ApplicationExportToIntegrationAccountPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ApplicationManagementWorkspaceView.xaml.cs">
+      <DependentUpon>ApplicationManagementWorkspaceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ApplicationSelectionView.xaml.cs">
+      <DependentUpon>ApplicationSelectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExportArtifactsStatusPageView.xaml.cs">
+      <DependentUpon>ExportArtifactsStatusPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExportToIntegrationAccountPageView.xaml.cs">
+      <DependentUpon>ExportToIntegrationAccountPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IntegrationServiceDetailsPageView.xaml.cs">
+      <DependentUpon>IntegrationServiceDetailsPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainSelection.xaml.cs">
+      <DependentUpon>MainSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ManagementWorkspaceView.xaml.cs">
+      <DependentUpon>ManagementWorkspaceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MapMigrationPageView.xaml.cs">
+      <DependentUpon>MapMigrationPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MapSelectionPageView.xaml.cs">
+      <DependentUpon>MapSelectionPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartnerMigrationPageView.xaml.cs">
+      <DependentUpon>PartnerMigrationPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Migrators\PartnerMigrator.cs" />
+    <Compile Include="Models\BizTalkManagementDbDetails.cs" />
+    <Compile Include="Views\PartnerSelectionPageView.xaml.cs">
+      <DependentUpon>PartnerSelectionPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BizTalkManagementDatabaseDetailsPageView.xaml.cs">
+      <DependentUpon>BizTalkManagementDatabaseDetailsPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\PageViewModels\BizTalkManagementDbDetailsPageViewModel.cs" />
+    <Compile Include="Utilities\ByteArrayFormatter.cs" />
+    <Compile Include="Views\ProgressBarView.xaml.cs" />
+    <Compile Include="Views\SchemaMigrationPageView.xaml.cs">
+      <DependentUpon>SchemaMigrationPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SchemaSelectionPageView.xaml.cs">
+      <DependentUpon>SchemaSelectionPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SelectionValidationRule.cs" />
+    <Compile Include="Views\SummaryPageView.xaml.cs">
+      <DependentUpon>SummaryPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\test.xaml.cs">
+      <DependentUpon>test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WelcomePageView.xaml.cs">
+      <DependentUpon>WelcomePageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ControlViewModels\WizardNavigationViewModel.cs" />
+    <Compile Include="Views\WizardStepsListView.xaml.cs">
+      <DependentUpon>WizardStepsListView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ServerMigration\BizTalkAdminOperations.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ServerMigration\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LogicConfiguration\CompareResult.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogicConfiguration\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogicConfiguration\ResultsInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogicConfiguration\VersionSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ServerMigration\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ServerMigration\Settings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AgreementMigrationPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AgreementSelectionPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ApplicationExportToIntegrationAccountPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ApplicationManagementWorkspaceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ApplicationSelectionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ExportArtifactsStatusPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ExportToIntegrationAccountPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\IntegrationServiceDetailsPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Views\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\ManagementWorkspaceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MapMigrationPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MapSelectionPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartnerMigrationPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartnerSelectionPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BizTalkManagementDatabaseDetailsPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgressBarView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SchemaMigrationPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SchemaSelectionPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SummaryPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WelcomePageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WizardStepsListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\TPM.jpg" />
+    <Resource Include="Images\MicrosoftLogo1.png" />
+    <Content Include="Resources\Images\Backup.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\BizTalk.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\configCheck.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\MicrosoftLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\Migrate.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\SettingIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\Testing.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\TPM.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ServerMigration\BizTalkApp.xsd" />
+    <None Include="ServerMigration\BizTalkAssemblies.xsd" />
+    <None Include="Files\Agreements\Archive\Agreement1.json" />
+    <None Include="Files\Agreements\Archive\Agreement4.json" />
+    <None Include="Files\Agreements\Archive\Agreement_MSHIT_SAP.json" />
+    <None Include="Files\Agreements\Archive\AMAZONEU_MICROSOFT_X12.json" />
+    <None Include="Files\Agreements\Archive\ArvatoAS2.json" />
+    <None Include="Files\Agreements\Archive\ARVATO_MICROSOFT.json" />
+    <None Include="Files\Agreements\Archive\CevaIBMVAN_Microsoft_As2.json" />
+    <None Include="Files\Agreements\Archive\CEVA_JP.json" />
+    <None Include="Files\Agreements\Archive\Ceva_Microsoft_As2.json" />
+    <None Include="Files\Agreements\Archive\CEVA_MICROSOFT_X12.json" />
+    <None Include="Files\Agreements\Archive\EDIFACT_INVRPT_D93A.json" />
+    <None Include="Files\Agreements\Archive\EDIFACT_ORDERS_FPP_D93A.json" />
+    <None Include="Files\Agreements\Archive\EDIFACT_ORDERS_MOLP_D93A.json" />
+    <None Include="Files\Agreements\Archive\EDIFACT_ORDERS_MSL_D97A.json" />
+    <None Include="Files\Agreements\Archive\EDIFACT_ORDERS_RETAIL_ACTEBISDENMARK.json" />
+    <None Include="Files\Agreements\Archive\EDIFACT_ORDERS_RETAIL_ACTEBISFIN.json" />
+    <None Include="Files\Agreements\Archive\EDIFACT_ORDERS_RETAIL_AMAZONGERMANY.json" />
+    <None Include="Files\Agreements\Archive\EDIFACT_ORDERS_RETAIL_BANQUE.json" />
+    <None Include="Files\Agreements\Archive\GXS_AMAZON.json" />
+    <None Include="Files\Agreements\Archive\GXS_BOND-Alpha_AS2.json" />
+    <None Include="Files\Agreements\Archive\GXS_Bond-Alpha_G2B.json" />
+    <None Include="Files\Agreements\Archive\GXS_Bond-Alpha_MOPR.json" />
+    <None Include="Files\Agreements\Archive\MSFT_ACTEBDNK2_FPP_EDIFACT.json" />
+    <None Include="Files\Agreements\Archive\MSFT_ACTEBDNK2_INV_EDIFACT.json" />
+    <None Include="Files\Agreements\Archive\MSFT_ACTEBDNK2_MLP_EDIFACT.json" />
+    <None Include="Files\Agreements\Archive\MSFT_ACTEBDNK2_SEL_EDIFACT.json" />
+    <None Include="Files\Agreements\Archive\MSFT_ACTEBDNK2_SLSRPT_93A_SBCSalesOut_IN.json" />
+    <None Include="Files\Agreements\Archive\MSFT_ACTEBDNK_INVRPT_93A_EOCCMS_IN.json" />
+    <None Include="Files\Agreements\Archive\MSFT_ACTEBDNK_PARTIN_00901_EOCCMS_IN.json" />
+    <None Include="Files\Agreements\Archive\MSFT_ACTEBDNK_SLSRPT_93A_EOCCMS_IN.json" />
+    <None Include="Files\Agreements\Archive\MSFT_Merisel-C_INV_X12.json" />
+    <None Include="Files\Agreements\Archive\MSFT_Merisel-C_MAX_X12.json" />
+    <None Include="Files\Agreements\Archive\MSFT_Merisel-C_MSL_X12.json" />
+    <None Include="Files\Agreements\Archive\MSFT_PCConnect_846_00401_CMODS_IN.json" />
+    <None Include="Files\Agreements\Archive\MSFT_PCConnect_867_00401_CMODS_IN.json" />
+    <None Include="Files\Agreements\Archive\MSFT_PCConnect_INV_X12.json" />
+    <None Include="Files\Agreements\Archive\MSFT_PCConnect_MSL_X12.json" />
+    <None Include="Files\Agreements\ArvatoAS2.json" />
+    <None Include="Files\Agreements\CEVACMC2.0_Microsoft_As2.json" />
+    <None Include="Files\Agreements\CevaIBMVAN_Microsoft_As2.json" />
+    <None Include="Files\Agreements\CEVA_JP.json" />
+    <None Include="Files\Agreements\Ceva_Microsoft_As2.json" />
+    <None Include="Files\Agreements\E2EAS2GXSParty.json" />
+    <None Include="Files\Agreements\GXS_AMAZON.json" />
+    <None Include="Files\Agreements\GXS_BOND-Alpha_AS2.json" />
+    <None Include="Files\Agreements\GXS_Bond-Alpha_G2B.json" />
+    <None Include="Files\Agreements\GXS_Bond-Alpha_MOPR.json" />
+    <None Include="Files\Agreements\MFT_01GXS_AS2.json" />
+    <None Include="Files\Agreements\MFT_01NFPPE_AS2.json" />
+    <None Include="Files\Agreements\MFT_01NMOLPx12_AS2.json" />
+    <None Include="Files\Agreements\MFT_Dell_AS2.json" />
+    <None Include="Files\Agreements\MFT_Demo170402_AS2.json" />
+    <None Include="Files\Agreements\MFT_E2Open_AS2.json" />
+    <None Include="Files\Agreements\MFT_smoke170501_x12_AS2.json" />
+    <None Include="Files\Agreements\MFT_smoke170601edi_AS2.json" />
+    <None Include="Files\Agreements\MFT_StagTest161001_AS2.json" />
+    <None Include="Files\Agreements\MSFT_01GXS_INVOIC_X12.json" />
+    <None Include="Files\Agreements\MSFT_01GXS_MAXCIM_X12.json" />
+    <None Include="Files\Agreements\MSFT_01NFPPE_MOLP_NEGACK_EDIFACT.json" />
+    <None Include="Files\Agreements\MSFT_01NMOLPE_FPP_ORDERS_EDIFACT.json" />
+    <None Include="Files\Agreements\MSFT_01NMOLPE_INVOIC_EDIFACT.json" />
+    <None Include="Files\Agreements\MSFT_01NMOLPE_MOLP_ORDERS_EDIFACT.json" />
+    <None Include="Files\Agreements\MSFT_01NMOLPx12_867_004010_CMODS_IN.json" />
+    <None Include="Files\Agreements\MSFT_01vlsurface_INVOIC_X12.json" />
+    <None Include="Files\Agreements\MSFT_01vlsurface_MAXCIM_X12.json" />
+    <None Include="Files\Agreements\MSFT_01vlsurface_MSLICENSE_X12.json" />
+    <None Include="Files\Agreements\MSFT_CEVA_005010_X12.json" />
+    <None Include="Files\Agreements\MSFT_Demo170402_VolumeLicensing_ORDERS_EDIFACT.json" />
+    <None Include="Files\Agreements\MSFT_Ingram%28US%29_867_004010_CMODS_IN.json" />
+    <None Include="Files\Agreements\MSFT_Ingram%28US%29_NEW_867_004010_CMODS_IN.json" />
+    <None Include="Files\Agreements\MSFT_PCConnect_MSL_X12.json" />
+    <None Include="Files\Certificates\GuestCert.json" />
+    <None Include="Files\Partners\01GXS.json" />
+    <None Include="Files\Partners\01NFPPE.json" />
+    <None Include="Files\Partners\01NMOLPE.json" />
+    <None Include="Files\Partners\01NMOLPx12.json" />
+    <None Include="Files\Partners\Archive\01GXS.json" />
+    <None Include="Files\Partners\Archive\ABCData.json" />
+    <None Include="Files\Partners\Archive\ABPoland.json" />
+    <None Include="Files\Partners\Archive\Actebis%28Denmark%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Actebis%28Denmark%29.json" />
+    <None Include="Files\Partners\Archive\Actebis%28Estonia%29.json" />
+    <None Include="Files\Partners\Archive\Actebis%28Finland%29.json" />
+    <None Include="Files\Partners\Archive\Actebis%28Germany%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Actebis%28Germany%29.json" />
+    <None Include="Files\Partners\Archive\Actebis%28Netherlands%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Actebis%28Netherlands%29.json" />
+    <None Include="Files\Partners\Archive\ActebisFrance.json" />
+    <None Include="Files\Partners\Archive\ADN.json" />
+    <None Include="Files\Partners\Archive\AlsoABC%28Germany%29.json" />
+    <None Include="Files\Partners\Archive\AlsoABC%28Switzerland%29.json" />
+    <None Include="Files\Partners\Archive\ALSOLatviaSIA.json" />
+    <None Include="Files\Partners\Archive\ALSOLietuvaUAB.json" />
+    <None Include="Files\Partners\Archive\Amazon%28France%29.json" />
+    <None Include="Files\Partners\Archive\AMAZONEU.json" />
+    <None Include="Files\Partners\Archive\APNPromise.json" />
+    <None Include="Files\Partners\Archive\Aptec.json" />
+    <None Include="Files\Partners\Archive\Arena.json" />
+    <None Include="Files\Partners\Archive\ARGOSUK.json" />
+    <None Include="Files\Partners\Archive\ARVATO.json" />
+    <None Include="Files\Partners\Archive\ASAPSoftwareExpress.json" />
+    <None Include="Files\Partners\Archive\ASI.json" />
+    <None Include="Files\Partners\Archive\ATEA.json" />
+    <None Include="Files\Partners\Archive\ATEA_FINLAND.json" />
+    <None Include="Files\Partners\Archive\Avnet.json" />
+    <None Include="Files\Partners\Archive\AVNETUK.json" />
+    <None Include="Files\Partners\Archive\AxizWorkGroup.json" />
+    <None Include="Files\Partners\Archive\bCentralLATAM.json" />
+    <None Include="Files\Partners\Archive\Beamscope.json" />
+    <None Include="Files\Partners\Archive\BECHTLE.json" />
+    <None Include="Files\Partners\Archive\Bertelsmann.json" />
+    <None Include="Files\Partners\Archive\BestBuyCanada.json" />
+    <None Include="Files\Partners\Archive\C2000%28allEuropeansites%29.json" />
+    <None Include="Files\Partners\Archive\C2000%28UnitedKingdom%29.json" />
+    <None Include="Files\Partners\Archive\CANCOM.json" />
+    <None Include="Files\Partners\Archive\CEVALogistics.json" />
+    <None Include="Files\Partners\Archive\CevaLogistics_IBMVAN.json" />
+    <None Include="Files\Partners\Archive\CHSMerisel%28allEuropeansites%29.json" />
+    <None Include="Files\Partners\Archive\CommonMERT.json" />
+    <None Include="Files\Partners\Archive\Compaq%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\Compucom%28ChannelReporting%29.json" />
+    <None Include="Files\Partners\Archive\Compucom.json" />
+    <None Include="Files\Partners\Archive\Compugen%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\Compugen.json" />
+    <None Include="Files\Partners\Archive\ComputacenterDE.json" />
+    <None Include="Files\Partners\Archive\ComputacenterFR.json" />
+    <None Include="Files\Partners\Archive\ComputacenterUK.json" />
+    <None Include="Files\Partners\Archive\ComputerDiscountWarehouse%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\ComputerDiscountWarehouse.json" />
+    <None Include="Files\Partners\Archive\ComputerGross.json" />
+    <None Include="Files\Partners\Archive\COPACO.json" />
+    <None Include="Files\Partners\Archive\CPCDistribution.json" />
+    <None Include="Files\Partners\Archive\CRAYON.json" />
+    <None Include="Files\Partners\Archive\CreativeComputers.json" />
+    <None Include="Files\Partners\Archive\CTSI.json" />
+    <None Include="Files\Partners\Archive\CyberGrants.json" />
+    <None Include="Files\Partners\Archive\D&amp;HDistributing.json" />
+    <None Include="Files\Partners\Archive\D&amp;HDistributingCanada.json" />
+    <None Include="Files\Partners\Archive\D&amp;HDistributors%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\D&amp;HDistributors%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\D&amp;HDistributors%28XBOX%29.json" />
+    <None Include="Files\Partners\Archive\DANDHDISTI.json" />
+    <None Include="Files\Partners\Archive\DatalogSoftwareAG.json" />
+    <None Include="Files\Partners\Archive\DATATHRAU.json" />
+    <None Include="Files\Partners\Archive\Dell.json" />
+    <None Include="Files\Partners\Archive\DellCanada.json" />
+    <None Include="Files\Partners\Archive\DICKERAU.json" />
+    <None Include="Files\Partners\Archive\Digital.json" />
+    <None Include="Files\Partners\Archive\DustinAB.json" />
+    <None Include="Files\Partners\Archive\ElCorteIngles%28Spain%29.json" />
+    <None Include="Files\Partners\Archive\EMJDataSystems%28FPP%29LTD.json" />
+    <None Include="Files\Partners\Archive\EnPointeTechnologies.json" />
+    <None Include="Files\Partners\Archive\Esprinet%28Spain%29.json" />
+    <None Include="Files\Partners\Archive\Esprinet.json" />
+    <None Include="Files\Partners\Archive\ExpressData.json" />
+    <None Include="Files\Partners\Archive\ExpressDataNZ.json" />
+    <None Include="Files\Partners\Archive\FnacBelgium.json" />
+    <None Include="Files\Partners\Archive\FnacItaly.json" />
+    <None Include="Files\Partners\Archive\FnacSwitzerland.json" />
+    <None Include="Files\Partners\Archive\Gamestop.json" />
+    <None Include="Files\Partners\Archive\GamestopEDI.json" />
+    <None Include="Files\Partners\Archive\GAMEUK.json" />
+    <None Include="Files\Partners\Archive\GECompunet.json" />
+    <None Include="Files\Partners\Archive\GENINZ.json" />
+    <None Include="Files\Partners\Archive\GNT.json" />
+    <None Include="Files\Partners\Archive\GNTFinland.json" />
+    <None Include="Files\Partners\Archive\GTI%28Spain%29.json" />
+    <None Include="Files\Partners\Archive\GTSI%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\GTSI.json" />
+    <None Include="Files\Partners\Archive\GXS_BOND-Alpha.json" />
+    <None Include="Files\Partners\Archive\Hewlett-PackardGalway.json" />
+    <None Include="Files\Partners\Archive\IdealHardware.json" />
+    <None Include="Files\Partners\Archive\IMINDIA.json" />
+    <None Include="Files\Partners\Archive\Inacom.json" />
+    <None Include="Files\Partners\Archive\IncomPoland.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Austria%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Belgium%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Belgium%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Canada%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Chile%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28France%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28France%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Germany%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Germany%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Hungary%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Hungary%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Italy%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Italy%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28LatAm%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Netherlands%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Netherlands%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Spain%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Spain%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Sweden%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Sweden%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Switzerland%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28Switzerland%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28UnitedKingdom%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28UnitedKingdom%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28US%29%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\Ingram%28US%29.json" />
+    <None Include="Files\Partners\Archive\IngramCanada%28CAO%29.json" />
+    <None Include="Files\Partners\Archive\IngramCons%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\IngramENT%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\IngramENT%28US%29.json" />
+    <None Include="Files\Partners\Archive\IngramEntertainment.json" />
+    <None Include="Files\Partners\Archive\IngramFPP%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\IngramFPP%28MEXICO%29.json" />
+    <None Include="Files\Partners\Archive\IngramFPP%28US%29.json" />
+    <None Include="Files\Partners\Archive\IngramSurface%28Mexico%29.json" />
+    <None Include="Files\Partners\Archive\IngramUS%28USO%29.json" />
+    <None Include="Files\Partners\Archive\IngramXBOX%28MEXICO%29.json" />
+    <None Include="Files\Partners\Archive\InmetaLicensingAS.json" />
+    <None Include="Files\Partners\Archive\Insight%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\Insight%28US%29.json" />
+    <None Include="Files\Partners\Archive\Insight.json" />
+    <None Include="Files\Partners\Archive\INSIGHTAT.json" />
+    <None Include="Files\Partners\Archive\InsightAustralia.json" />
+    <None Include="Files\Partners\Archive\INSIGHTBE.json" />
+    <None Include="Files\Partners\Archive\INSIGHTCH.json" />
+    <None Include="Files\Partners\Archive\INSIGHTDE.json" />
+    <None Include="Files\Partners\Archive\InsightDirectCanada%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\InsightDirectUSA%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\InsightDirectUSA%28Alt4%29.json" />
+    <None Include="Files\Partners\Archive\InsightDirectUSA%28SoftAltAlt4%29.json" />
+    <None Include="Files\Partners\Archive\InsightDirectUSA.json" />
+    <None Include="Files\Partners\Archive\INSIGHTDK.json" />
+    <None Include="Files\Partners\Archive\INSIGHTES.json" />
+    <None Include="Files\Partners\Archive\INSIGHTFI.json" />
+    <None Include="Files\Partners\Archive\INSIGHTFR.json" />
+    <None Include="Files\Partners\Archive\InsightHongKong.json" />
+    <None Include="Files\Partners\Archive\INSIGHTIT.json" />
+    <None Include="Files\Partners\Archive\InsightNewZealand.json" />
+    <None Include="Files\Partners\Archive\INSIGHTNO.json" />
+    <None Include="Files\Partners\Archive\INSIGHTSE.json" />
+    <None Include="Files\Partners\Archive\InsightSingapore.json" />
+    <None Include="Files\Partners\Archive\INSIGHTUK.json" />
+    <None Include="Files\Partners\Archive\KIVUTO.json" />
+    <None Include="Files\Partners\Archive\LogicomCY.json" />
+    <None Include="Files\Partners\Archive\Merisel %28Canada%29.json" />
+    <None Include="Files\Partners\Archive\Merisel%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\Microsoft.json" />
+    <None Include="Files\Partners\Archive\Microsoft_Mert_Party.json" />
+    <None Include="Files\Partners\Archive\MicroWarehouseLimited.json" />
+    <None Include="Files\Partners\Archive\MINDWARE.json" />
+    <None Include="Files\Partners\Archive\Moet97.json" />
+    <None Include="Files\Partners\Archive\MSHGermany.json" />
+    <None Include="Files\Partners\Archive\MSHITALY.json" />
+    <None Include="Files\Partners\Archive\MSHSwitzerland.json" />
+    <None Include="Files\Partners\Archive\MultiMicro%28FPP%29.json" />
+    <None Include="Files\Partners\Archive\MultiMicro.json" />
+    <None Include="Files\Partners\Archive\Multitech.json" />
+    <None Include="Files\Partners\Archive\NACS.json" />
+    <None Include="Files\Partners\Archive\NEWLEASEAU.json" />
+    <None Include="Files\Partners\Archive\NexsysColombia.json" />
+    <None Include="Files\Partners\Archive\NEXWAY.json" />
+    <None Include="Files\Partners\Archive\OB10.json" />
+    <None Include="Files\Partners\Archive\OfficeDepot%28UK%29.json" />
+    <None Include="Files\Partners\Archive\PC-WARE.json" />
+    <None Include="Files\Partners\Archive\PCConnection.json" />
+    <None Include="Files\Partners\Archive\PCM.json" />
+    <None Include="Files\Partners\Archive\Sarcom.json" />
+    <None Include="Files\Partners\Archive\SCH.json" />
+    <None Include="Files\Partners\Archive\Scribona%28Denmark%29.json" />
+    <None Include="Files\Partners\Archive\Scribona%28Sweden%29.json" />
+    <None Include="Files\Partners\Archive\Scribona.json" />
+    <None Include="Files\Partners\Archive\SHL%28Canada-Invoices%29.json" />
+    <None Include="Files\Partners\Archive\SMG,Norway.json" />
+    <None Include="Files\Partners\Archive\SMOKE2112.json" />
+    <None Include="Files\Partners\Archive\SoftcatLtd.json" />
+    <None Include="Files\Partners\Archive\SoftChoice.json" />
+    <None Include="Files\Partners\Archive\SoftChoiceCanada%28867%29.json" />
+    <None Include="Files\Partners\Archive\SoftChoiceUS%28867%29.json" />
+    <None Include="Files\Partners\Archive\Softmart.json" />
+    <None Include="Files\Partners\Archive\Softsource%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\SoftwareHouse.json" />
+    <None Include="Files\Partners\Archive\SoftwareHouseCanada.json" />
+    <None Include="Files\Partners\Archive\SPF.json" />
+    <None Include="Files\Partners\Archive\Synnex%28Japan%29.json" />
+    <None Include="Files\Partners\Archive\Synnex%28US%29.json" />
+    <None Include="Files\Partners\Archive\Synnex%28USAlt1%29.json" />
+    <None Include="Files\Partners\Archive\SYNNEXAU.json" />
+    <None Include="Files\Partners\Archive\SynnexCanada%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\SynnexCanada.json" />
+    <None Include="Files\Partners\Archive\SYNNEXHK.json" />
+    <None Include="Files\Partners\Archive\TechData%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Belgium%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Canada%29%28Alt1%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Canada%29%28Alt2%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28CzechRepublic%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Denmark%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Finland%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28France%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Germany%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Italy%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28LatinAmerica%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Netherlands%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Norway%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Poland%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Portugal%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Spain%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Sweden%29.json" />
+    <None Include="Files\Partners\Archive\TechData%28Switzerland%29.json" />
+    <None Include="Files\Partners\Archive\TechData.json" />
+    <None Include="Files\Partners\Archive\TechDataCanadaCorporation.json" />
+    <None Include="Files\Partners\Archive\TechDataENT%28US%29.json" />
+    <None Include="Files\Partners\Archive\TechDataFPP%28Canada%29.json" />
+    <None Include="Files\Partners\Archive\TechDataFPP%28US%29.json" />
+    <None Include="Files\Partners\Archive\TechDataLatinAmerica.json" />
+    <None Include="Files\Partners\Archive\TechDataProductManagement.json" />
+    <None Include="Files\Partners\Archive\Technicolor,UK.json" />
+    <None Include="Files\Partners\Archive\TechPacificAustralia.json" />
+    <None Include="Files\Partners\Archive\TECHPACIFICHONGKONG.json" />
+    <None Include="Files\Partners\Archive\TECHPACIFICMALAYSIA.json" />
+    <None Include="Files\Partners\Archive\TechPacificNewZealand.json" />
+    <None Include="Files\Partners\Archive\TECHPACIFICTHAILAND.json" />
+    <None Include="Files\Partners\Archive\Techpac_Singapore.json" />
+    <None Include="Files\Partners\Archive\TheValueSystemsTH.json" />
+    <None Include="Files\Partners\Archive\TrustMarqueSolutions.json" />
+    <None Include="Files\Partners\Archive\ULTIMASPGB.json" />
+    <None Include="Files\Partners\Archive\Verkkokauppa.com.json" />
+    <None Include="Files\Partners\Archive\VERYSELL.json" />
+    <None Include="Files\Partners\Archive\WestcoastLtd.json" />
+    <None Include="Files\Partners\Archive\WestconComztek.json" />
+    <None Include="Files\Partners\Archive\WortmannAG.json" />
+    <None Include="Files\Partners\Archive\ZeroOne,Taiwan.json" />
+    <None Include="Files\Partners\Archive\ZonesInc.json" />
+    <None Include="Files\Partners\CEVALogistics.json" />
+    <None Include="Files\Partners\CevaLogistics_IBMVAN.json" />
+    <None Include="Files\Partners\Dell.json" />
+    <None Include="Files\Partners\E2E2062017220.json" />
+    <None Include="Files\Partners\MFT_Dell.json" />
+    <None Include="Files\Partners\Microsoft.json" />
+    <None Include="ServerMigration\HostSchema.xsd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ReadMe\MigrationToolReadme.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="ServerMigration\RcvSndHandlers.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\forward_button.png" />
+    <Resource Include="Images\forward_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\minimize_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cancel_button.png" />
+    <Resource Include="Images\cancel_button_disabled.png" />
+    <Resource Include="Images\cancel_button_hover.png" />
+    <Resource Include="Images\minimize_button_disabled.png" />
+    <Resource Include="Images\minimize_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\back_button.png" />
+    <Resource Include="Images\back_button_disabled.png" />
+    <Resource Include="Images\back_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\start_button.png" />
+    <Resource Include="Images\start_button_disable.png" />
+    <Resource Include="Images\start_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MicrosoftLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\check_icon.png" />
+    <Resource Include="Images\loader_icon.png" />
+    <Resource Include="Images\windows_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\warning.png" />
+    <Resource Include="Images\successStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\previous.png" />
+    <Resource Include="Images\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\azurelogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Images\biztalk_icon.png" />
+    <Content Include="Images\biztalk_icon_taskbar.png" />
+    <Content Include="MappingFiles\PartnerCertificateMapping.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="References\Microsoft.Azure.Management.Logic.dll" />
+    <Content Include="References\Microsoft.BizTalk.B2B.PartnerManagement.dll" />
+    <Content Include="References\Microsoft.Rest.ClientRuntime.Azure.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SchemaMigration\SchemaMigration.csproj">
+      <Project>{28c3926b-c993-4383-9e91-8026b1661dad}</Project>
+      <Name>SchemaMigration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapMigration\MapMigration.csproj">
+      <Project>{85ef18af-b4b9-4419-8696-4944d5c60ffd}</Project>
+      <Name>MapMigration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestPublisherHelper\TestPublisherHelper.csproj">
+      <Project>{a9043313-b558-42a0-8d1e-dcff5aeaf090}</Project>
+      <Name>TestPublisherHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Themes\References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--<Import Project="$(INETROOT)\private\source\Integration\Microsoft.Build.CSharp.AppFabricICB.targets" />-->
+  <!--<Target Name="AfterBuild" AfterTargets="CoreBuild">
+    <Copy SourceFiles="$(OutputPath)\$(AssemblyName).exe" DestinationFolder="$(Inetroot)\bins\$(BuildType)\$(BuildArchitecture)\PackagePayload" OverwriteReadOnlyFiles="true" SkipUnchangedFiles="true" Retries="3" RetryDelayMilliseconds="3000" ContinueOnError="false" />
+  </Target>-->
+</Project>

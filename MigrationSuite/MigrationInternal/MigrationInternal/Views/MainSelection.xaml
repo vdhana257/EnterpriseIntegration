@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.Views.MainSelection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid Name="Main">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="33" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <!--Selection Area -->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Background="#FFE7E7E7"/>
+
+                <Grid Grid.Column="2">
+
+                    <StackPanel>
+                        <Label Content="Select the Migration Criteria : " Margin="0,20,0,0" FontSize="14"/>
+                        <RadioButton Name="AppSelect" Content="Application" Style="{StaticResource StandardRadioButton}" HorizontalAlignment="Left" Margin="20,10,0,5" FontSize="12" />
+                        <RadioButton Name="PartnerSelect" Content="Partner" Style="{StaticResource StandardRadioButton}" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="12" />
+                    </StackPanel>
+
+                </Grid>
+            </Grid>
+            <!-- Windows Azure Logo Strip -->
+            <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{StaticResource DarkBlueBrush}"  Margin="-1 -1 -1 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="75" />
+
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="1" VerticalAlignment="Center" Height="23" Stretch="Uniform" Source="/TpmMigration;component/Images/azurelogo.png" />
+                <TextBlock Grid.Column="3" Text="{Binding TpmMigrationToolTitle, Source={StaticResource Resources}}" FontFamily="Segoe UI" FontSize="18" VerticalAlignment="Center" Foreground="AntiqueWhite"  />
+                <Button Grid.Column="4" HorizontalAlignment="Center" Visibility="Visible" Style="{StaticResource CommandMenuButtonStyle}" Content="   Home  "  DockPanel.Dock="Right" Click="HomePage_Click"/>
+
+            </Grid>
+
+
+            <DockPanel Grid.Row="3" Background="{StaticResource DarkBlueBrush}">
+                <Button Visibility="Visible" Style="{StaticResource CommandMenuButtonStyle}" Content="Next"  DockPanel.Dock="Right" Click="Operation_Selected"/>
+                <Label Content="{Binding ContactSupport}" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Bisque"></Label>
+            </DockPanel>
+
+        </Grid>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="MigrationTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MigrationTool"
+        mc:Ignorable="d"
+        
+        Title="Migration Suite"
+        Name="myMainWindow"
+        Width="1095" Height="715"
+        >
+
+    <Grid x:Name="MainGrid" SizeChanged="MainGrid_SizeChanged">
+        <Grid.LayoutTransform>
+            <ScaleTransform x:Name="ApplicationScaleTransform"
+                        CenterX="0"
+                        CenterY="0"
+                        ScaleX="{Binding ElementName=myMainWindow, Path=ScaleValue}"
+                        ScaleY="{Binding ElementName=myMainWindow, Path=ScaleValue}" />
+        </Grid.LayoutTransform>
+        <StackPanel>
+            <Grid Background="#FF284E8E" Height="70">
+                <Image Source="../Resources/Images/MicrosoftLogo.png" HorizontalAlignment="Left" Height="70" Margin="29,0,0,0" VerticalAlignment="Top" Width="69"/>
+                <Label Content="Migration Suite" Foreground="White" HorizontalAlignment="Left" Margin="118,6,0,0" VerticalAlignment="Top" Width="452" Height="60" Background="{x:Null}" FontSize="36"/>
+            </Grid>
+            
+            <Grid Name="Main" Height="620"/>
+        </StackPanel>
+
+
+    </Grid>
+</Window>

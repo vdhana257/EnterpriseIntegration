@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABTestAdapter", "ABTestAdapter\ABTestAdapter.csproj", "{0EE74A1B-D983-4D94-80AF-953DC32384E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABTestAisPublisher", "ABTestAisPublisher\ABTestAisPublisher.csproj", "{BDD7A4F4-725B-49C2-BA74-25D41C42610C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryClient", "TelemetryClient\TelemetryClient.csproj", "{18AB10BB-9083-4A88-9698-3F2832203D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityManager", "UnityManager\UnityManager.csproj", "{757CF415-6C16-4870-A5ED-7CFB4C23E03F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ABTestSuites", "ABTestSuites", "{53C71D81-58A4-4075-A21C-99D4351B8E26}"
+	ProjectSection(SolutionItems) = preProject
+		ABTestSuites\ABTestFileSource.json = ABTestSuites\ABTestFileSource.json
+		ABTestSuites\ABTestPCConnection_File.json = ABTestSuites\ABTestPCConnection_File.json
+		ABTestSuites\ABTestPCConnection_LA.json = ABTestSuites\ABTestPCConnection_LA.json
+		GTISpain810.config = GTISpain810.config
+		Sarcom810.config = Sarcom810.config
+		Sarcom850.config = Sarcom850.config
+		ABTestSuites\TechData2_Inbound.config = ABTestSuites\TechData2_Inbound.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EE74A1B-D983-4D94-80AF-953DC32384E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE74A1B-D983-4D94-80AF-953DC32384E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE74A1B-D983-4D94-80AF-953DC32384E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE74A1B-D983-4D94-80AF-953DC32384E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD7A4F4-725B-49C2-BA74-25D41C42610C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD7A4F4-725B-49C2-BA74-25D41C42610C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD7A4F4-725B-49C2-BA74-25D41C42610C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD7A4F4-725B-49C2-BA74-25D41C42610C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AB10BB-9083-4A88-9698-3F2832203D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AB10BB-9083-4A88-9698-3F2832203D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AB10BB-9083-4A88-9698-3F2832203D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AB10BB-9083-4A88-9698-3F2832203D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757CF415-6C16-4870-A5ED-7CFB4C23E03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757CF415-6C16-4870-A5ED-7CFB4C23E03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757CF415-6C16-4870-A5ED-7CFB4C23E03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757CF415-6C16-4870-A5ED-7CFB4C23E03F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+{
+	"TestSuiteName": "ABTestPCConnection",
+	"Enabled": "True",
+	"ABTestAdapterType": "AisABTestAdapter",
+	"ActualFilePublisher": {
+		"PublisherType": "LogicAppPublisher",
+		"HttpVerb": "POST",
+		"LogicAppUri": "https://prod-22.westus2.logic.azure.com:443/workflows/319111d4c84f4b41ad84a4c351a8fcc0/triggers/manual/paths/invoke?api-version=2017-07-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=u8cm69lhBRm1aB3S_z3N70KA9AFMIX5nIgnk1KieqJ8"
+	},
+	"ExpectedFilePublisher": {
+		"PublisherType": "BlobPublisher",
+		"BlobContainerSasTokenUri": "https://aisv2storagedev.blob.core.windows.net/abtestexpectedfiles?sv=2015-12-11&si=writeblob&sr=c&sig=5TQ%2BpO6LSHfCnyd7kHLgu9bLKCuexCxRS3yC5zLmo%2Fk%3D"
+	},
+	"PayloadContainer": "NA",
+	"PayloadDirectory": "NA",
+	"ContentType": "text/plain",
+	"Partners": "PC Connection",
+	"Transactions": "850",
+	"StartDate": "2017-08-22T15:47:00.000Z",
+	"EndDate": "2017-08-23T15:47:00.000Z",
+	"TestCase": ["test1", "test2"],
+	"Headers": {
+		"AS2-To": "MICROSOFTTEST",
+		"AS2-From": "CANARYTESTASYNC"
+	}
+}

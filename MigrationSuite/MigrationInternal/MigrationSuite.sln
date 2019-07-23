@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaMigration", "..\SchemaMigration\SchemaMigration.csproj", "{28C3926B-C993-4383-9E91-8026B1661DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationInternal", "MigrationInternal\MigrationInternal.csproj", "{2F3441E1-45DA-473B-B1F0-04CE216FA470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteOperations", "RemoteOperations\RemoteOperations.csproj", "{66D1607B-4D49-402B-940B-C87F3F8BE97E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Util", "Util", "{76337E48-BCA6-48F1-B8A6-71A32D46346F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\ServerMigrationToolOriginal\Util\gacutil.exe = ..\..\ServerMigrationToolOriginal\Util\gacutil.exe
+		..\..\ServerMigrationToolOriginal\Util\gacutil.exe.config = ..\..\ServerMigrationToolOriginal\Util\gacutil.exe.config
+		..\..\ServerMigrationToolOriginal\Util\PsExec.exe = ..\..\ServerMigrationToolOriginal\Util\PsExec.exe
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapMigration", "MapMigration\MapMigration.csproj", "{85EF18AF-B4B9-4419-8696-4944D5C60FFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABTestAdapter", "..\ABTestPublisher\ABTestAdapter\ABTestAdapter.csproj", "{0EE74A1B-D983-4D94-80AF-953DC32384E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryClient", "..\ABTestPublisher\TelemetryClient\TelemetryClient.csproj", "{18AB10BB-9083-4A88-9698-3F2832203D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityManager", "..\ABTestPublisher\UnityManager\UnityManager.csproj", "{757CF415-6C16-4870-A5ED-7CFB4C23E03F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ABTestSuites", "ABTestSuites", "{53C71D81-58A4-4075-A21C-99D4351B8E26}"
+	ProjectSection(SolutionItems) = preProject
+		..\ABTestPublisher\ABTestSuites\ABTestFileSource.json = ..\ABTestPublisher\ABTestSuites\ABTestFileSource.json
+		..\ABTestPublisher\ABTestSuites\ABTestPCConnection_File.json = ..\ABTestPublisher\ABTestSuites\ABTestPCConnection_File.json
+		..\ABTestPublisher\ABTestSuites\ABTestPCConnection_LA.json = ..\ABTestPublisher\ABTestSuites\ABTestPCConnection_LA.json
+		..\ABTestPublisher\GTISpain810.config = ..\ABTestPublisher\GTISpain810.config
+		..\ABTestPublisher\Sarcom810.config = ..\ABTestPublisher\Sarcom810.config
+		..\ABTestPublisher\Sarcom850.config = ..\ABTestPublisher\Sarcom850.config
+		..\ABTestPublisher\ABTestSuites\TechData2_Inbound.config = ..\ABTestPublisher\ABTestSuites\TechData2_Inbound.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPublisherHelper", "TestPublisherHelper\TestPublisherHelper.csproj", "{A9043313-B558-42A0-8D1E-DCFF5AEAF090}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28C3926B-C993-4383-9E91-8026B1661DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C3926B-C993-4383-9E91-8026B1661DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C3926B-C993-4383-9E91-8026B1661DAD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C3926B-C993-4383-9E91-8026B1661DAD}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2F3441E1-45DA-473B-B1F0-04CE216FA470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3441E1-45DA-473B-B1F0-04CE216FA470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3441E1-45DA-473B-B1F0-04CE216FA470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3441E1-45DA-473B-B1F0-04CE216FA470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D1607B-4D49-402B-940B-C87F3F8BE97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D1607B-4D49-402B-940B-C87F3F8BE97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D1607B-4D49-402B-940B-C87F3F8BE97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D1607B-4D49-402B-940B-C87F3F8BE97E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85EF18AF-B4B9-4419-8696-4944D5C60FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85EF18AF-B4B9-4419-8696-4944D5C60FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85EF18AF-B4B9-4419-8696-4944D5C60FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85EF18AF-B4B9-4419-8696-4944D5C60FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE74A1B-D983-4D94-80AF-953DC32384E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE74A1B-D983-4D94-80AF-953DC32384E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE74A1B-D983-4D94-80AF-953DC32384E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE74A1B-D983-4D94-80AF-953DC32384E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AB10BB-9083-4A88-9698-3F2832203D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AB10BB-9083-4A88-9698-3F2832203D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AB10BB-9083-4A88-9698-3F2832203D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AB10BB-9083-4A88-9698-3F2832203D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757CF415-6C16-4870-A5ED-7CFB4C23E03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757CF415-6C16-4870-A5ED-7CFB4C23E03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757CF415-6C16-4870-A5ED-7CFB4C23E03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757CF415-6C16-4870-A5ED-7CFB4C23E03F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9043313-B558-42A0-8D1E-DCFF5AEAF090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9043313-B558-42A0-8D1E-DCFF5AEAF090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9043313-B558-42A0-8D1E-DCFF5AEAF090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9043313-B558-42A0-8D1E-DCFF5AEAF090}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75049F51-4184-4B2E-B203-45AE01564555}
+	EndGlobalSection
+EndGlobal

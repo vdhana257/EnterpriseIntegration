@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.LogicConfiguration.ResultsInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.LogicConfiguration"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    <Grid Name="main">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid Grid.Row="0" Grid.ColumnSpan="5" Background="#FF007ACC">
+            <Label Content="LogicApp Configuration" Margin="30,0,0,0" Foreground="White" FontSize="18" />
+            
+                <Button Width="100" Content="Back" Margin="0,0,100,0" FontSize="16" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalAlignment="Right" Click="Back_Click" />
+                <Button Width="100" Content="Home" FontSize="16" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalAlignment="Right" Click="HomePage_Click" />
+            </Grid>
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock Name="version1Name" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Name="version1Date" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="3" VerticalAlignment="Center">
+            <TextBlock Name="version2Name" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Name="version2Date" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </StackPanel>
+        
+        <RichTextBox Grid.Row="2" Grid.Column="1" Name="ver1" IsReadOnly="True" >
+                <RichTextBox.Resources>
+                    <Style TargetType="{x:Type Paragraph}">
+                        <Setter Property="Margin" Value="0"/>
+                    </Style>
+                </RichTextBox.Resources>
+            </RichTextBox>
+        <RichTextBox Grid.Row="2" Grid.Column="3" Name="ver2" IsReadOnly="True">
+                <RichTextBox.Resources>
+                    <Style TargetType="{x:Type Paragraph}">
+                        <Setter Property="Margin" Value="0"/>
+                    </Style>
+                </RichTextBox.Resources>
+            </RichTextBox>
+    </Grid>
+    </Grid>
+</UserControl>

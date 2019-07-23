@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.LogicConfiguration.CompareResult"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.LogicConfiguration"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    <Grid Name="main">
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="5" Background="#FF007ACC">
+            <Label Content="LogicApp Configuration" Margin="30,0,0,0" Foreground="White" FontSize="18" />
+            <Button Width="100" Content="Home" FontSize="16" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalAlignment="Right" Click="HomePage_Click" />
+            </Grid>
+        <Label Content="Comparison Results" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="1" Margin="0,20,0,0" HorizontalAlignment="Center" FontSize="18" FontFamily="Verdana" FontWeight="Bold"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1">
+            <Label Content="Definition Parameters" FontSize="18" HorizontalAlignment="Center"/>
+            <TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Name="definition_parameterStatus"/>
+            <Button Margin="0,10,0,0" Style="{StaticResource Link}" Content="More Information" Click="definition_parameterInfo"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2">
+            <Label Content="Triggers" FontSize="18" HorizontalAlignment="Center"/>
+            <TextBlock TextAlignment="Center" FontSize="18"  FontWeight="Bold" Name="triggersStatus"/>
+            <Button Margin="0,10,0,0" Style="{StaticResource Link}" Content="More Information" Click="triggerInfo"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3">
+            <Label Content="Actions" FontSize="18" HorizontalAlignment="Center"/>
+            <TextBlock TextAlignment="Center" FontSize="18"  FontWeight="Bold" Name="actionsStatus"/>
+            <Button Margin="0,10,0,0" Style="{StaticResource Link}" Content="More Information" Click="actionInfo"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1">
+            <Label Content="Outputs" FontSize="18" HorizontalAlignment="Center"/>
+            <TextBlock TextAlignment="Center" FontSize="18"  FontWeight="Bold" Name="outputsStatus"/>
+            <Button Margin="0,10,0,0" Style="{StaticResource Link}" Content="More Information" Click="outputsInfo"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2">
+            <Label Content="Endpoints Configuration" FontSize="18" HorizontalAlignment="Center"/>
+            <TextBlock TextAlignment="Center" FontSize="18"  FontWeight="Bold" Name="endpointsConfigurationStatus"/>
+            <Button Margin="0,10,0,0" Style="{StaticResource Link}" Content="More Information" Click="endpointsConfigurationInfo"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3">
+            <Label Content="Parameters" FontSize="18" HorizontalAlignment="Center"/>
+            <TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Name="parametersStatus"/>
+            <Button Margin="0,10,0,0" Style="{StaticResource Link}" Content="More Information" Click="parameterInfo"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2">
+            <Label Content="Result :" FontSize="18" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold" Name="status"/>
+        </StackPanel>
+
+    </Grid>
+    </Grid>
+</UserControl>

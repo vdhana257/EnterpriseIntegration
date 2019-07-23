@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.SummaryPageView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:tpmMigration="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration"
+      mc:Ignorable="d"
+      d:DesignHeight="503" d:DesignWidth="721">
+
+    <Grid x:Name="Layout">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="15"></ColumnDefinition>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="{Binding SummaryText}">
+        </TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="2">
+           A <Hyperlink x:Name="FileLink" Command="{Binding OpenLogFileCommand}" >Logfile</Hyperlink> has been created in your temp directory.
+        </TextBlock>
+    </Grid>
+</UserControl>

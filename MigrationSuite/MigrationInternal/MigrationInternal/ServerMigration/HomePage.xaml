@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="MigrationTool.HomePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MigrationTool"
+             mc:Ignorable="d" 
+             Height="606" Width="1080">
+    <Grid Name="Main" Background="White" HorizontalAlignment="Stretch">
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
+                <Button Margin="0,28,0,33" Click="Button_Click">
+                    <Image Source="../Resources/Images/BizTalk.png" Width="256"/>
+                </Button>
+                <TextBlock Margin="20,51" FontSize="18" TextAlignment="Justify" Text="BizTalk Migration Tool simplifies manual effort in migrating artifacts from one source to destination BizTalk platform. " Width="157" TextWrapping="Wrap"  />
+            </StackPanel >
+            <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Horizontal" Margin="15,0,0,0">
+                <Button Margin="0,28,0,33" Click="TPM_Click">
+                    <Image Source="../Resources/Images/TPM.jpg" Width="246"/>
+                </Button>
+                <TextBlock Margin="20,51" FontSize="18" TextAlignment="Justify" Text="The trading partner data migration tool migrates schemas, certificates, partners and agreements from BizTalk Server 2016 to Azure Logic Apps Integration Account. " Width="161" TextWrapping="Wrap"  />
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,0">
+                <Button Margin="0,28,0,33" Click="Button_Click_1">
+                    <Image Source="../Resources/Images/configCheck.jpg" Width="268" Height="217"/>
+                </Button>
+                <TextBlock Margin="20,51" FontSize="18" TextAlignment="Justify" Text="The Configuration Matcher tool allows comparing different versions of logic app workflows and track changes. " Width="161" TextWrapping="Wrap"  />
+            </StackPanel>
+            <StackPanel Grid.Column="2" Grid.Row="1" Orientation="Horizontal" Margin="15,0,0,0">
+                <Button Margin="0,28,0,33" Click="Button_Click_2">
+                    <Image Source="../Resources/Images/Testing.jpg" Width="248" Height="215"/>
+                </Button>
+                <TextBlock Margin="20,51" FontSize="18" TextAlignment="Justify" Text="Enables end to end automated testing of Logic App Workflows and generates detailed report." Width="161" TextWrapping="Wrap"  />
+            </StackPanel>
+
+
+        </Grid>
+    </Grid>
+</UserControl>

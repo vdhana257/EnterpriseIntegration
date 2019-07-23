@@ -1,0 +1,25 @@
+{
+	"TestSuiteName": "ABTestFileSource",
+	"Enabled": "True",
+	"ABTestAdapterType": "AisABTestAdapter",
+  "ActualFilePublisher": {
+    "PublisherType": "FilePublisher",
+    "FilePath": "F%3A%5CShared%5COfc%20Desktop%5CABTesting%5CFileSource%5CPreTrfm"
+  },
+  "ExpectedFilePublisher": {
+    "PublisherType": "FilePublisher",
+    "FilePath": "F%3A%5CShared%5COfc%20Desktop%5CABTesting%5CFileSource%5CPostTrfm"
+  },
+	"PayloadContainer": "NA",
+	"PayloadDirectory": "NA",
+	"ContentType": "text/plain",
+	"Partners": "PC Connection",
+	"Transactions": "850",
+	"StartDate": "2017-08-22T15:47:00.000Z",
+	"EndDate": "2017-08-23T15:47:00.000Z",
+	"TestCase": ["test1", "test2"],
+  "Headers": {
+    "AS2-To": "MICROSOFTTEST",
+    "AS2-From": "CANARYTESTASYNC"
+  }
+}

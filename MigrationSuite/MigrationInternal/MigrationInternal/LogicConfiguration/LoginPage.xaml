@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.LogicConfiguration.LoginPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Microsoft.Windows.Azure.BizTalkService.ClientTools.TpmMigration.LogicConfiguration"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    <Grid Name="main">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="3" Background="#FF007ACC">
+            <Label Content="LogicApp Configuration" Margin="30,0,0,0" Foreground="White" FontSize="18" />
+            <Button Width="100" Content="Home" FontSize="16" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalAlignment="Right" Click="HomePage_Click" />
+            </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <StackPanel>
+                <TextBlock Margin="30,30,0,0" Text="Click on the button to open Azure login page :" FontSize="16" FontFamily="Verdana"/>
+                <Button Content="Azure Login" Margin="200,20" Height="30" Foreground="White" Background="#FF293956" BorderBrush="White" Click="Loginbtn_Click"/>
+            </StackPanel>
+        </Grid>
+        <Grid Name="SubscriptionDetails" Grid.Row="2" Grid.Column="1" Visibility="Hidden" >
+            <StackPanel>
+                <TextBlock Margin="30,0,0,0" Text="Select Subscription" FontSize="16" FontFamily="Verdana"/>
+            </StackPanel>
+            <ComboBox Name="SubscriptionComboBox" Height="30" Width="300" Style="{DynamicResource theComboBox}" ItemContainerStyle="{DynamicResource theComboBoxItem}" SelectionChanged="SubscriptionComboBox_SelectionChanged">
+
+            </ComboBox>
+        </Grid>
+
+        <Grid Name="ResourceDetails" Grid.Row="3" Grid.Column="1" Visibility="Hidden">
+            <StackPanel>
+                <TextBlock Margin="30,0,0,0" Text="Select Resource Group" FontSize="16" FontFamily="Verdana"/>
+            </StackPanel>
+            <ComboBox Name="ResourceComboBox" Height="30" Width="300" Style="{DynamicResource theComboBox}" ItemContainerStyle="{DynamicResource theComboBoxItem}" SelectionChanged="ResourceComboBox_SelectionChanged">
+
+            </ComboBox>
+        </Grid>
+
+        <Grid Name="WorkflowDetails" Grid.Row="4"  Grid.RowSpan="2" Grid.Column="1" Visibility="Hidden">
+            <StackPanel>
+                <TextBlock Margin="30,0,0,0" Text="Select Workflow" FontSize="16" FontFamily="Verdana"/>
+            </StackPanel>
+            <ComboBox Name="WorkflowComboBox" Margin="0,0,0,150" Height="30" Width="300" Style="{DynamicResource theComboBox}" ItemContainerStyle="{DynamicResource theComboBoxItem}" >
+
+            </ComboBox>
+            <Button Name="Next" Visibility="Hidden" Content="Next" Margin="400,100,0,50" Height="30" Foreground="White" Background="#FF293956" BorderBrush="White" Click="VersionSelection_Click"/>
+        </Grid>
+
+        <TextBox x:Name="tt" HorizontalAlignment="Left" Height="23" Margin="237,231,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+        </Grid>
+    </Grid>
+</UserControl>

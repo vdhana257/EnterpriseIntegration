@@ -1,0 +1,632 @@
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.csprojResolveAssemblyReference.cache
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Resources\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll.config
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.pdb
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.pdb
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.pdb
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.xml
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.dll
+C:\Users\visukuma\Desktop\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.pdb
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Resources\Microsoft.IT.Aisap.ConfigEncryptor.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll.config
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.pdb
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.ConfigEncryptor.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Extensions.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Formatting.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Primitives.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.pdb
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.pdb
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.xml
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.OData.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.OData.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.OData.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\System.Spatial.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\System.Spatial.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\System.Spatial.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\System.Spatial.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\System.Spatial.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\System.Spatial.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\System.Spatial.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\System.Spatial.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\System.Spatial.resources.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.csprojResolveAssemblyReference.cache
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.dll
+D:\Share\21Dec\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.pdb
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Resources\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll.config
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.pdb
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Extensions.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Formatting.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Primitives.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.pdb
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.pdb
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.xml
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\System.Spatial.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\System.Spatial.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\System.Spatial.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\System.Spatial.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\System.Spatial.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\System.Spatial.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\System.Spatial.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.csprojResolveAssemblyReference.cache
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.dll
+C:\Ashish\Project\ABTesting\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.pdb
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Resources\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll.config
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.pdb
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Extensions.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Formatting.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Primitives.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.pdb
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.pdb
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.xml
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\de\System.Spatial.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\es\System.Spatial.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\fr\System.Spatial.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\it\System.Spatial.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ja\System.Spatial.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ko\System.Spatial.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\ru\System.Spatial.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.csprojResolveAssemblyReference.cache
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.dll
+C:\Naresh\ABTesting\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.pdb
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Resources\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll.config
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.pdb
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.pdb
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.pdb
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.xml
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.csprojResolveAssemblyReference.cache
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.dll
+C:\Users\t-asnira\Desktop\ABTestPublisher (2)\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.pdb
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Resources\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll.config
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.pdb
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.pdb
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.pdb
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.xml
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.csprojResolveAssemblyReference.cache
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.dll
+C:\Users\t-asnira\Desktop\Testing\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.pdb
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Resources\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll.config
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.pdb
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.ConfigEncryptor.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.pdb
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.pdb
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.xml
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.csprojResolveAssemblyReference.cache
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.dll
+C:\Users\t-asnira\Desktop\ModifiedSolution\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.pdb
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Resources\Microsoft.IT.Aisap.ConfigEncryptor.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll.config
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ABTestAdapter.pdb
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.ConfigEncryptor.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Extensions.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Formatting.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\System.Net.Http.Primitives.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.TelemetryClient.pdb
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IT.Aisap.UnityManager.pdb
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Edm.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.OData.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Data.Services.Client.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\Newtonsoft.Json.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\System.Spatial.xml
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.OData.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.OData.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.OData.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\de\System.Spatial.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\es\System.Spatial.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\fr\System.Spatial.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\it\System.Spatial.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ja\System.Spatial.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ko\System.Spatial.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\ru\System.Spatial.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hans\System.Spatial.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\bin\Debug\zh-Hant\System.Spatial.resources.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.csprojResolveAssemblyReference.cache
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.dll
+\\ashjai\Ashish-Share\SolutionFolder\ABTestPublisher\ABTestAdapter\obj\Debug\ABTestAdapter.pdb
